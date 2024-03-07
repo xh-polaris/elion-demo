@@ -1,0 +1,42 @@
+.PageTitle {
+  position: absolute;
+  left: 58px;
+  top: 58px;
+}
+
+.PageTitle__logo {
+  width: 66px;
+  height: 66px;
+}
+
+.PageTitle__title {
+  position: absolute;
+  left: 99px;
+  top: 0;
+  height: 55px;
+  line-height: 55px;
+
+  font-size: 55px;
+  font-weight: bold;
+  text-wrap: nowrap;
+
+  letter-spacing: 4px;
+
+  font-family: 'CKTKingKong';
+}
+
+.PageTitle__subtitle {
+  position: absolute;
+  left: 2px;
+  top: 68px;
+  height: 19px;
+  line-height: 19px;
+
+  font-size: 19px;
+  font-weight: bold;
+  text-wrap: nowrap;
+
+  letter-spacing: 2px;
+
+  font-family: 'CKTKingKong';
+}

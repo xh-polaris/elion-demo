@@ -1,0 +1,29 @@
+.EaseIn {
+  animation: easeIn 0.3s forwards;
+}
+
+@keyframes easeIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.EaseOut {
+  animation: easeOut 0.3s forwards;
+}
+
+@keyframes easeOut {
+  from {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+}

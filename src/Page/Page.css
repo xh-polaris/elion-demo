@@ -1,0 +1,16 @@
+.Page {
+  width: 1920px;
+  height: 1080px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+.Page__content {
+  position: absolute;
+  top: 182px;
+  left: 212px;
+}

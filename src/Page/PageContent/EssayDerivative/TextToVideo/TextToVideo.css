@@ -1,0 +1,16 @@
+.TextToVideo {
+  width: 428px;
+  height: 272px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.TextToVideo__video {
+  --width: 360px;
+  width: var(--width);
+  height: calc(var(--width) * 0.88 * 9 / 16);
+  object-fit: cover;
+  object-position: 0% 0%;
+}

@@ -1,0 +1,11 @@
+.User__Logo {
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+}
+
+.User__content {
+  width: 100%;
+  text-align: right;
+  overflow-wrap: break-word;
+}

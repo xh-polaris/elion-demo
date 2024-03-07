@@ -1,0 +1,54 @@
+.EssayImage__locator {
+  width: 420px;
+  height: 560px;
+
+  position: absolute;
+  left: 20%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+}
+
+.EssayImage__wrapper {
+  width: 420px;
+  height: 560px;
+
+  background-color: #fff;
+
+  overflow: hidden;
+  position: relative;
+
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.EssayImage__img {
+  width: 100%;
+  height: 100%;
+}
+
+.ScanLayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 240px;
+  background: linear-gradient(rgba(34, 229, 255, 0), rgb(34, 229, 255, 0.8));
+
+  transition: transform 3s;
+  transform: translateY(-100%);
+
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+  animation: scan 3s;
+}
+
+@keyframes scan {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(560px);
+  }
+}

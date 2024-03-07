@@ -1,0 +1,33 @@
+.ParagraphComment {
+  position: relative;
+  width: 100%;
+  height: 0;
+}
+
+.ParagraphComment__locator {
+  position: absolute;
+
+  top: -10px;
+
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #c7f2ff;
+
+  mask: radial-gradient(transparent 6px, #000 6px);
+}
+
+.ParagraphComment__locator--left {
+  left: -14px;
+}
+
+.ParagraphComment__locator--right {
+  right: -14px;
+}
+
+.ParagraphComment__comment {
+  min-width: 100px;
+
+  
+  max-width: 200px;
+}

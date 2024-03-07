@@ -1,0 +1,47 @@
+.PentagonVertexScore {
+  min-width: 100px;
+
+  position: absolute;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  transform: translate(-50%, -50%);
+
+  cursor: pointer;
+
+  transition: left 0.5s, top 0.5s;
+}
+
+.PentagonVertexScore:nth-child(3) {
+  transform: translate(-25%, -90%);
+}
+.PentagonVertexScore:nth-child(4) {
+  transform: translate(-75%, -90%);
+}
+
+.PentagonVertexScore:nth-child(2) {
+  transform: translate(-40%, -50%);
+}
+.PentagonVertexScore:nth-child(5) {
+  transform: translate(-60%, -50%);
+}
+
+.PentagonVertexScore__score {
+  font-family: 'Century Gothic';
+  font-size: 28px;
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+  letter-spacing: 2px;
+  transform: translateX(1px);
+}
+
+.PentagonVertexScore__desc {
+  margin-top: 4px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 900;
+  margin-bottom: 6px;
+}

@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'CKTKingKong';
+  src: url('./fonts/CKTKingKong.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SmileySans';
+  src: url('./fonts/SmileySans-Oblique.otf');
+  font-weight: normal;
+  font-style: normal;
+}

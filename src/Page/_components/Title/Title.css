@@ -1,0 +1,55 @@
+.Title {
+  box-sizing: border-box;
+
+  height: 45px;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+
+  position: relative;
+
+  margin-bottom: 20px;
+}
+
+.Title__anchor {
+  width: 37px;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.6);
+
+  position: absolute;
+
+  bottom: -1px;
+}
+
+.Title__anchor--start {
+  left: 0;
+}
+
+.Title__anchor--end {
+  right: 0;
+}
+
+.Title__zh {
+  font-family: 'SmileySans';
+  font-size: 24px;
+  letter-spacing: 1px;
+
+  height: 28px;
+  line-height: 28px;
+
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+}
+
+.Title__en {
+  font-family: 'SmileySans';
+  font-size: 14px;
+  letter-spacing: 1px;
+
+  height: 16px;
+  line-height: 16px;
+
+  position: absolute;
+  bottom: 16px;
+  right: 0;
+}

@@ -1,0 +1,44 @@
+.CommentContent__wrapper {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0px 22px;
+
+  position: relative;
+}
+
+.CommentContent {
+  width: 333px;
+  height: 100%;
+
+  font-size: 21px;
+  line-height: 38px;
+  color: #fff;
+
+  position: relative;
+
+  font-family: 'SmileySans';
+
+  line-height: 36px;
+}
+
+.CommentContent__interior {
+  padding: 10px;
+  width: 100%;
+  min-height: 278px;
+  max-height: 344px;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.CommentContent__interior::-webkit-scrollbar {
+  display: none;
+}
+
+.CommentContent__logo {
+  width: 140px;
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

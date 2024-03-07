@@ -1,0 +1,25 @@
+.Analysis {
+  width: 488px;
+  position: relative;
+}
+
+.Analysis__spacing {
+  height: 28px;
+}
+
+.RadarChartBoard {
+  width: 488px;
+  height: 350px;
+}
+
+.CommentBoard {
+  width: 488px;
+  height: 347px;
+}
+
+.Battery--overall {
+  position: absolute;
+  left: 110px;
+  top: 0;
+  cursor: pointer;
+}

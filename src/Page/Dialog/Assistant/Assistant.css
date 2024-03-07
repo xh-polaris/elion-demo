@@ -1,0 +1,13 @@
+.Assistant__Logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+
+.Dialog__content--assistant {
+  white-space: pre-wrap;
+}
+
+.Dialog__content--assistant {
+  color: rgb(252, 210, 159);
+}
