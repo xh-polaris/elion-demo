@@ -1,10 +1,12 @@
 import { useState } from 'react';
 import { message } from 'antd';
 
-const rootUrl = 'http://localhost:3003/';
+//const rootUrl = 'http://localhost:3003/';
+
+const rootUrl = window.location.href
 
 function post(url: string, body: BodyInit, headers?: HeadersInit) {
-  return fetch(rootUrl + url, {
+  return fetch(new URL(`api/${url}`,rootUrl), {
     method: 'post',
     headers,
     body
