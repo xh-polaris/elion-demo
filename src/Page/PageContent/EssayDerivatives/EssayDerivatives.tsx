@@ -6,9 +6,9 @@ import OpacityBg from '../../_components/OpacityBg/OpacityBg';
 import TextToImage from './TextToImage/TextToImage';
 import TextToVideo from './TextToVideo/TextToVideo';
 
-import './EssayDerivative.css';
+import './EssayDerivatives.css';
 
-export default function EssayDerivative() {
+export default function EssayDerivatives() {
   return (
     <div className="EssayDerivative">
       <Title zh="作文配图" en="TEXT TO IMAGE"></Title>

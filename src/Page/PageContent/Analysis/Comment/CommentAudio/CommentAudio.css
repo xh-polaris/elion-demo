@@ -14,6 +14,8 @@
 
   transition: opacity 1s;
   opacity: 1;
+
+  cursor: pointer;
 }
 
 @keyframes rotate {
@@ -54,4 +56,6 @@
 
 .Icon--invisible {
   opacity: 0;
+
+  cursor: default;
 }

@@ -1,35 +1,38 @@
 import React from 'react';
 
-import { useEssay } from '@store';
-
 import Autofit from './_components/Autofit/Autofit';
 
-import SideBar from './SideBar/SideBar';
 import PageContent from './PageContent/PageContent';
-import EssayImage from './EssayImage/EssayImage';
+
 import Dialog from './Dialog/Dialog';
 
 import BgVideo from './BgVideo/BgVideo';
 import PageTitle from './PageTitle/PageTitle';
+import Controls from './Controls/Controls';
 
 import './Page.css';
 
 function Page() {
-  const { id } = useEssay(state => state.essay);
-
   return (
-    <Autofit>
-      <div className="Page">
-        <BgVideo></BgVideo>
-        <PageTitle></PageTitle>
-        <SideBar></SideBar>
-        <div className="Page__content">
-          <PageContent key={id} />
-        </div>
-        <EssayImage key={id}></EssayImage>
-        <Dialog></Dialog>
+    <div style={{ position: 'relative' }}>
+      <div className="CenterLocator">
+        <Autofit mode={1}>
+          <BgVideo></BgVideo>
+        </Autofit>
       </div>
-    </Autofit>
+      <div className="CenterLocator">
+        <Autofit>
+          <div className="Page">
+            <PageTitle></PageTitle>
+            <Controls></Controls>
+
+            <PageContent />
+
+            <Dialog></Dialog>
+          </div>
+        </Autofit>
+      </div>
+    </div>
   );
 }
 

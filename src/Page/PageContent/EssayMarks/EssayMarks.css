@@ -1,0 +1,79 @@
+.EssayMarks {
+  width: 380px;
+  height: 100%;
+
+  border-radius: 25px;
+
+  overflow: hidden;
+
+  position: relative;
+
+  display: flex;
+
+  flex-direction: column;
+}
+
+.EssayMarks__content {
+  flex: 1;
+
+  overflow: auto;
+}
+
+.EssayMarks__menu {
+  width: 100%;
+  height: 64px;
+
+  display: flex;
+}
+
+.EssayMarks__menu__background {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  background-color: #1d20349a;
+  z-index: -1;
+}
+
+.EssayMarks__menu__item,
+.EssayMarks__menu__item__background {
+  height: 100%;
+  flex: 1;
+}
+
+.EssayMarks__menu__item {
+  font-family: 'SmileySans';
+  font-size: 20px;
+  color: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+
+  box-sizing: border-box;
+  padding-bottom: 26px;
+}
+
+.EssayMarks__menu__item__background {
+  opacity: 0;
+
+  transition: opacity 0.5s;
+}
+
+.EssayMarks__menu__item__background--0 {
+  background-color: var(--sick-sent-color);
+}
+
+.EssayMarks__menu__item__background--1 {
+  background-color: var(--good-sent-color);
+}
+
+.EssayMarks__menu__item__background--2 {
+  background-color: var(--theme-color);
+}
+
+.EssayMarks__menu__item__background--active {
+  opacity: 0.6;
+}

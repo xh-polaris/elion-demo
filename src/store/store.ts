@@ -7,6 +7,10 @@ export const ESSAYS = es;
 const emptyEssay = {
   id: -1,
   title: '',
+  author: {
+    name: '',
+    class: ''
+  },
   content: '',
   scores: [0, 0, 0, 0, 0, 0],
   comments: ['', '', '', '', '', ''],
@@ -16,12 +20,14 @@ const emptyEssay = {
   sick_sents: [],
   sent_relations: [],
   good_words: [],
+  textCorrections: [],
 
   lines: 0,
   good_sents_arranged: [],
   sick_sents_arranged: [],
   sent_relations_arranged: [],
-  good_words_arranged: []
+  good_words_arranged: [],
+  textCorrections_arranged: []
 };
 
 interface EssayState {
@@ -37,10 +43,10 @@ export const useEssay = create<EssayState>((set, get) => ({
   essayIdx: -1,
   loadEssay: (idx: number) => {
     if (get().essayIdx !== idx) {
-      set({ essay: emptyEssay, viewIdx: 0, essayIdx: idx });
-      setTimeout(() => {
-        set({ essay: ESSAYS[idx] });
-      }, 0);
+      set({ essay: ESSAYS[idx], viewIdx: 0, essayIdx: idx });
+      // setTimeout(() => {
+      //   set({ essay: ESSAYS[idx] });
+      // }, 0);
     }
   },
   viewIdx: 0,
@@ -60,5 +66,42 @@ export const useDialog = create<DialogState>((set, get) => ({
     } else {
       set({ active: newActive });
     }
+  }
+}));
+
+interface VideoState {
+  idx: number;
+  videoName: string;
+  toggleVideo: () => void;
+}
+
+const VIDEO_NAMES = ['earth', 'DNA', 'heartbeat', 'tech'];
+
+const defIdx = 0;
+
+export const useBgVideo = create<VideoState>((set, get) => ({
+  idx: defIdx,
+  videoName: VIDEO_NAMES[defIdx],
+  toggleVideo: () => {
+    let targetIdx = get().idx + 1;
+    targetIdx %= VIDEO_NAMES.length;
+    set({ idx: targetIdx, videoName: VIDEO_NAMES[targetIdx] });
+  }
+}));
+
+interface DisplayModeState {
+  idx: number;
+  toggleDisplayMode: () => void;
+}
+
+enum DisplayMode {
+  DEFAULT = 0,
+  LARGE = 1
+}
+
+export const useDisplayMode = create<DisplayModeState>((set, get) => ({
+  idx: DisplayMode.DEFAULT,
+  toggleDisplayMode: () => {
+    set({ idx: (get().idx + 1) % 2 });
   }
 }));

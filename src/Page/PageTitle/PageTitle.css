@@ -1,7 +1,9 @@
 .PageTitle {
   position: absolute;
-  left: 58px;
+  left: 74px;
   top: 58px;
+
+  cursor: pointer;
 }
 
 .PageTitle__logo {

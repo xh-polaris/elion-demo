@@ -1,7 +1,5 @@
 .SideBar {
-  position: absolute;
-  left: 30px;
-  top: 254px;
+  margin-top: 80px;
 
   width: 130px;
   height: 725px;
@@ -14,7 +12,7 @@
 }
 
 .EssayList {
-  width: 100%;
+  width: 130px;
 
   flex: 1;
   overflow: hidden;
@@ -50,6 +48,8 @@
 
   transform-origin: 50% 50%;
   transition: transform 0.3s;
+
+  cursor: pointer;
 }
 
 .EssayThumbnail--active {
@@ -69,6 +69,8 @@
   opacity: 1;
 
   transition: opacity 1s;
+
+  cursor: pointer;
 }
 
 .Arrow__up {
@@ -78,4 +80,6 @@
 
 .Arrow__hide {
   opacity: 0;
+
+  cursor: default;
 }

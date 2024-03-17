@@ -5,11 +5,11 @@ function TypewriterAnimation({
   duration,
   watcher
 }: {
-  list: JSX.Element[];
+  list: (JSX.Element|string)[];
   duration: number;
   watcher?: any;
 }) {
-  const [currentList, setCurrentList] = useState<JSX.Element[]>([]);
+  const [currentList, setCurrentList] = useState<(JSX.Element|string)[]>([]);
   const cnt = useRef<number>(0);
   const watch = useRef<any>(undefined);
 

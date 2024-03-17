@@ -3,8 +3,8 @@ import React, { useEffect, useState } from 'react';
 import { useEssay } from '@store';
 import { animationDurations } from '@def';
 
-import EaseIn from '../_components/EaseAnimation/EaseIn';
-import EaseOut from '../_components/EaseAnimation/EaseOut';
+import EaseIn from '../../_components/EaseAnimation/EaseIn';
+import EaseOut from '../../_components/EaseAnimation/EaseOut';
 
 import './EssayImage.css';
 

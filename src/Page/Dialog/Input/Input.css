@@ -21,6 +21,8 @@
   border-radius: 20px;
 
   background-color: var(--theme-color);
+
+  cursor: pointer;
 }
 
 .icon__wrapper img {

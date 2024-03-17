@@ -1,0 +1,16 @@
+.ParagraphComment {
+  padding: 20px;
+}
+
+.ParagraphComment__item {
+  display: flex;
+
+  margin-bottom: 40px;
+
+  font-size: 20px;
+}
+
+.ParagraphComment__item .ParagraphComment__locator {
+  margin-right: 20px;
+  flex-shrink: 0;
+}

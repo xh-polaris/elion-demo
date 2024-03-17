@@ -1,0 +1,43 @@
+.SickExpression {
+  padding: 20px;
+}
+
+.SickExpression__Title {
+  font-size: 30px;
+  font-weight: bold;
+
+  color: #fff;
+
+  margin-bottom: 15px;
+}
+
+.BrightSpot__Title--goodWord {
+  margin-top: 15px;
+}
+
+.BrightSpot__goodWord {
+  font-size: 22px;
+  line-height: 30px;
+
+  margin-bottom: 6px;
+  width: fit-content;
+  height: 26px;
+
+  background-color: var(--good-sent-color);
+}
+
+.SickExpression__sickSent {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.SickExpression__label {
+  /* margin-left: 10px; */
+  color: var(--sick-sent-color);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.SickExpression__revised {
+  background-color: var(--sick-sent-color);
+}

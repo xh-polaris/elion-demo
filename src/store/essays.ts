@@ -4,6 +4,7 @@ export const ORIGINAL_ESSAYS = [
   {
     id: 1,
     title: '迪士尼',
+    author: { name: '王子涵', class: '三年级一班' },
     content:
       '大家好，你们都知道迪士尼吗？在那里有很多可以玩的，还可以见到我们知道的人物们，那么接下来我就带你们去观赏一下吧！每当我们走过一个地方我们可以看见一些迪士尼好朋友比如说：米奇，米妮，唐老鸭……有一次我也去了迪士尼也见了一些好朋友哦！\n我不仅在那里玩，还在那住了6天哦，我住的酒店是“玩具总动员”酒店，我们在那里排队排了1个小时左右吧，在这段时间里我买了一个迪士尼米奇大街的水晶球！\n不知道你们知不知道米奇大街呢？现在我就给你们讲一下什么是米奇大街。“米奇大街”是迪士尼的景点之一！还有星愿湖等等。\n我们进房间之后我们就想着玩妈妈说：“已经很晚了我们明天再一起出去玩吧！”我说：“好吧！”第二天妈妈，早上好！我们去吃早饭吧！我们来到了第一个玩的地方，哦！好高啊，这不是梦幻飞车吧！我们玩玩看吧！上去后，啊！好快啊！我要下去！一会儿，唉好险，好快啊！我说的不是只有这些游戏的哦。\n迪士尼真的是个非常好玩的地方，如果你们去到那里也可以玩个痛快哦！',
     scores: [90, 70, 80, 90, 82, 80],
@@ -16,11 +17,11 @@ export const ORIGINAL_ESSAYS = [
       '这篇作文内容充实，描述了对迪士尼的全面体验，包括见到迪士尼的人物、入住玩具总动员酒店、参观米奇大街和体验梦幻飞车等等。但在描述内容时可适当加入更多细节，使文章更加生动。'
     ],
     paragraphComments: [
-      '这一段内容独具匠心，让读者在思考的过程中得到新的启示和思考。',
-      '这一段内容独具匠心，让读者在思考的过程中得到新的启示和思考。',
-      '作者在这一段中运用了不同的句式和结构，让文章更加生动有趣。',
-      '这一段的描写还可以更加具体，可以加入更多的人物、事物的描写来让文章更加丰富。',
-      '作者在这一段中运用了丰富的词汇和词语，让人印象深刻。'
+      '这一段的描写比较平淡，需要更加注意细节的描写和表现。',
+      '这一段的句式和结构非常丰富，让人读起来愉悦而不单调。',
+      '作者在这一段中表达了深刻的情感，让人不由自主地体会到其中的情感和感受。',
+      '作者在这一段中阐述了深刻的见解和观点，让人不由自主地思考和反思。',
+      '这一段的描写比较平淡，需要更加注意细节的描写和表现。'
     ],
     sents: [
       [
@@ -57,224 +58,71 @@ export const ORIGINAL_ESSAYS = [
     good_sents: [],
     good_words: [],
     sick_sents: [
-      {
-        label: '其他成分多余',
-        paragraph_id: 0,
-        sent_id: 1
-      },
-      {
-        label: '字符级错误，其他成分多余',
-        paragraph_id: 0,
-        sent_id: 2
-      },
-      {
-        label: '其他成分多余',
-        paragraph_id: 0,
-        sent_id: 3
-      },
-      {
-        label: '错用标点',
-        paragraph_id: 1,
-        sent_id: 0
-      },
-      {
-        label: '成分搭配不当型错误',
-        paragraph_id: 2,
-        sent_id: 1
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 2,
-        sent_id: 2
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 2,
-        sent_id: 3
-      },
-      {
-        label: '缺少标点，其他成分多余',
-        paragraph_id: 3,
-        sent_id: 0
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 3,
-        sent_id: 1
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 3,
-        sent_id: 2
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 3,
-        sent_id: 4
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 3,
-        sent_id: 5
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 3,
-        sent_id: 7
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 3,
-        sent_id: 8
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 3,
-        sent_id: 9
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 3,
-        sent_id: 10
-      },
-      {
-        label: '其他成分多余',
-        paragraph_id: 4,
-        sent_id: 0
-      }
+      { label: '其他成分多余', paragraph_id: 0, sent_id: 1 },
+      { label: '字符级错误，其他成分多余', paragraph_id: 0, sent_id: 2 },
+      { label: '其他成分多余', paragraph_id: 0, sent_id: 3 },
+      { label: '错用标点', paragraph_id: 1, sent_id: 0 },
+      { label: '成分搭配不当型错误', paragraph_id: 2, sent_id: 1 },
+      { label: '字符级错误', paragraph_id: 2, sent_id: 2 },
+      { label: '字符级错误', paragraph_id: 2, sent_id: 3 },
+      { label: '缺少标点，其他成分多余', paragraph_id: 3, sent_id: 0 },
+      { label: '字符级错误', paragraph_id: 3, sent_id: 1 },
+      { label: '字符级错误', paragraph_id: 3, sent_id: 2 },
+      { label: '字符级错误', paragraph_id: 3, sent_id: 4 },
+      { label: '字符级错误', paragraph_id: 3, sent_id: 5 },
+      { label: '字符级错误', paragraph_id: 3, sent_id: 7 },
+      { label: '字符级错误', paragraph_id: 3, sent_id: 8 },
+      { label: '字符级错误', paragraph_id: 3, sent_id: 9 },
+      { label: '字符级错误', paragraph_id: 3, sent_id: 10 },
+      { label: '其他成分多余', paragraph_id: 4, sent_id: 0 }
     ],
     sent_relations: [
+      { end: 0, label: '因果关系', paragraph_id: 0, start: 1 },
+      { end: 1, label: '时序关系', paragraph_id: 0, start: 2 },
+      { end: 2, label: '条件关系', paragraph_id: 0, start: 3 },
+      { end: 3, label: 'ROOT', paragraph_id: 0, start: 4 },
+      { end: 4, label: 'ROOT', paragraph_id: 0, start: 5 },
+      { end: 5, label: 'ROOT', paragraph_id: 0, start: 6 },
+      { end: 6, label: 'ROOT', paragraph_id: 0, start: 7 },
+      { end: 7, label: '并列关系', paragraph_id: 0, start: 8 },
+      { end: 0, label: '并列关系', paragraph_id: 2, start: 1 },
+      { end: 1, label: '并列关系', paragraph_id: 2, start: 2 },
+      { end: 2, label: '并列关系', paragraph_id: 2, start: 3 },
+      { end: 0, label: '顺承关系', paragraph_id: 3, start: 1 },
+      { end: 1, label: '顺承关系', paragraph_id: 3, start: 2 },
+      { end: 2, label: '顺承关系', paragraph_id: 3, start: 3 },
+      { end: 3, label: '顺承关系', paragraph_id: 3, start: 4 },
+      { end: 4, label: '解说关系', paragraph_id: 3, start: 5 },
+      { end: 5, label: '顺承关系', paragraph_id: 3, start: 6 },
+      { end: 6, label: '时序关系', paragraph_id: 3, start: 7 },
+      { end: 7, label: '顺承关系', paragraph_id: 3, start: 8 },
+      { end: 8, label: '顺承关系', paragraph_id: 3, start: 9 },
+      { end: 10, label: '条件关系', paragraph_id: 3, start: 11 }
+    ],
+    textCorrections: [
       {
-        end: 0,
-        label: '因果关系',
+        label: ['R', 'R'],
         paragraph_id: 0,
-        start: 1
+        revised_sent:
+          '每当我们走过一个地方我们可以看见一些迪士尼好朋友比如说：米奇，米妮，唐老鸭uu',
+        revised_token_idx: [37, 38],
+        sent_id: 2,
+        token_idx: [37, 38]
       },
       {
-        end: 1,
-        label: '时序关系',
-        paragraph_id: 0,
-        start: 2
-      },
-      {
-        end: 2,
-        label: '条件关系',
-        paragraph_id: 0,
-        start: 3
-      },
-      {
-        end: 3,
-        label: 'ROOT',
-        paragraph_id: 0,
-        start: 4
-      },
-      {
-        end: 4,
-        label: 'ROOT',
-        paragraph_id: 0,
-        start: 5
-      },
-      {
-        end: 5,
-        label: 'ROOT',
-        paragraph_id: 0,
-        start: 6
-      },
-      {
-        end: 6,
-        label: 'ROOT',
-        paragraph_id: 0,
-        start: 7
-      },
-      {
-        end: 7,
-        label: '并列关系',
-        paragraph_id: 0,
-        start: 8
-      },
-      {
-        end: 0,
-        label: '并列关系',
-        paragraph_id: 2,
-        start: 1
-      },
-      {
-        end: 1,
-        label: '并列关系',
-        paragraph_id: 2,
-        start: 2
-      },
-      {
-        end: 2,
-        label: '并列关系',
-        paragraph_id: 2,
-        start: 3
-      },
-      {
-        end: 0,
-        label: '顺承关系',
+        label: ['R'],
         paragraph_id: 3,
-        start: 1
-      },
-      {
-        end: 1,
-        label: '顺承关系',
-        paragraph_id: 3,
-        start: 2
-      },
-      {
-        end: 2,
-        label: '顺承关系',
-        paragraph_id: 3,
-        start: 3
-      },
-      {
-        end: 3,
-        label: '顺承关系',
-        paragraph_id: 3,
-        start: 4
-      },
-      {
-        end: 4,
-        label: '解说关系',
-        paragraph_id: 3,
-        start: 5
-      },
-      {
-        end: 5,
-        label: '顺承关系',
-        paragraph_id: 3,
-        start: 6
-      },
-      {
-        end: 6,
-        label: '时序关系',
-        paragraph_id: 3,
-        start: 7
-      },
-      {
-        end: 7,
-        label: '顺承关系',
-        paragraph_id: 3,
-        start: 8
-      },
-      {
-        end: 8,
-        label: '顺承关系',
-        paragraph_id: 3,
-        start: 9
-      },
-      {
-        end: 10,
-        label: '条件关系',
-        paragraph_id: 3,
-        start: 11
+        revised_sent: '我们玩完看吧！',
+        revised_token_idx: [3],
+        sent_id: 6,
+        token_idx: [3]
       }
     ]
   },
   {
     id: 1,
     title: '迪士尼',
+    author: { name: '王子涵', class: '三年级一班' },
     content:
       '大家好，你们都知道迪士尼吗？在那里有很多可以玩的，还可以见到我们知道的人物们，那么接下来我就带你们去观赏一下吧！每当我们走过一个地方我们可以看见一些迪士尼好朋友比如说：米奇，米妮，唐老鸭……有一次我也去了迪士尼也见了一些好朋友哦！\n我不仅在那里玩，还在那住了6天哦，我住的酒店是“玩具总动员”酒店，我们在那里排队排了1个小时左右吧，在这段时间里我买了一个迪士尼米奇大街的水晶球！\n不知道你们知不知道米奇大街呢？现在我就给你们讲一下什么是米奇大街。“米奇大街”是迪士尼的景点之一！还有星愿湖等等。\n我们进房间之后我们就想着玩妈妈说：“已经很晚了我们明天再一起出去玩吧！”我说：“好吧！”第二天妈妈，早上好！我们去吃早饭吧！我们来到了第一个玩的地方，哦！好高啊，这不是梦幻飞车吧！我们玩玩看吧！上去后，啊！好快啊！我要下去！一会儿，唉好险，好快啊！我说的不是只有这些游戏的哦。\n迪士尼真的是个非常好玩的地方，如果你们去到那里也可以玩个痛快哦！',
     scores: [90, 70, 80, 90, 82, 80],
@@ -287,10 +135,10 @@ export const ORIGINAL_ESSAYS = [
       '这篇作文内容充实，描述了对迪士尼的全面体验，包括见到迪士尼的人物、入住玩具总动员酒店、参观米奇大街和体验梦幻飞车等等。但在描述内容时可适当加入更多细节，使文章更加生动。'
     ],
     paragraphComments: [
-      '这一段内容独具匠心，让读者在思考的过程中得到新的启示和思考。',
-      '这一段内容独具匠心，让读者在思考的过程中得到新的启示和思考。',
-      '作者在这一段中运用了不同的句式和结构，让文章更加生动有趣。',
-      '这一段的描写还可以更加具体，可以加入更多的人物、事物的描写来让文章更加丰富。',
+      '作者在这一段中提出了独特的思考和观点，让人不由得感叹其想象力和创造力。',
+      '作者在这一段中运用了丰富的词汇和词语，让人印象深刻。',
+      '这一段的句式和结构非常丰富，让人读起来愉悦而不单调。',
+      '这一段的描写比较平淡，需要更加注意细节的描写和表现。',
       '作者在这一段中运用了丰富的词汇和词语，让人印象深刻。'
     ],
     sents: [
@@ -328,224 +176,71 @@ export const ORIGINAL_ESSAYS = [
     good_sents: [],
     good_words: [],
     sick_sents: [
-      {
-        label: '其他成分多余',
-        paragraph_id: 0,
-        sent_id: 1
-      },
-      {
-        label: '字符级错误，其他成分多余',
-        paragraph_id: 0,
-        sent_id: 2
-      },
-      {
-        label: '其他成分多余',
-        paragraph_id: 0,
-        sent_id: 3
-      },
-      {
-        label: '错用标点',
-        paragraph_id: 1,
-        sent_id: 0
-      },
-      {
-        label: '成分搭配不当型错误',
-        paragraph_id: 2,
-        sent_id: 1
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 2,
-        sent_id: 2
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 2,
-        sent_id: 3
-      },
-      {
-        label: '缺少标点，其他成分多余',
-        paragraph_id: 3,
-        sent_id: 0
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 3,
-        sent_id: 1
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 3,
-        sent_id: 2
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 3,
-        sent_id: 4
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 3,
-        sent_id: 5
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 3,
-        sent_id: 7
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 3,
-        sent_id: 8
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 3,
-        sent_id: 9
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 3,
-        sent_id: 10
-      },
-      {
-        label: '其他成分多余',
-        paragraph_id: 4,
-        sent_id: 0
-      }
+      { label: '其他成分多余', paragraph_id: 0, sent_id: 1 },
+      { label: '字符级错误，其他成分多余', paragraph_id: 0, sent_id: 2 },
+      { label: '其他成分多余', paragraph_id: 0, sent_id: 3 },
+      { label: '错用标点', paragraph_id: 1, sent_id: 0 },
+      { label: '成分搭配不当型错误', paragraph_id: 2, sent_id: 1 },
+      { label: '字符级错误', paragraph_id: 2, sent_id: 2 },
+      { label: '字符级错误', paragraph_id: 2, sent_id: 3 },
+      { label: '缺少标点，其他成分多余', paragraph_id: 3, sent_id: 0 },
+      { label: '字符级错误', paragraph_id: 3, sent_id: 1 },
+      { label: '字符级错误', paragraph_id: 3, sent_id: 2 },
+      { label: '字符级错误', paragraph_id: 3, sent_id: 4 },
+      { label: '字符级错误', paragraph_id: 3, sent_id: 5 },
+      { label: '字符级错误', paragraph_id: 3, sent_id: 7 },
+      { label: '字符级错误', paragraph_id: 3, sent_id: 8 },
+      { label: '字符级错误', paragraph_id: 3, sent_id: 9 },
+      { label: '字符级错误', paragraph_id: 3, sent_id: 10 },
+      { label: '其他成分多余', paragraph_id: 4, sent_id: 0 }
     ],
     sent_relations: [
+      { end: 0, label: '因果关系', paragraph_id: 0, start: 1 },
+      { end: 1, label: '时序关系', paragraph_id: 0, start: 2 },
+      { end: 2, label: '条件关系', paragraph_id: 0, start: 3 },
+      { end: 3, label: 'ROOT', paragraph_id: 0, start: 4 },
+      { end: 4, label: 'ROOT', paragraph_id: 0, start: 5 },
+      { end: 5, label: 'ROOT', paragraph_id: 0, start: 6 },
+      { end: 6, label: 'ROOT', paragraph_id: 0, start: 7 },
+      { end: 7, label: '并列关系', paragraph_id: 0, start: 8 },
+      { end: 0, label: '并列关系', paragraph_id: 2, start: 1 },
+      { end: 1, label: '并列关系', paragraph_id: 2, start: 2 },
+      { end: 2, label: '并列关系', paragraph_id: 2, start: 3 },
+      { end: 0, label: '顺承关系', paragraph_id: 3, start: 1 },
+      { end: 1, label: '顺承关系', paragraph_id: 3, start: 2 },
+      { end: 2, label: '顺承关系', paragraph_id: 3, start: 3 },
+      { end: 3, label: '顺承关系', paragraph_id: 3, start: 4 },
+      { end: 4, label: '解说关系', paragraph_id: 3, start: 5 },
+      { end: 5, label: '顺承关系', paragraph_id: 3, start: 6 },
+      { end: 6, label: '时序关系', paragraph_id: 3, start: 7 },
+      { end: 7, label: '顺承关系', paragraph_id: 3, start: 8 },
+      { end: 8, label: '顺承关系', paragraph_id: 3, start: 9 },
+      { end: 10, label: '条件关系', paragraph_id: 3, start: 11 }
+    ],
+    textCorrections: [
       {
-        end: 0,
-        label: '因果关系',
+        label: ['R', 'R'],
         paragraph_id: 0,
-        start: 1
+        revised_sent:
+          '每当我们走过一个地方我们可以看见一些迪士尼好朋友比如说：米奇，米妮，唐老鸭uu',
+        revised_token_idx: [37, 38],
+        sent_id: 2,
+        token_idx: [37, 38]
       },
       {
-        end: 1,
-        label: '时序关系',
-        paragraph_id: 0,
-        start: 2
-      },
-      {
-        end: 2,
-        label: '条件关系',
-        paragraph_id: 0,
-        start: 3
-      },
-      {
-        end: 3,
-        label: 'ROOT',
-        paragraph_id: 0,
-        start: 4
-      },
-      {
-        end: 4,
-        label: 'ROOT',
-        paragraph_id: 0,
-        start: 5
-      },
-      {
-        end: 5,
-        label: 'ROOT',
-        paragraph_id: 0,
-        start: 6
-      },
-      {
-        end: 6,
-        label: 'ROOT',
-        paragraph_id: 0,
-        start: 7
-      },
-      {
-        end: 7,
-        label: '并列关系',
-        paragraph_id: 0,
-        start: 8
-      },
-      {
-        end: 0,
-        label: '并列关系',
-        paragraph_id: 2,
-        start: 1
-      },
-      {
-        end: 1,
-        label: '并列关系',
-        paragraph_id: 2,
-        start: 2
-      },
-      {
-        end: 2,
-        label: '并列关系',
-        paragraph_id: 2,
-        start: 3
-      },
-      {
-        end: 0,
-        label: '顺承关系',
+        label: ['R'],
         paragraph_id: 3,
-        start: 1
-      },
-      {
-        end: 1,
-        label: '顺承关系',
-        paragraph_id: 3,
-        start: 2
-      },
-      {
-        end: 2,
-        label: '顺承关系',
-        paragraph_id: 3,
-        start: 3
-      },
-      {
-        end: 3,
-        label: '顺承关系',
-        paragraph_id: 3,
-        start: 4
-      },
-      {
-        end: 4,
-        label: '解说关系',
-        paragraph_id: 3,
-        start: 5
-      },
-      {
-        end: 5,
-        label: '顺承关系',
-        paragraph_id: 3,
-        start: 6
-      },
-      {
-        end: 6,
-        label: '时序关系',
-        paragraph_id: 3,
-        start: 7
-      },
-      {
-        end: 7,
-        label: '顺承关系',
-        paragraph_id: 3,
-        start: 8
-      },
-      {
-        end: 8,
-        label: '顺承关系',
-        paragraph_id: 3,
-        start: 9
-      },
-      {
-        end: 10,
-        label: '条件关系',
-        paragraph_id: 3,
-        start: 11
+        revised_sent: '我们玩完看吧！',
+        revised_token_idx: [3],
+        sent_id: 6,
+        token_idx: [3]
       }
     ]
   },
   {
     id: 2,
     title: '小小“动物园”',
+    author: { name: '李希', class: '三年级二班' },
     content:
       '你们知道吗？我的家可是一个动物园呢！一起来看看吧！\n我的妈妈像一只老虎，在一年级和二年级的时候只要我不好好写作业就会被妈妈打皮开肉绽，一边打，一边大声的吼叫着：“你为什么不好好写作业！”那声音震耳欲聋，仿佛房顶都要被掀翻了。\n我的妹妹是一只叽叽喳喳的百灵鸟，我在认真写作业的时候，总能听见百灵鸟在外面唱歌，时常搞得我没有办法好好写作，而且就算让她停下来，不过几分钟她又忍不住了。\n我的弟弟最有趣了。我去他家的时候，他就像一只猴子一样在那里乱蹦乱跳，有一次我来他家，他开始蹦来蹦去。听见”啪！”家里的电视遥控器被打坏了；姑妈打的他一直在跑。我也真的是服了他，哦对了，他也喜欢吃香蕉呢！\n这就是我的“动物之家”。你们也有一个这样的家吗？给我介绍一下吧！',
     scores: [90, 90, 80, 80, 80, 78],
@@ -558,11 +253,11 @@ export const ORIGINAL_ESSAYS = [
       '在这篇作文中，作者生动形象地描述了自己家人的各种行为特点，使得整个作文内容充实丰富。然而，也可以适当增加一些关于动物园的比喻，丰富作文内容，以使得内容更加充实。'
     ],
     paragraphComments: [
-      '这一段的情感表达非常到位，让人不由自主地被感染和打动。',
-      '这一段的句子结构非常多变，让人读起来非常流畅，也让人印象深刻。',
-      '这一段的描写比较平淡，需要更加注意细节的描写和表现。',
-      '作者在这一段中运用了不同的句式和结构，让文章更加生动有趣。',
-      '这一段的句式和结构非常丰富，让人读起来愉悦而不单调。'
+      '作者在这一段中阐述了深刻的见解和观点，让人不由自主地思考和反思。',
+      '作者这一段的语言非常优美，每一个词语都能够恰到好处地表达作者的意图。“皮开肉绽”鲜活生动。“震耳欲聋”词语精练，朴实生动。“我的妈妈像一只老虎，在一年级和二年级的时候只要我不好好写作业就会被妈妈打皮开肉绽，一边打，一边大声的吼叫着：“你为什么不好好写作业！””为文章平添了许多文采。',
+      '作者在这一段中运用了丰富的词汇和词语，让人印象深刻。小作者的此句“我的妹妹是一只叽叽喳喳的百灵鸟，我在认真写作业的时候，总能听见百灵鸟在外面唱歌，时常搞得我没有办法好好写作，而且就算让她停下来，不过几分钟她又忍不住了。”比较生动，能够打动读者。',
+      '这一段内容独具匠心，让读者在思考的过程中得到新的启示和思考。文中“我去他家的时候，他就像一只猴子一样在那里乱蹦乱跳，有一次我来他家，他开始蹦来蹦去。”与所表达的语意密切相关，所以写得真切、自然，贴近生活实际。',
+      '作者在这一段中运用了丰富的词汇和词语，让人印象深刻。'
     ],
     sents: [
       ['你们知道吗？', '我的家可是一个动物园呢！', '一起来看看吧！'],
@@ -583,132 +278,58 @@ export const ORIGINAL_ESSAYS = [
       ['这就是我的“动物之家”。', '你们也有一个这样的家吗？', '给我介绍一下吧！']
     ],
     good_sents: [
-      {
-        label: '1',
-        paragraph_id: 1,
-        sent_id: 0
-      },
-      {
-        label: '1',
-        paragraph_id: 2,
-        sent_id: 0
-      },
-      {
-        label: '1',
-        paragraph_id: 3,
-        sent_id: 1
-      }
+      { label: '1', paragraph_id: 1, sent_id: 0 },
+      { label: '1', paragraph_id: 2, sent_id: 0 },
+      { label: '1', paragraph_id: 3, sent_id: 1 }
     ],
     good_words: [
-      {
-        end: 40,
-        paragraph_id: 1,
-        sent_id: 0,
-        start: 36
-      },
-      {
-        end: 7,
-        paragraph_id: 1,
-        sent_id: 1,
-        start: 3
-      }
+      { end: 40, paragraph_id: 1, sent_id: 0, start: 36 },
+      { end: 7, paragraph_id: 1, sent_id: 1, start: 3 }
     ],
     sent_relations: [
-      {
-        end: 0,
-        label: '并列关系',
-        paragraph_id: 0,
-        start: 1
-      },
-      {
-        end: 1,
-        label: '时序关系',
-        paragraph_id: 0,
-        start: 2
-      },
-      {
-        end: 0,
-        label: '目的关系',
-        paragraph_id: 1,
-        start: 1
-      },
-      {
-        end: 0,
-        label: '时序关系',
-        paragraph_id: 3,
-        start: 1
-      },
-      {
-        end: 1,
-        label: '对比关系',
-        paragraph_id: 3,
-        start: 2
-      },
-      {
-        end: 3,
-        label: '并列关系',
-        paragraph_id: 3,
-        start: 4
-      },
-      {
-        end: 0,
-        label: '因果关系',
-        paragraph_id: 4,
-        start: 1
-      },
-      {
-        end: 1,
-        label: '顺承关系',
-        paragraph_id: 4,
-        start: 2
-      }
+      { end: 0, label: '并列关系', paragraph_id: 0, start: 1 },
+      { end: 1, label: '时序关系', paragraph_id: 0, start: 2 },
+      { end: 0, label: '目的关系', paragraph_id: 1, start: 1 },
+      { end: 0, label: '时序关系', paragraph_id: 3, start: 1 },
+      { end: 1, label: '对比关系', paragraph_id: 3, start: 2 },
+      { end: 3, label: '并列关系', paragraph_id: 3, start: 4 },
+      { end: 0, label: '因果关系', paragraph_id: 4, start: 1 },
+      { end: 1, label: '顺承关系', paragraph_id: 4, start: 2 }
     ],
     sick_sents: [
+      { label: '其他成分多余', paragraph_id: 0, sent_id: 1 },
+      { label: '错别字错误，其他成分多余', paragraph_id: 1, sent_id: 0 },
+      { label: '字符级错误，其他成分多余', paragraph_id: 2, sent_id: 0 },
+      { label: '错别字错误', paragraph_id: 3, sent_id: 0 },
+      { label: '字符级错误', paragraph_id: 3, sent_id: 1 },
+      { label: '成分残缺型错误', paragraph_id: 3, sent_id: 2 },
+      { label: '错别字错误，错用标点', paragraph_id: 3, sent_id: 3 },
+      { label: '错别字错误', paragraph_id: 3, sent_id: 4 }
+    ],
+    textCorrections: [
       {
-        label: '其他成分多余',
-        paragraph_id: 0,
-        sent_id: 1
-      },
-      {
-        label: '错别字错误，其他成分多余',
+        label: ['R'],
         paragraph_id: 1,
-        sent_id: 0
+        revised_sent:
+          '我的妈妈像一只老虎，在一年级和二年级的时候只要我不好好写作业就会被妈妈打皮开肉绽，一边打，一边大声地吼叫着：“你为什么不好好写作业！”',
+        revised_token_idx: [49],
+        sent_id: 0,
+        token_idx: [49]
       },
       {
-        label: '字符级错误，其他成分多余',
-        paragraph_id: 2,
-        sent_id: 0
-      },
-      {
-        label: '错别字错误',
+        label: ['R'],
         paragraph_id: 3,
-        sent_id: 0
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 3,
-        sent_id: 1
-      },
-      {
-        label: '成分残缺型错误',
-        paragraph_id: 3,
-        sent_id: 2
-      },
-      {
-        label: '错别字错误，错用标点',
-        paragraph_id: 3,
-        sent_id: 3
-      },
-      {
-        label: '错别字错误',
-        paragraph_id: 3,
-        sent_id: 4
+        revised_sent: '家里的电视遥控器被打坏了；姑妈打得他一直在跑。',
+        revised_token_idx: [16],
+        sent_id: 3,
+        token_idx: [16]
       }
     ]
   },
   {
     id: 3,
     title: '多肉植物观察日记',
+    author: { name: '多多', class: '四年级一班' },
     content:
       '我有一课多肉植物，这个多肉来到我家有两年了，这几天老师让写观察日记，我又把它摆回了我的书桌上。\n你们知道什么是多肉植物吗？多肉植物是一种肥厚多汁并且具备储藏大量水分功能的植物。那么接下来我就给大家介绍我的多肉植物吧！\n我拿起我的多肉植物的时候，它毫无力气的生长着，不过它还是开出了一朵新的小多肉，这应该就是它具备储藏大量水分的原因吧！\n接下来的几天我每天都给它浇水，看它生长，它的变化很大，我真的为它而感到自豪。本来还有很多快要枯萎的多肉，现在又变的更绿了，新长出来的多肉现在也长大了一些，它叶子的颜色是那么翠绿。看来植物也要定时浇水的。\n通过这几天对多肉的观察，我给它每天浇水，给它每天足够阳光，就像我的宝贝一样每天昭顾它。',
     scores: [85, 80, 70, 70, 90, 80],
@@ -722,10 +343,10 @@ export const ORIGINAL_ESSAYS = [
     ],
     paragraphComments: [
       '这一段内容独具匠心，让读者在思考的过程中得到新的启示和思考。',
-      '作者这一段的语言非常优美，每一个词语都能够恰到好处地表达作者的意图。',
-      '这一段的句子结构非常多变，让人读起来非常流畅，也让人印象深刻。',
-      '这一段的描写比较平淡，需要更加注意细节的描写和表现。',
-      '作者在这一段中运用了丰富的词汇和词语，让人印象深刻。'
+      '这一段内容独具匠心，让读者在思考的过程中得到新的启示和思考。文章的语言比较文雅，如“多肉植物是一种肥厚多汁并且具备储藏大量水分功能的植物。”。',
+      '作者在这一段中表达了深刻的情感，让人不由自主地体会到其中的情感和感受。',
+      '作者在这一段中阐述了深刻的见解和观点，让人不由自主地思考和反思。',
+      '这一段的句式和结构非常丰富，让人读起来愉悦而不单调。'
     ],
     sents: [
       [
@@ -744,93 +365,61 @@ export const ORIGINAL_ESSAYS = [
         '本来还有很多快要枯萎的多肉，现在又变的更绿了，新长出来的多肉现在也长大了一些，它叶子的颜色是那么翠绿。',
         '看来植物也要定时浇水的。'
       ],
-      ['通过这几天对多肉的观察，我给它每天浇水，给它每天足够阳光，就像我的宝贝一样每天照顾它。']
+      ['通过这几天对多肉的观察，我给它每天浇水，给它每天足够阳光，就像我的宝贝一样每天昭顾它。']
     ],
-    good_sents: [
-      {
-        label: '1',
-        paragraph_id: 1,
-        sent_id: 1
-      }
-    ],
+    good_sents: [{ label: '1', paragraph_id: 1, sent_id: 1 }],
     good_words: [],
     sick_sents: [
-      {
-        label: '缺字漏字',
-        paragraph_id: 0,
-        sent_id: 0
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 1,
-        sent_id: 0
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 1,
-        sent_id: 1
-      },
-      {
-        label: '其他成分多余',
-        paragraph_id: 1,
-        sent_id: 2
-      },
-      {
-        label: '错别字错误',
-        paragraph_id: 2,
-        sent_id: 0
-      },
-      {
-        label: '其他成分多余',
-        paragraph_id: 3,
-        sent_id: 0
-      },
-      {
-        label: '错别字错误',
-        paragraph_id: 3,
-        sent_id: 1
-      },
-      {
-        label: '其他成分多余',
-        paragraph_id: 3,
-        sent_id: 2
-      },
-      {
-        label: '成分赘余型错误',
-        paragraph_id: 4,
-        sent_id: 0
-      }
+      { label: '缺字漏字', paragraph_id: 0, sent_id: 0 },
+      { label: '字符级错误', paragraph_id: 1, sent_id: 0 },
+      { label: '字符级错误', paragraph_id: 1, sent_id: 1 },
+      { label: '其他成分多余', paragraph_id: 1, sent_id: 2 },
+      { label: '错别字错误', paragraph_id: 2, sent_id: 0 },
+      { label: '其他成分多余', paragraph_id: 3, sent_id: 0 },
+      { label: '错别字错误', paragraph_id: 3, sent_id: 1 },
+      { label: '其他成分多余', paragraph_id: 3, sent_id: 2 },
+      { label: '成分赘余型错误', paragraph_id: 4, sent_id: 0 }
     ],
     sent_relations: [
+      { end: 0, label: '并列关系', paragraph_id: 1, start: 1 },
+      { end: 1, label: '因果关系', paragraph_id: 1, start: 2 },
+      { end: 0, label: '并列关系', paragraph_id: 3, start: 1 },
+      { end: 1, label: '并列关系', paragraph_id: 3, start: 2 }
+    ],
+    textCorrections: [
       {
-        end: 0,
-        label: '并列关系',
-        paragraph_id: 1,
-        start: 1
+        label: ['R'],
+        paragraph_id: 2,
+        revised_sent:
+          '我拿起我的多肉植物的时候，它毫无力气地生长着，不过它还是开出了一朵新的小多肉，这应该就是它具备储藏大量水分的原因吧！',
+        revised_token_idx: [18],
+        sent_id: 0,
+        token_idx: [18]
       },
       {
-        end: 1,
-        label: '因果关系',
-        paragraph_id: 1,
-        start: 2
-      },
-      {
-        end: 0,
-        label: '并列关系',
+        label: ['R'],
         paragraph_id: 3,
-        start: 1
+        revised_sent:
+          '本来还有很多快要枯萎的多肉，现在又变得更绿了，新长出来的多肉现在也长大了一些，它叶子的颜色是那么翠绿。',
+        revised_token_idx: [18],
+        sent_id: 1,
+        token_idx: [18]
       },
       {
-        end: 1,
-        label: '并列关系',
-        paragraph_id: 3,
-        start: 2
+        label: ['R'],
+        paragraph_id: 4,
+        revised_sent:
+          '通过这几天对多肉的观察，我给它每天浇水，给它每天足够阳光，就像我的宝贝一样每天照顾它。',
+        revised_token_idx: [39],
+        sent_id: 0,
+        token_idx: [39]
       }
     ]
   },
   {
     id: 4,
     title: '我和哪吒过一天',
+    author: { name: '况欣嘉', class: '四年级一班' },
     content:
       '有一天妈妈告诉我他的同事会来我们家做客,我可不能让人家留下不好的印象啊!我听了这事急忙来到我的房间。\n于是我拿起打扫的工具,准备开始打扫屋子，可这扫帚似乎像是有魔法一样,我一拿到它就犯困,收着收着我就不小心睡了。我一睁眼就发现了一个脚踩风火轮,有三头六臂的小孩子,我仔细看,发现是哪吒啊,这真是踏破铁鞋无觅处，得来全不费工夫,我可以叫哪吒来帮帮忙。我将事情的原委和哪吒说了一下,哪吒连声答应。哪吒利用三头六臂下子变出了三个扫帚,像疾风一样迅速地打扫完地面了。这速度让我傻眼,他又变出抹布像扫地一样又快速地抹完了地面。我的心里默默的赞叹到要是我头六臂,那会多好呀!\n突然,我听见一个开门的声音,这时我才知到这只是个梦啊!',
     scores: [90, 80, 70, 70, 75, 80],
@@ -843,11 +432,9 @@ export const ORIGINAL_ESSAYS = [
       '这篇作文的内容充实，描述了一个生动的梦境故事。故事情节生动有趣，展现了作者与哪吒的互动情节，表现出丰富的想象力和创造力。但是在内容充实方面，可以适当增加一些细节和情节描写，使故事更加丰富立体。'
     ],
     paragraphComments: [
-      '作者在这一段中提出了独特的思考和观点，让人不由得感叹其想象力和创造力。',
-      '作者这一段的语言非常优美，每一个词语都能够恰到好处地表达作者的意图。',
-      '作者在这一段中运用了不同的句式和结构，让文章更加生动有趣。',
-      '这一段的描写比较平淡，需要更加注意细节的描写和表现。',
-      '这一段的句子结构非常多变，让人读起来非常流畅，也让人印象深刻。'
+      '这一段的情感表达非常到位，让人不由自主地被感染和打动。',
+      '作者在这一段中运用了丰富的词汇和词语，让人印象深刻。“三头六臂”用得精准。“三头六臂”为文章增添了亮色，可见作者有较强的写作功底。“哪吒利用三头六臂下子变出了三个扫帚,像疾风一样迅速地打扫完地面了。”情感真挚，打动人心。',
+      '这一段内容独具匠心，让读者在思考的过程中得到新的启示和思考。'
     ],
     sents: [
       [
@@ -863,106 +450,51 @@ export const ORIGINAL_ESSAYS = [
       ],
       ['突然,我听见一个开门的声音,这时我才知到这只是个梦啊!']
     ],
-    good_sents: [
-      {
-        label: '1',
-        paragraph_id: 1,
-        sent_id: 3
-      }
-    ],
+    good_sents: [{ label: '1', paragraph_id: 1, sent_id: 3 }],
     good_words: [
-      {
-        end: 21,
-        paragraph_id: 1,
-        sent_id: 1,
-        start: 17
-      },
-      {
-        end: 8,
-        paragraph_id: 1,
-        sent_id: 3,
-        start: 4
-      }
+      { end: 21, paragraph_id: 1, sent_id: 1, start: 17 },
+      { end: 8, paragraph_id: 1, sent_id: 3, start: 4 }
     ],
     sick_sents: [
-      {
-        label: '字符级错误',
-        paragraph_id: 0,
-        sent_id: 0
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 1,
-        sent_id: 1
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 1,
-        sent_id: 2
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 1,
-        sent_id: 3
-      },
-      {
-        label: '错别字错误',
-        paragraph_id: 1,
-        sent_id: 4
-      },
-      {
-        label: '错别字错误',
-        paragraph_id: 1,
-        sent_id: 5
-      },
-      {
-        label: '错别字错误',
-        paragraph_id: 2,
-        sent_id: 0
-      }
+      { label: '字符级错误', paragraph_id: 0, sent_id: 0 },
+      { label: '字符级错误', paragraph_id: 1, sent_id: 1 },
+      { label: '字符级错误', paragraph_id: 1, sent_id: 2 },
+      { label: '字符级错误', paragraph_id: 1, sent_id: 3 },
+      { label: '错别字错误', paragraph_id: 1, sent_id: 4 },
+      { label: '错别字错误', paragraph_id: 1, sent_id: 5 },
+      { label: '错别字错误', paragraph_id: 2, sent_id: 0 }
     ],
     sent_relations: [
+      { end: 0, label: '顺承关系', paragraph_id: 0, start: 1 },
+      { end: 0, label: '时序关系', paragraph_id: 1, start: 1 },
+      { end: 1, label: '并列关系', paragraph_id: 1, start: 2 },
+      { end: 2, label: '顺承关系', paragraph_id: 1, start: 3 },
+      { end: 3, label: '并列关系', paragraph_id: 1, start: 4 },
+      { end: 4, label: '并列关系', paragraph_id: 1, start: 5 }
+    ],
+    textCorrections: [
       {
-        end: 0,
-        label: '顺承关系',
-        paragraph_id: 0,
-        start: 1
+        label: ['A'],
+        paragraph_id: 1,
+        revised_sent: '我的心里默默的赞叹到道要是我头六臂,那会多好呀!',
+        revised_token_idx: [10],
+        sent_id: 5,
+        token_idx: [10]
       },
       {
-        end: 0,
-        label: '时序关系',
-        paragraph_id: 1,
-        start: 1
-      },
-      {
-        end: 1,
-        label: '并列关系',
-        paragraph_id: 1,
-        start: 2
-      },
-      {
-        end: 2,
-        label: '顺承关系',
-        paragraph_id: 1,
-        start: 3
-      },
-      {
-        end: 3,
-        label: '并列关系',
-        paragraph_id: 1,
-        start: 4
-      },
-      {
-        end: 4,
-        label: '并列关系',
-        paragraph_id: 1,
-        start: 5
+        label: ['R'],
+        paragraph_id: 2,
+        revised_sent: '突然,我听见一个开门的声音,这时我才知道这只是个梦啊!',
+        revised_token_idx: [19],
+        sent_id: 0,
+        token_idx: [19]
       }
     ]
   },
   {
     id: 5,
     title: '捉蚊趣事',
+    author: { name: '迟菊', class: '三年级一班' },
     content:
       '明天就是期末考试，为了考出一个好成绩我早早入睡，当我睡的正香的时候，只听见“嗡嗡，嗡嗡”飞来了一只蚊子。\n这只蚊子嗡嗡声越来越大了，我已经忍无可忍，一下子从床上跳了起来，要和蚊子来一场大战，这只蚊子飞的很快我东打打，西打打。可是它终究没有死，这时那只蚊子飞到了爸爸的脸上。我想：“我要打，还是不要打呢？”我下定决心打上去吧！我举起手“啪”的一下子逃了，爸爸火冒三丈，准备打我。我小声地说：“安静有一只蚊子！”我用余光一瞄看见蚊子在花瓶上休息。我用力地打了一去把蚊子打的四脚朝天可是我不小心把爸爸最喜欢的花瓶给打碎了！\n爸爸苦笑着说：”儿子，你厉害啊！打一只蚊子都能把东西打碎！”',
     scores: [90, 90, 70, 80, 75, 75],
@@ -975,11 +507,9 @@ export const ORIGINAL_ESSAYS = [
       '这篇作文的内容充实度一般，描述了主人公和蚊子的斗争情节，但是可以适当增加一些细节和描述，让故事更加生动有趣。'
     ],
     paragraphComments: [
-      '这一段的情感表达非常到位，让人不由自主地被感染和打动。',
-      '这一段的描写比较简单，需要加入更多的细节描写来让场景更加生动。',
-      '作者在这一段中提出了独特的思考和观点，让人不由得感叹其想象力和创造力。',
-      '这一段的句子结构非常多变，让人读起来非常流畅，也让人印象深刻。',
-      '作者在这一段中提出了独特的思考和观点，让人不由得感叹其想象力和创造力。'
+      '这一段的句子结构非常多变，让人读起来非常流畅，也让人印象深刻。“明天就是期末考试，为了考出一个好成绩我早早入睡，当我睡的正香的时候，只听见“嗡嗡，嗡嗡”飞来了一只蚊子。”描写细腻，真切生动。',
+      '作者在这一段中表达了深刻的情感，让人不由自主地体会到其中的情感和感受。“忍无可忍”为文章增添了亮色，可见作者有较强的写作功底。“火冒三丈”词语精练，朴实生动。“四脚朝天”为文章增添了亮色，可见作者有较强的写作功底。“这只蚊子嗡嗡声越来越大了，我已经忍无可忍，一下子从床上跳了起来，要和蚊子来一场大战，这只蚊子飞的很快我东打打，西打打。”的运用读来别具风味。文章的语言富有情趣，如“可是它终究没有死，这时那只蚊子飞到了爸爸的脸上。”。“我小声地说：“安静有一只蚊子！””既使文章的语言整齐有气势，也使作者的情感得以更透彻的表达。“我用余光一瞄看见蚊子在花瓶上休息。”描写细腻，生动感人。“我用力地打了一去把蚊子打的四脚朝天可是我不小心把爸爸最喜欢的花瓶给打碎了！”生动具体，感情真挚丰富。',
+      '这一段的句式和结构非常丰富，让人读起来愉悦而不单调。'
     ],
     sents: [
       [
@@ -998,158 +528,72 @@ export const ORIGINAL_ESSAYS = [
       ['爸爸苦笑着说：”儿子，你厉害啊！', '打一只蚊子都能把东西打碎！”']
     ],
     good_sents: [
-      {
-        label: '1',
-        paragraph_id: 0,
-        sent_id: 0
-      },
-      {
-        label: '1',
-        paragraph_id: 1,
-        sent_id: 0
-      },
-      {
-        label: '2',
-        paragraph_id: 1,
-        sent_id: 1
-      },
-      {
-        label: '2',
-        paragraph_id: 1,
-        sent_id: 5
-      },
-      {
-        label: '2',
-        paragraph_id: 1,
-        sent_id: 6
-      },
-      {
-        label: '1',
-        paragraph_id: 1,
-        sent_id: 7
-      }
+      { label: '1', paragraph_id: 0, sent_id: 0 },
+      { label: '1', paragraph_id: 1, sent_id: 0 },
+      { label: '2', paragraph_id: 1, sent_id: 1 },
+      { label: '2', paragraph_id: 1, sent_id: 5 },
+      { label: '2', paragraph_id: 1, sent_id: 6 },
+      { label: '1', paragraph_id: 1, sent_id: 7 }
     ],
     good_words: [
-      {
-        end: 20,
-        paragraph_id: 1,
-        sent_id: 0,
-        start: 16
-      },
-      {
-        end: 20,
-        paragraph_id: 1,
-        sent_id: 4,
-        start: 16
-      },
-      {
-        end: 17,
-        paragraph_id: 1,
-        sent_id: 7,
-        start: 13
-      }
+      { end: 20, paragraph_id: 1, sent_id: 0, start: 16 },
+      { end: 20, paragraph_id: 1, sent_id: 4, start: 16 },
+      { end: 17, paragraph_id: 1, sent_id: 7, start: 13 }
     ],
     sick_sents: [
-      {
-        label: '错别字错误，缺少标点',
-        paragraph_id: 0,
-        sent_id: 0
-      },
-      {
-        label: '错别字错误',
-        paragraph_id: 1,
-        sent_id: 0
-      },
-      {
-        label: '成分残缺型错误',
-        paragraph_id: 1,
-        sent_id: 2
-      },
-      {
-        label: '错别字错误',
-        paragraph_id: 1,
-        sent_id: 3
-      },
-      {
-        label: '错别字错误',
-        paragraph_id: 1,
-        sent_id: 4
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 1,
-        sent_id: 5
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 1,
-        sent_id: 6
-      },
-      {
-        label: '错别字错误，缺少标点',
-        paragraph_id: 1,
-        sent_id: 7
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 2,
-        sent_id: 1
-      }
+      { label: '错别字错误，缺少标点', paragraph_id: 0, sent_id: 0 },
+      { label: '错别字错误', paragraph_id: 1, sent_id: 0 },
+      { label: '成分残缺型错误', paragraph_id: 1, sent_id: 2 },
+      { label: '错别字错误', paragraph_id: 1, sent_id: 3 },
+      { label: '错别字错误', paragraph_id: 1, sent_id: 4 },
+      { label: '字符级错误', paragraph_id: 1, sent_id: 5 },
+      { label: '字符级错误', paragraph_id: 1, sent_id: 6 },
+      { label: '错别字错误，缺少标点', paragraph_id: 1, sent_id: 7 },
+      { label: '字符级错误', paragraph_id: 2, sent_id: 1 }
     ],
     sent_relations: [
+      { end: 0, label: '对比关系', paragraph_id: 1, start: 1 },
+      { end: 1, label: '选择关系', paragraph_id: 1, start: 2 },
+      { end: 2, label: '顺承关系', paragraph_id: 1, start: 3 },
+      { end: 3, label: '顺承关系', paragraph_id: 1, start: 4 },
+      { end: 4, label: '顺承关系', paragraph_id: 1, start: 5 },
+      { end: 5, label: '时序关系', paragraph_id: 1, start: 6 },
+      { end: 6, label: '对比关系', paragraph_id: 1, start: 7 },
+      { end: 0, label: '顺承关系', paragraph_id: 2, start: 1 }
+    ],
+    textCorrections: [
       {
-        end: 0,
-        label: '对比关系',
-        paragraph_id: 1,
-        start: 1
+        label: ['R'],
+        paragraph_id: 0,
+        revised_sent:
+          '明天就是期末考试，为了考出一个好成绩我早早入睡，当我睡得正香的时候，只听见“嗡嗡，嗡嗡”飞来了一只蚊子。',
+        revised_token_idx: [27],
+        sent_id: 0,
+        token_idx: [27]
       },
       {
-        end: 1,
-        label: '选择关系',
+        label: ['R'],
         paragraph_id: 1,
-        start: 2
+        revised_sent:
+          '这只蚊子嗡嗡声越来越大了，我已经忍无可忍，一下子从床上跳了起来，要和蚊子来一场大战，这只蚊子飞得很快我东打打，西打打。',
+        revised_token_idx: [47],
+        sent_id: 0,
+        token_idx: [47]
       },
       {
-        end: 2,
-        label: '顺承关系',
+        label: ['R'],
         paragraph_id: 1,
-        start: 3
-      },
-      {
-        end: 3,
-        label: '顺承关系',
-        paragraph_id: 1,
-        start: 4
-      },
-      {
-        end: 4,
-        label: '顺承关系',
-        paragraph_id: 1,
-        start: 5
-      },
-      {
-        end: 5,
-        label: '时序关系',
-        paragraph_id: 1,
-        start: 6
-      },
-      {
-        end: 6,
-        label: '对比关系',
-        paragraph_id: 1,
-        start: 7
-      },
-      {
-        end: 0,
-        label: '顺承关系',
-        paragraph_id: 2,
-        start: 1
+        revised_sent: '我用馀光一瞄看见蚊子在花瓶上休息。',
+        revised_token_idx: [2],
+        sent_id: 6,
+        token_idx: [2]
       }
     ]
   },
   {
     id: 6,
     title: '画鼻子',
+    author: { name: '诸葛代卉', class: '四年级二班' },
     content:
       '今天我的朋友邀请我和他一起玩画鼻子，我们需要准备一个小黑板，一个黑板笔和一个遮挡物。玩法就是蒙上眼睛，给他一支笔来到白板面前在自转三圈就就可以开始画了。\n首先朋友请了一位小朋友，蒙上眼睛，给他一支笔，让他来到白板面前自转三圈。画鼻子游戏就这样开始了，只见他手在白板上像爬山虎似的，我想他应该在凭他的记忆来画。他的手里拿着笔心里紧张的很，他在我们的催促下画出了一个鼻子，正好就在嘴上。突然，台下一下子哄堂大笑起来，没想到他竟然把鼻子画到了嘴上！他苦笑着回去了，下面抢到我了！我做好了准备然后开始画，我学着小朋友像爬山虎一样凭自己的记忆来画。我心想要是我输了我就会被笑，我学着他有用吗？画好后突然，台下一下子满是鼓掌声，我拿下眼罩一看，惊讶地说：“我画对了地方！”我欢天喜地地说：“我赢了！”\n这次游戏是玩过最快乐的一次，他给我留下深刻的印象。',
     scores: [90, 90, 70, 80, 80, 80],
@@ -1162,11 +606,9 @@ export const ORIGINAL_ESSAYS = [
       '这篇作文内容充实，描述了画鼻子的游戏过程，情节生动。但是在描述上还可以更加详细一些，补充更多细节和感受，让读者更好地体会到作者的心情和游戏的乐趣。'
     ],
     paragraphComments: [
-      '这一段的描写还可以更加具体，可以加入更多的人物、事物的描写来让文章更加丰富。',
-      '这一段的描写比较简单，需要加入更多的细节描写来让场景更加生动。',
-      '作者在这一段中阐述了深刻的见解和观点，让人不由自主地思考和反思。',
-      '作者这一段的语言非常优美，每一个词语都能够恰到好处地表达作者的意图。',
-      '这一段的情感表达非常到位，让人不由自主地被感染和打动。'
+      '这一段内容独具匠心，让读者在思考的过程中得到新的启示和思考。',
+      '这一段的描写比较平淡，需要更加注意细节的描写和表现。“哄堂大笑”生动传神。“欢天喜地”使用得很有创意。“画鼻子游戏就这样开始了，只见他手在白板上像爬山虎似的，我想他应该在凭他的记忆来画。”感情真挚，亲切自然。“我做好了准备然后开始画，我学着小朋友像爬山虎一样凭自己的记忆来画。”描写细腻，真切生动。“我欢天喜地地说：“我赢了！””情感真挚，打动人心。',
+      '这一段的描写比较平淡，需要更加注意细节的描写和表现。'
     ],
     sents: [
       [
@@ -1187,148 +629,53 @@ export const ORIGINAL_ESSAYS = [
       ['这次游戏是玩过最快乐的一次，他给我留下深刻的印象。']
     ],
     good_sents: [
-      {
-        label: '1',
-        paragraph_id: 1,
-        sent_id: 1
-      },
-      {
-        label: '1',
-        paragraph_id: 1,
-        sent_id: 5
-      },
-      {
-        label: '2',
-        paragraph_id: 1,
-        sent_id: 8
-      }
+      { label: '1', paragraph_id: 1, sent_id: 1 },
+      { label: '1', paragraph_id: 1, sent_id: 5 },
+      { label: '2', paragraph_id: 1, sent_id: 8 }
     ],
     good_words: [
-      {
-        end: 12,
-        paragraph_id: 1,
-        sent_id: 3,
-        start: 8
-      },
-      {
-        end: 5,
-        paragraph_id: 1,
-        sent_id: 8,
-        start: 1
-      }
+      { end: 12, paragraph_id: 1, sent_id: 3, start: 8 },
+      { end: 5, paragraph_id: 1, sent_id: 8, start: 1 }
     ],
     sick_sents: [
-      {
-        label: '字符级错误',
-        paragraph_id: 0,
-        sent_id: 0
-      },
-      {
-        label: '缺少标点，成分残缺型错误',
-        paragraph_id: 0,
-        sent_id: 1
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 1,
-        sent_id: 0
-      },
-      {
-        label: '错别字错误，成分赘余型错误',
-        paragraph_id: 1,
-        sent_id: 1
-      },
-      {
-        label: '错别字错误，缺少标点',
-        paragraph_id: 1,
-        sent_id: 2
-      },
-      {
-        label: '缺少标点',
-        paragraph_id: 1,
-        sent_id: 5
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 1,
-        sent_id: 6
-      },
-      {
-        label: '成分赘余型错误',
-        paragraph_id: 1,
-        sent_id: 7
-      },
-      {
-        label: '错别字错误',
-        paragraph_id: 1,
-        sent_id: 8
-      },
-      {
-        label: '成分赘余型错误',
-        paragraph_id: 2,
-        sent_id: 0
-      }
+      { label: '字符级错误', paragraph_id: 0, sent_id: 0 },
+      { label: '缺少标点，成分残缺型错误', paragraph_id: 0, sent_id: 1 },
+      { label: '字符级错误', paragraph_id: 1, sent_id: 0 },
+      { label: '错别字错误，成分赘余型错误', paragraph_id: 1, sent_id: 1 },
+      { label: '错别字错误，缺少标点', paragraph_id: 1, sent_id: 2 },
+      { label: '缺少标点', paragraph_id: 1, sent_id: 5 },
+      { label: '字符级错误', paragraph_id: 1, sent_id: 6 },
+      { label: '成分赘余型错误', paragraph_id: 1, sent_id: 7 },
+      { label: '错别字错误', paragraph_id: 1, sent_id: 8 },
+      { label: '成分赘余型错误', paragraph_id: 2, sent_id: 0 }
     ],
     sent_relations: [
+      { end: 0, label: '因果关系', paragraph_id: 0, start: 1 },
+      { end: 0, label: '因果关系', paragraph_id: 1, start: 1 },
+      { end: 1, label: '时序关系', paragraph_id: 1, start: 2 },
+      { end: 2, label: '对比关系', paragraph_id: 1, start: 3 },
+      { end: 3, label: '对比关系', paragraph_id: 1, start: 4 },
+      { end: 4, label: '时序关系', paragraph_id: 1, start: 5 },
+      { end: 5, label: '条件关系', paragraph_id: 1, start: 6 },
+      { end: 6, label: '时序关系', paragraph_id: 1, start: 7 },
+      { end: 7, label: '并列关系', paragraph_id: 1, start: 8 }
+    ],
+    textCorrections: [
       {
-        end: 0,
-        label: '因果关系',
-        paragraph_id: 0,
-        start: 1
-      },
-      {
-        end: 0,
-        label: '因果关系',
+        label: ['R'],
         paragraph_id: 1,
-        start: 1
-      },
-      {
-        end: 1,
-        label: '时序关系',
-        paragraph_id: 1,
-        start: 2
-      },
-      {
-        end: 2,
-        label: '对比关系',
-        paragraph_id: 1,
-        start: 3
-      },
-      {
-        end: 3,
-        label: '对比关系',
-        paragraph_id: 1,
-        start: 4
-      },
-      {
-        end: 4,
-        label: '时序关系',
-        paragraph_id: 1,
-        start: 5
-      },
-      {
-        end: 5,
-        label: '条件关系',
-        paragraph_id: 1,
-        start: 6
-      },
-      {
-        end: 6,
-        label: '时序关系',
-        paragraph_id: 1,
-        start: 7
-      },
-      {
-        end: 7,
-        label: '并列关系',
-        paragraph_id: 1,
-        start: 8
+        revised_sent:
+          '画鼻子游戏就这样开始了，只见他手在白板上像爬山虎似的，我想他应该再凭他的记忆来画。',
+        revised_token_idx: [32],
+        sent_id: 1,
+        token_idx: [32]
       }
     ]
   },
   {
     id: 7,
     title: '我的心儿怦怦跳',
+    author: { name: '娄安宁', class: '五年级三班' },
     content:
       '人生中最紧张的时候，就是我第一次打冰球比赛。\n这件事是在3年前了。在那一天，妈妈让我参加了一场冰球比赛我一进门心里就打起了鼓来，虽然已经学了一段时间，真的能打比赛吗？我换上了冰球服上了场练了一会儿，看见对方的人比我们还多心里有了一种不好的预感。\n第一回合开始，我心感学都要跳出来了，对方一下子就拿下了我们的球向我方的门射去。就这样我们对方的分数越来越多。第二回合开始了，我们乱作一团，球也不知哪了。等发现的时候，一切已经来不及了，对方已经将球打进了门。对手又拿下了分，这是对方失误了，我拿下了球向对方的门冲去。我跨过关斩将，穿越敌人，一道又一道的向对方的门冲去。来到最好的位置后，我瞄准了球门的位置，将球一打，球进了！这时，时间已经到了，我们的分数被搬成了比对方多一分的分数，这一场比赛我们赢了！\n队友们为我而高兴，我也很高兴，家人也很高兴……',
     scores: [90, 80, 80, 90, 85, 82],
@@ -1341,11 +688,10 @@ export const ORIGINAL_ESSAYS = [
       '这篇作文的内容充实，详细描述了作者第一次打冰球比赛的紧张和挑战，以及最后取得胜利的喜悦。但是在描述比赛过程中，可以适当增加一些细节，丰富故事情节，让读者更加身临其境。'
     ],
     paragraphComments: [
-      '作者在这一段中运用了不同的句式和结构，让文章更加生动有趣。',
-      '这一段的描写比较平淡，需要更加注意细节的描写和表现。',
-      '作者在这一段中运用了不同的句式和结构，让文章更加生动有趣。',
-      '这一段的句式和结构非常丰富，让人读起来愉悦而不单调。',
-      '作者在这一段中提出了独特的思考和观点，让人不由得感叹其想象力和创造力。'
+      '这一段的描写还可以更加具体，可以加入更多的人物、事物的描写来让文章更加丰富。',
+      '这一段的情感表达非常到位，让人不由自主地被感染和打动。',
+      '作者这一段的语言非常优美，每一个词语都能够恰到好处地表达作者的意图。小作者的此句“第二回合开始了，我们乱作一团，球也不知哪了。”比较生动，能够打动读者。',
+      '这一段的描写比较平淡，需要更加注意细节的描写和表现。'
     ],
     sents: [
       ['人生中最紧张的时候，就是我第一次打冰球比赛。'],
@@ -1366,162 +712,77 @@ export const ORIGINAL_ESSAYS = [
       ],
       ['队友们为我而高兴，我也很高兴，家人也很高兴……', '.']
     ],
-    good_sents: [
-      {
-        label: '1',
-        paragraph_id: 2,
-        sent_id: 2
-      }
-    ],
+    good_sents: [{ label: '1', paragraph_id: 2, sent_id: 2 }],
     good_words: [],
     sick_sents: [
-      {
-        label: '成分残缺型错误',
-        paragraph_id: 1,
-        sent_id: 0
-      },
-      {
-        label: '缺少标点',
-        paragraph_id: 1,
-        sent_id: 1
-      },
-      {
-        label: '缺少标点',
-        paragraph_id: 1,
-        sent_id: 2
-      },
-      {
-        label: '错别字错误',
-        paragraph_id: 2,
-        sent_id: 0
-      },
-      {
-        label: '其他成分多余',
-        paragraph_id: 2,
-        sent_id: 1
-      },
-      {
-        label: '错别字错误',
-        paragraph_id: 2,
-        sent_id: 2
-      },
-      {
-        label: '错别字错误',
-        paragraph_id: 2,
-        sent_id: 5
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 2,
-        sent_id: 6
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 2,
-        sent_id: 7
-      },
-      {
-        label: '错用标点',
-        paragraph_id: 3,
-        sent_id: 1
-      }
+      { label: '成分残缺型错误', paragraph_id: 1, sent_id: 0 },
+      { label: '缺少标点', paragraph_id: 1, sent_id: 1 },
+      { label: '缺少标点', paragraph_id: 1, sent_id: 2 },
+      { label: '错别字错误', paragraph_id: 2, sent_id: 0 },
+      { label: '其他成分多余', paragraph_id: 2, sent_id: 1 },
+      { label: '错别字错误', paragraph_id: 2, sent_id: 2 },
+      { label: '错别字错误', paragraph_id: 2, sent_id: 5 },
+      { label: '字符级错误', paragraph_id: 2, sent_id: 6 },
+      { label: '字符级错误', paragraph_id: 2, sent_id: 7 },
+      { label: '错用标点', paragraph_id: 3, sent_id: 1 }
     ],
     sent_relations: [
+      { end: 0, label: '对比关系', paragraph_id: 1, start: 1 },
+      { end: 1, label: '并列关系', paragraph_id: 1, start: 2 },
+      { end: 0, label: '因果关系', paragraph_id: 2, start: 1 },
+      { end: 1, label: '并列关系', paragraph_id: 2, start: 2 },
+      { end: 2, label: '对比关系', paragraph_id: 2, start: 3 },
+      { end: 3, label: '并列关系', paragraph_id: 2, start: 4 },
+      { end: 4, label: '并列关系', paragraph_id: 2, start: 5 },
+      { end: 5, label: '时序关系', paragraph_id: 2, start: 6 },
+      { end: 6, label: '顺承关系', paragraph_id: 2, start: 7 },
+      { end: 0, label: '并列关系', paragraph_id: 3, start: 1 },
+      { end: 1, label: 'ROOT', paragraph_id: 3, start: 2 },
+      { end: 2, label: 'ROOT', paragraph_id: 3, start: 3 },
+      { end: 3, label: 'ROOT', paragraph_id: 3, start: 4 },
+      { end: 4, label: 'ROOT', paragraph_id: 3, start: 5 },
+      { end: 5, label: 'ROOT', paragraph_id: 3, start: 6 }
+    ],
+    textCorrections: [
       {
-        end: 0,
-        label: '对比关系',
-        paragraph_id: 1,
-        start: 1
-      },
-      {
-        end: 1,
-        label: '并列关系',
-        paragraph_id: 1,
-        start: 2
-      },
-      {
-        end: 0,
-        label: '因果关系',
+        label: ['R'],
         paragraph_id: 2,
-        start: 1
+        revised_sent:
+          '第一回合开始，我心感觉都要跳出来了，对方一下子就拿下了我们的球向我方的门射去。',
+        revised_token_idx: [10],
+        sent_id: 0,
+        token_idx: [10]
       },
       {
-        end: 1,
-        label: '并列关系',
+        label: ['A'],
         paragraph_id: 2,
-        start: 2
+        revised_sent: '对手又拿下了了分，这是对方失误了，我拿下了球向对方的门冲去。',
+        revised_token_idx: [6],
+        sent_id: 4,
+        token_idx: [6]
       },
       {
-        end: 2,
-        label: '对比关系',
+        label: ['R', 'R'],
         paragraph_id: 2,
-        start: 3
+        revised_sent: '我也过关斩将，穿越敌人，一道又一道地向对方的门冲去。',
+        revised_token_idx: [1, 17],
+        sent_id: 5,
+        token_idx: [1, 17]
       },
       {
-        end: 3,
-        label: '并列关系',
-        paragraph_id: 2,
-        start: 4
-      },
-      {
-        end: 4,
-        label: '并列关系',
-        paragraph_id: 2,
-        start: 5
-      },
-      {
-        end: 5,
-        label: '时序关系',
-        paragraph_id: 2,
-        start: 6
-      },
-      {
-        end: 6,
-        label: '顺承关系',
-        paragraph_id: 2,
-        start: 7
-      },
-      {
-        end: 0,
-        label: '并列关系',
+        label: ['R', 'R'],
         paragraph_id: 3,
-        start: 1
-      },
-      {
-        end: 1,
-        label: 'ROOT',
-        paragraph_id: 3,
-        start: 2
-      },
-      {
-        end: 2,
-        label: 'ROOT',
-        paragraph_id: 3,
-        start: 3
-      },
-      {
-        end: 3,
-        label: 'ROOT',
-        paragraph_id: 3,
-        start: 4
-      },
-      {
-        end: 4,
-        label: 'ROOT',
-        paragraph_id: 3,
-        start: 5
-      },
-      {
-        end: 5,
-        label: 'ROOT',
-        paragraph_id: 3,
-        start: 6
+        revised_sent: '队友们为我而高兴，我也很高兴，家人也很高兴uu',
+        revised_token_idx: [21, 22],
+        sent_id: 0,
+        token_idx: [21, 22]
       }
     ]
   },
   {
     id: 8,
     title: '一场有趣的投篮游戏',
+    author: { name: '王倚云', class: '五年级三班' },
     content:
       '周末，我参加了篮球训练。快结束的时候，教练提出玩一个有趣的投篮游戏。\n教练说道：“大家在罚球线上站成一列。第一个人先投篮，如果球进了，她就把球传给第三个人；如果没进，她就得补篮。与此同时，第二个人也同时投篮，如果她比第一个人先投进球，第一个人就出局了。以此类推，留下的最后一个人就是游戏的冠军。”大家听了既紧张又兴奋，都希望自己晚一点被淘汰。\n游戏很快开始了。我站在队伍的第四个，当我前面的人传球给我时我紧张地接住了球，深吸一口气，回想着训练时的动作要领，立马做好了投篮的准备。我调整双腿与肩同宽，略微下蹲，突然猛地像弹簧一样借助下肢的力量跳了起来，瞄准篮筐，把球投了出去。哇，我顺利地进球了！身后传来了一阵雷鸣般的掌声。我那始终紧绷着的心情瞬间放松了下来。于是我把球传给了后面的人，赶紧跑到队伍的末尾，等待下一轮的挑战。\n很快又轮到我了。这次，当我接到球的时候，前面的那个人还没投进篮。我心想：机会来了，我一定要把她淘汰！我兴奋不已，迫不及待地在罚球线上准备投篮。只听“啪”的一声球竟然反弹了回来，没有进！我懊丧极了，都怪自己太冲忙了，没有做好充分的准备。这时候，我暗暗对自己说：不要灰心前面那个人也还没有投进，我还有机会。于是，我把心平静了下来，站在篮筐右边45度角的位置进行补篮，哇！一个漂亮的打板球，我投进了！我把她淘汰了！\n接着，我又淘汰掉了许多人，最后只剩下我和另外一个队手。我们不分彼此，僵持了好一会儿，我们表现得都非常沉着冷静。这时，对手忽然出现了一个小失误，我立马抓住机会，稳稳地一个投篮，“唰”的一声，球进了，我获得了这次游戏的冠军。大家都为我欢呼喝彩，我也开心得手舞足蹈！\n投篮游戏看似非常有趣，但要想赢得比赛，还是需要平时扎实的基本功和比赛时的良好心理责质呢。',
     scores: [90, 90, 80, 80, 85, 85],
@@ -1534,11 +795,12 @@ export const ORIGINAL_ESSAYS = [
       '这篇作文内容充实，详细描述了一场有趣的投篮游戏，展现了比赛的紧张刺激和个人经历。然而，在描述投篮细节和比赛氛围时可以更加生动具体，增加一些细节描述和情感描绘，会使文章更加生动有趣。'
     ],
     paragraphComments: [
-      '这一段的描写比较平淡，需要更加注意细节的描写和表现。',
-      '这一段的描写比较平淡，需要更加注意细节的描写和表现。',
-      '这一段的句子结构非常多变，让人读起来非常流畅，也让人印象深刻。',
-      '作者在这一段中提出了独特的思考和观点，让人不由得感叹其想象力和创造力。',
-      '这一段的描写比较简单，需要加入更多的细节描写来让场景更加生动。'
+      '这一段的句式和结构非常丰富，让人读起来愉悦而不单调。“周末，我参加了篮球训练。”感情真挚，亲切自然。',
+      '作者在这一段中表达了深刻的情感，让人不由自主地体会到其中的情感和感受。',
+      '作者在这一段中运用了不同的句式和结构，让文章更加生动有趣。文章的语言比较文雅，如“游戏很快开始了。”。文中“我调整双腿与肩同宽，略微下蹲，突然猛地像弹簧一样借助下肢的力量跳了起来，瞄准篮筐，把球投了出去。”与所表达的语意密切相关，所以写得真切、自然，贴近生活实际。“身后传来了一阵雷鸣般的掌声。”的运用读来别具风味。“我那始终紧绷着的心情瞬间放松了下来。”言简意丰，颇耐咀嚼。',
+      '作者在这一段中运用了不同的句式和结构，让文章更加生动有趣。“迫不及待”用得精准。“我兴奋不已，迫不及待地在罚球线上准备投篮。”言简意丰，颇耐咀嚼。',
+      '作者在这一段中阐述了深刻的见解和观点，让人不由自主地思考和反思。“不分彼此”生动传神。“手舞足蹈”使用得很有创意。文章的语言富有情趣，如“大家都为我欢呼喝彩，我也开心得手舞足蹈！”。',
+      '这一段的描写还可以更加具体，可以加入更多的人物、事物的描写来让文章更加丰富。'
     ],
     sents: [
       ['周末，我参加了篮球训练。', '快结束的时候，教练提出玩一个有趣的投篮游戏。'],
@@ -1579,280 +841,125 @@ export const ORIGINAL_ESSAYS = [
       ['投篮游戏看似非常有趣，但要想赢得比赛，还是需要平时扎实的基本功和比赛时的良好心理责质呢。']
     ],
     good_sents: [
-      {
-        label: '2',
-        paragraph_id: 0,
-        sent_id: 0
-      },
-      {
-        label: '2',
-        paragraph_id: 2,
-        sent_id: 0
-      },
-      {
-        label: '1',
-        paragraph_id: 2,
-        sent_id: 2
-      },
-      {
-        label: '2',
-        paragraph_id: 2,
-        sent_id: 4
-      },
-      {
-        label: '2',
-        paragraph_id: 2,
-        sent_id: 5
-      },
-      {
-        label: '2',
-        paragraph_id: 3,
-        sent_id: 3
-      },
-      {
-        label: '2',
-        paragraph_id: 4,
-        sent_id: 3
-      }
+      { label: '2', paragraph_id: 0, sent_id: 0 },
+      { label: '2', paragraph_id: 2, sent_id: 0 },
+      { label: '1', paragraph_id: 2, sent_id: 2 },
+      { label: '2', paragraph_id: 2, sent_id: 4 },
+      { label: '2', paragraph_id: 2, sent_id: 5 },
+      { label: '2', paragraph_id: 3, sent_id: 3 },
+      { label: '2', paragraph_id: 4, sent_id: 3 }
     ],
     good_words: [
-      {
-        end: 10,
-        paragraph_id: 3,
-        sent_id: 3,
-        start: 6
-      },
-      {
-        end: 6,
-        paragraph_id: 4,
-        sent_id: 1,
-        start: 2
-      },
-      {
-        end: 19,
-        paragraph_id: 4,
-        sent_id: 3,
-        start: 15
-      }
+      { end: 10, paragraph_id: 3, sent_id: 3, start: 6 },
+      { end: 6, paragraph_id: 4, sent_id: 1, start: 2 },
+      { end: 19, paragraph_id: 4, sent_id: 3, start: 15 }
     ],
     sick_sents: [
-      {
-        label: '其他成分多余',
-        paragraph_id: 0,
-        sent_id: 0
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 1,
-        sent_id: 0
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 1,
-        sent_id: 1
-      },
-      {
-        label: '成分赘余型错误',
-        paragraph_id: 1,
-        sent_id: 3
-      },
-      {
-        label: '成分搭配不当型错误',
-        paragraph_id: 1,
-        sent_id: 4
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 2,
-        sent_id: 1
-      },
-      {
-        label: '错别字错误',
-        paragraph_id: 2,
-        sent_id: 3
-      },
-      {
-        label: '其他成分多余',
-        paragraph_id: 2,
-        sent_id: 5
-      },
-      {
-        label: '成分残缺型错误',
-        paragraph_id: 3,
-        sent_id: 0
-      },
-      {
-        label: '成分赘余型错误',
-        paragraph_id: 3,
-        sent_id: 3
-      },
-      {
-        label: '错别字错误',
-        paragraph_id: 3,
-        sent_id: 5
-      },
-      {
-        label: '缺少标点',
-        paragraph_id: 3,
-        sent_id: 6
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 3,
-        sent_id: 7
-      },
-      {
-        label: '错别字错误',
-        paragraph_id: 3,
-        sent_id: 8
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 3,
-        sent_id: 9
-      },
-      {
-        label: '其他成分多余',
-        paragraph_id: 4,
-        sent_id: 1
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 4,
-        sent_id: 2
-      },
-      {
-        label: '成分赘余型错误，成分搭配不当型错误',
-        paragraph_id: 5,
-        sent_id: 0
-      }
+      { label: '其他成分多余', paragraph_id: 0, sent_id: 0 },
+      { label: '字符级错误', paragraph_id: 1, sent_id: 0 },
+      { label: '字符级错误', paragraph_id: 1, sent_id: 1 },
+      { label: '成分赘余型错误', paragraph_id: 1, sent_id: 3 },
+      { label: '成分搭配不当型错误', paragraph_id: 1, sent_id: 4 },
+      { label: '字符级错误', paragraph_id: 2, sent_id: 1 },
+      { label: '错别字错误', paragraph_id: 2, sent_id: 3 },
+      { label: '其他成分多余', paragraph_id: 2, sent_id: 5 },
+      { label: '成分残缺型错误', paragraph_id: 3, sent_id: 0 },
+      { label: '成分赘余型错误', paragraph_id: 3, sent_id: 3 },
+      { label: '错别字错误', paragraph_id: 3, sent_id: 5 },
+      { label: '缺少标点', paragraph_id: 3, sent_id: 6 },
+      { label: '字符级错误', paragraph_id: 3, sent_id: 7 },
+      { label: '错别字错误', paragraph_id: 3, sent_id: 8 },
+      { label: '字符级错误', paragraph_id: 3, sent_id: 9 },
+      { label: '其他成分多余', paragraph_id: 4, sent_id: 1 },
+      { label: '字符级错误', paragraph_id: 4, sent_id: 2 },
+      { label: '成分赘余型错误，成分搭配不当型错误', paragraph_id: 5, sent_id: 0 }
     ],
     sent_relations: [
+      { end: 0, label: '并列关系', paragraph_id: 0, start: 1 },
+      { end: 0, label: '条件关系', paragraph_id: 1, start: 1 },
+      { end: 1, label: '条件关系', paragraph_id: 1, start: 2 },
+      { end: 2, label: '并列关系', paragraph_id: 1, start: 3 },
+      { end: 3, label: '并列关系', paragraph_id: 1, start: 4 },
+      { end: 0, label: '时序关系', paragraph_id: 2, start: 1 },
+      { end: 1, label: '顺承关系', paragraph_id: 2, start: 2 },
+      { end: 2, label: '顺承关系', paragraph_id: 2, start: 3 },
+      { end: 5, label: '因果关系', paragraph_id: 2, start: 6 },
+      { end: 0, label: '时序关系', paragraph_id: 3, start: 1 },
+      { end: 1, label: '时序关系', paragraph_id: 3, start: 2 },
+      { end: 2, label: '时序关系', paragraph_id: 3, start: 3 },
+      { end: 3, label: '顺承关系', paragraph_id: 3, start: 4 },
+      { end: 5, label: '并列关系', paragraph_id: 3, start: 6 },
+      { end: 6, label: '因果关系', paragraph_id: 3, start: 7 },
+      { end: 7, label: '顺承关系', paragraph_id: 3, start: 8 },
+      { end: 8, label: '并列关系', paragraph_id: 3, start: 9 },
+      { end: 0, label: '顺承关系', paragraph_id: 4, start: 1 },
+      { end: 1, label: '顺承关系', paragraph_id: 4, start: 2 },
+      { end: 2, label: '并列关系', paragraph_id: 4, start: 3 }
+    ],
+    textCorrections: [
       {
-        end: 0,
-        label: '并列关系',
-        paragraph_id: 0,
-        start: 1
-      },
-      {
-        end: 0,
-        label: '条件关系',
+        label: ['R'],
         paragraph_id: 1,
-        start: 1
+        revised_sent: '与此同时，第二个人也同时投篮，如果他比第一个人先投进球，第一个人就出局了。',
+        revised_token_idx: [17],
+        sent_id: 2,
+        token_idx: [17]
       },
       {
-        end: 1,
-        label: '条件关系',
-        paragraph_id: 1,
-        start: 2
-      },
-      {
-        end: 2,
-        label: '并列关系',
-        paragraph_id: 1,
-        start: 3
-      },
-      {
-        end: 3,
-        label: '并列关系',
-        paragraph_id: 1,
-        start: 4
-      },
-      {
-        end: 0,
-        label: '时序关系',
-        paragraph_id: 2,
-        start: 1
-      },
-      {
-        end: 1,
-        label: '顺承关系',
-        paragraph_id: 2,
-        start: 2
-      },
-      {
-        end: 2,
-        label: '顺承关系',
-        paragraph_id: 2,
-        start: 3
-      },
-      {
-        end: 5,
-        label: '因果关系',
-        paragraph_id: 2,
-        start: 6
-      },
-      {
-        end: 0,
-        label: '时序关系',
+        label: ['R'],
         paragraph_id: 3,
-        start: 1
+        revised_sent: '我懊丧极了，都怪自己太匆忙了，没有做好充分的准备。',
+        revised_token_idx: [11],
+        sent_id: 5,
+        token_idx: [11]
       },
       {
-        end: 1,
-        label: '时序关系',
+        label: ['R', 'R'],
         paragraph_id: 3,
-        start: 2
+        revised_sent: '一个漂亮的大棒球，我投进了！',
+        revised_token_idx: [5, 6],
+        sent_id: 8,
+        token_idx: [5, 6]
       },
       {
-        end: 2,
-        label: '时序关系',
+        label: ['R'],
         paragraph_id: 3,
-        start: 3
+        revised_sent: '我把他淘汰了！',
+        revised_token_idx: [2],
+        sent_id: 9,
+        token_idx: [2]
       },
       {
-        end: 3,
-        label: '顺承关系',
-        paragraph_id: 3,
-        start: 4
-      },
-      {
-        end: 5,
-        label: '并列关系',
-        paragraph_id: 3,
-        start: 6
-      },
-      {
-        end: 6,
-        label: '因果关系',
-        paragraph_id: 3,
-        start: 7
-      },
-      {
-        end: 7,
-        label: '顺承关系',
-        paragraph_id: 3,
-        start: 8
-      },
-      {
-        end: 8,
-        label: '并列关系',
-        paragraph_id: 3,
-        start: 9
-      },
-      {
-        end: 0,
-        label: '顺承关系',
+        label: ['R'],
         paragraph_id: 4,
-        start: 1
+        revised_sent: '接着，我又淘汰掉了许多人，最后只剩下我和另外一个对手。',
+        revised_token_idx: [24],
+        sent_id: 0,
+        token_idx: [24]
       },
       {
-        end: 1,
-        label: '顺承关系',
+        label: ['R'],
         paragraph_id: 4,
-        start: 2
+        revised_sent:
+          '这时，对手忽然出现了一个小失误，我立马抓住机会，稳稳地一个投篮，“u”的一声，球进了，我获得了这次游戏的冠军。',
+        revised_token_idx: [33],
+        sent_id: 2,
+        token_idx: [33]
       },
       {
-        end: 2,
-        label: '并列关系',
+        label: ['R'],
         paragraph_id: 4,
-        start: 3
+        revised_sent: '大家都为我欢呼喝彩，我也开心地手舞足蹈！',
+        revised_token_idx: [14],
+        sent_id: 3,
+        token_idx: [14]
       }
     ]
   },
   {
     id: 9,
     title: '美丽的马尔代夫群岛',
+    author: { name: '王若华', class: '四年级三班' },
     content:
       '在亚洲，印渡洋上有一片群岛。那里风景优美，物产丰富，海水湛蓝迷人，深不见底。而那片美丽的群岛，正是马尔代夫。如果你对它有兴趣，想到那去看看，就先走进我笔下的马尔代夫其中一座小岛神仙珊瑚岛。\n在马尔代夫，四季如春，特别适合去度寒假。那里有许许多多的珊瑚礁，色彩丰富，美极了。早可以去海边浮潜，可以看到特别多的小鱼、海龟、大龙虾在珊瑚上游来游去；或者去最美沙滩，在歪脖子树下荡秋千，在超高秋千上拍照片；又或者是去泳池和沙滩里玩水，抓小白蟹。\n在黄昏，出海钓鱼是一个不错的选择，只要不晕船，就一定钓得日到鱼。伴着落日的余晖出海，载着月光和闪烁的星回来，多么美好啊！而夜晚，待在房间里就已经很满足了。那一阵阵浪声和又咸又湿的空气会让你的身心彻底放松下来，安睡到天亮。\n马尔代夫。这一串“上帝洒在人间的珍珠“，如果是你，你会想去到那里旅行吗？',
     scores: [90, 90, 80, 70, 90, 85],
@@ -1865,11 +972,10 @@ export const ORIGINAL_ESSAYS = [
       '这篇作文在内容上较为充实，详细描述了马尔代夫的风景和度假项目，但可以适当增加一些相关历史文化或当地风土人情的介绍，让读者更全面地了解马尔代夫。'
     ],
     paragraphComments: [
-      '作者这一段的语言非常优美，每一个词语都能够恰到好处地表达作者的意图。',
-      '这一段的情感表达非常到位，让人不由自主地被感染和打动。',
-      '这一段的句式和结构非常丰富，让人读起来愉悦而不单调。',
-      '这一段的情感表达非常到位，让人不由自主地被感染和打动。',
-      '作者在这一段中运用了丰富的词汇和词语，让人印象深刻。'
+      '这一段的描写比较简单，需要加入更多的细节描写来让场景更加生动。“而那片美丽的群岛，正是马尔代夫。”这样的语言富有灵动的美，将浓浓的文字馨香，摇曳在字里行间。',
+      '作者这一段的语言非常优美，每一个词语都能够恰到好处地表达作者的意图。“许许多多”为文章增添了亮色，可见作者有较强的写作功底。“在马尔代夫，四季如春，特别适合去度寒假。”既使文章的语言整齐有气势，也使作者的情感得以更透彻的表达。',
+      '作者在这一段中运用了不同的句式和结构，让文章更加生动有趣。',
+      '这一段的句子结构非常多变，让人读起来非常流畅，也让人印象深刻。“马尔代夫。”这句使文章显得丰富多彩。'
     ],
     sents: [
       [
@@ -1892,131 +998,55 @@ export const ORIGINAL_ESSAYS = [
       ['马尔代夫。', '这一串“上帝洒在人间的珍珠“，如果是你，你会想去到那里旅行吗？']
     ],
     good_sents: [
-      {
-        label: '2',
-        paragraph_id: 0,
-        sent_id: 2
-      },
-      {
-        label: '2',
-        paragraph_id: 1,
-        sent_id: 0
-      },
-      {
-        label: '2',
-        paragraph_id: 3,
-        sent_id: 0
-      }
+      { label: '2', paragraph_id: 0, sent_id: 2 },
+      { label: '2', paragraph_id: 1, sent_id: 0 },
+      { label: '2', paragraph_id: 3, sent_id: 0 }
     ],
-    good_words: [
-      {
-        end: 7,
-        paragraph_id: 1,
-        sent_id: 1,
-        start: 3
-      }
-    ],
+    good_words: [{ end: 7, paragraph_id: 1, sent_id: 1, start: 3 }],
     sick_sents: [
-      {
-        label: '成分赘余型错误',
-        paragraph_id: 0,
-        sent_id: 2
-      },
-      {
-        label: '其他成分多余',
-        paragraph_id: 0,
-        sent_id: 3
-      },
-      {
-        label: '错用标点，主语不明',
-        paragraph_id: 1,
-        sent_id: 2
-      },
-      {
-        label: '成分残缺型错误',
-        paragraph_id: 2,
-        sent_id: 0
-      },
-      {
-        label: '主语不明',
-        paragraph_id: 2,
-        sent_id: 1
-      },
-      {
-        label: '成分残缺型错误',
-        paragraph_id: 2,
-        sent_id: 2
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 2,
-        sent_id: 3
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 3,
-        sent_id: 0
-      },
-      {
-        label: '错用标点',
-        paragraph_id: 3,
-        sent_id: 1
-      }
+      { label: '成分赘余型错误', paragraph_id: 0, sent_id: 2 },
+      { label: '其他成分多余', paragraph_id: 0, sent_id: 3 },
+      { label: '错用标点，主语不明', paragraph_id: 1, sent_id: 2 },
+      { label: '成分残缺型错误', paragraph_id: 2, sent_id: 0 },
+      { label: '主语不明', paragraph_id: 2, sent_id: 1 },
+      { label: '成分残缺型错误', paragraph_id: 2, sent_id: 2 },
+      { label: '字符级错误', paragraph_id: 2, sent_id: 3 },
+      { label: '字符级错误', paragraph_id: 3, sent_id: 0 },
+      { label: '错用标点', paragraph_id: 3, sent_id: 1 }
     ],
     sent_relations: [
+      { end: 0, label: '并列关系', paragraph_id: 0, start: 1 },
+      { end: 1, label: '并列关系', paragraph_id: 0, start: 2 },
+      { end: 2, label: '条件关系', paragraph_id: 0, start: 3 },
+      { end: 0, label: '条件关系', paragraph_id: 1, start: 1 },
+      { end: 1, label: '因果关系', paragraph_id: 1, start: 2 },
+      { end: 0, label: '并列关系', paragraph_id: 2, start: 1 },
+      { end: 2, label: '并列关系', paragraph_id: 2, start: 3 },
+      { end: 0, label: '条件关系', paragraph_id: 3, start: 1 }
+    ],
+    textCorrections: [
       {
-        end: 0,
-        label: '并列关系',
+        label: ['R'],
         paragraph_id: 0,
-        start: 1
+        revised_sent: '在亚洲，印度洋上有一片群岛。',
+        revised_token_idx: [5],
+        sent_id: 0,
+        token_idx: [5]
       },
       {
-        end: 1,
-        label: '并列关系',
-        paragraph_id: 0,
-        start: 2
-      },
-      {
-        end: 2,
-        label: '条件关系',
-        paragraph_id: 0,
-        start: 3
-      },
-      {
-        end: 0,
-        label: '条件关系',
-        paragraph_id: 1,
-        start: 1
-      },
-      {
-        end: 1,
-        label: '因果关系',
-        paragraph_id: 1,
-        start: 2
-      },
-      {
-        end: 0,
-        label: '并列关系',
-        paragraph_id: 2,
-        start: 1
-      },
-      {
-        end: 2,
-        label: '并列关系',
-        paragraph_id: 2,
-        start: 3
-      },
-      {
-        end: 0,
-        label: '条件关系',
+        label: ['R'],
         paragraph_id: 3,
-        start: 1
+        revised_sent: '马尔戴夫。',
+        revised_token_idx: [2],
+        sent_id: 0,
+        token_idx: [2]
       }
     ]
   },
   {
     id: 10,
     title: '葱的成长记',
+    author: { name: '孟心语', class: '五年级三班' },
     content:
       '每天的饭桌上，我总能看到葱的影子。我常常好奇葱是怎么生长的？一天，我想要自己尝试着种葱。\n我问妈妈：“种葱要怎么种？我想自己种葱。”妈妈笑眯眯地从厨房里拿出一把葱。葱的底部有一根根细细的根。根的上面是白白的葱白。越往上颜色越深。”你要把葱的根和葱白剪下，把根载入泥土，葱白留在泥土上。每天浇点水就可以了！”妈妈说道。\n于是，我按照妈妈说的方法，在空的花盆里种下了十只葱头。我充满了期待希望它能快快长高。\n第二天，我带着期待的心情来看望我的葱，但是它却没有发生变化。我心想：这下完了！我的葱长不出来了。妈妈安慰我说：“要耐心一点，过两天肯定会长出来的。”\n过了两天，我惊喜地发现我的葱从土里悄悄地探出头来，我开心地欢呼雀跃。嫩嫩的绿叶散发着清新的香味，夹杂着一丝辣味。\n一天又一天，我的葱每天都在长高。由原来的5厘米长到了现在的15厘米。参差不齐的葱，现在个个蹿得高高的。原本的葱是嫩绿的，现在的葱是深绿的。真是一所迷你的森林！\n葱的生命力非常旺盛。即使把葱花剪掉，它也会继续茁壮生长。这不正是生命的力量吗？',
     scores: [90, 90, 80, 90, 85, 85],
@@ -2029,11 +1059,13 @@ export const ORIGINAL_ESSAYS = [
       '作文内容充实，详细描述了从种植葱开始到葱的成长过程，展示了作者的耐心和感悟。'
     ],
     paragraphComments: [
-      '这一段的句式和结构非常丰富，让人读起来愉悦而不单调。',
-      '作者这一段的语言非常优美，每一个词语都能够恰到好处地表达作者的意图。',
-      '这一段的句子结构非常多变，让人读起来非常流畅，也让人印象深刻。',
-      '这一段的描写比较简单，需要加入更多的细节描写来让场景更加生动。',
-      '这一段内容独具匠心，让读者在思考的过程中得到新的启示和思考。'
+      '这一段的句子结构非常多变，让人读起来非常流畅，也让人印象深刻。文章的语言富有情趣，如“每天的饭桌上，我总能看到葱的影子。”。“我常常好奇葱是怎么生长的？”的运用读来别具风味。',
+      '作者在这一段中提出了独特的思考和观点，让人不由得感叹其想象力和创造力。“笑眯眯”用语生动。“我想自己种葱。””既使文章的语言整齐有气势，也使作者的情感得以更透彻的表达。文中“妈妈笑眯眯地从厨房里拿出一把葱。”与所表达的语意密切相关，所以写得真切、自然，贴近生活实际。“葱的底部有一根根细细的根。”生动具体、趣味盎然。“根的上面是白白的葱白。”这句使文章显得丰富多彩。',
+      '这一段的描写比较平淡，需要更加注意细节的描写和表现。“我充满了期待希望它能快快长高。”描写细腻，真切生动。',
+      '这一段的句子结构非常多变，让人读起来非常流畅，也让人印象深刻。“第二天，我带着期待的心情来看望我的葱，但是它却没有发生变化。”意义丰富，耐人寻味。“我的葱长不出来了。”感情真挚，亲切自然。',
+      '这一段内容独具匠心，让读者在思考的过程中得到新的启示和思考。“欢呼雀跃”情感真切。“过了两天，我惊喜地发现我的葱从土里悄悄地探出头来，我开心地欢呼雀跃。”使得文章显得更有文采，更有气势。“嫩嫩的绿叶散发着清新的香味，夹杂着一丝辣味。”生动具体，感情真挚丰富。',
+      '这一段的描写比较平淡，需要更加注意细节的描写和表现。“参差不齐”生动传神。文中“一天又一天，我的葱每天都在长高。”与所表达的语意密切相关，所以写得真切、自然，贴近生活实际。“参差不齐的葱，现在个个蹿得高高的。”意义丰富，耐人寻味。“原本的葱是嫩绿的，现在的葱是深绿的。”使得文章显得更有文采，更有气势。',
+      '作者在这一段中提出了独特的思考和观点，让人不由得感叹其想象力和创造力。小作者的此句“葱的生命力非常旺盛。”比较生动，能够打动读者。“即使把葱花剪掉，它也会继续茁壮生长。”使得文章显得更有文采，更有气势。'
     ],
     sents: [
       [
@@ -2073,317 +1105,108 @@ export const ORIGINAL_ESSAYS = [
       ['葱的生命力非常旺盛。', '即使把葱花剪掉，它也会继续茁壮生长。', '这不正是生命的力量吗？']
     ],
     good_sents: [
-      {
-        label: '2',
-        paragraph_id: 0,
-        sent_id: 0
-      },
-      {
-        label: '2',
-        paragraph_id: 0,
-        sent_id: 1
-      },
-      {
-        label: '2',
-        paragraph_id: 1,
-        sent_id: 1
-      },
-      {
-        label: '2',
-        paragraph_id: 1,
-        sent_id: 2
-      },
-      {
-        label: '2',
-        paragraph_id: 1,
-        sent_id: 3
-      },
-      {
-        label: '2',
-        paragraph_id: 1,
-        sent_id: 4
-      },
-      {
-        label: '2',
-        paragraph_id: 2,
-        sent_id: 1
-      },
-      {
-        label: '2',
-        paragraph_id: 3,
-        sent_id: 0
-      },
-      {
-        label: '2',
-        paragraph_id: 3,
-        sent_id: 2
-      },
-      {
-        label: '2',
-        paragraph_id: 4,
-        sent_id: 0
-      },
-      {
-        label: '2',
-        paragraph_id: 4,
-        sent_id: 1
-      },
-      {
-        label: '2',
-        paragraph_id: 5,
-        sent_id: 0
-      },
-      {
-        label: '2',
-        paragraph_id: 5,
-        sent_id: 2
-      },
-      {
-        label: '2',
-        paragraph_id: 5,
-        sent_id: 3
-      },
-      {
-        label: '2',
-        paragraph_id: 6,
-        sent_id: 0
-      },
-      {
-        label: '2',
-        paragraph_id: 6,
-        sent_id: 1
-      }
+      { label: '2', paragraph_id: 0, sent_id: 0 },
+      { label: '2', paragraph_id: 0, sent_id: 1 },
+      { label: '2', paragraph_id: 1, sent_id: 1 },
+      { label: '2', paragraph_id: 1, sent_id: 2 },
+      { label: '2', paragraph_id: 1, sent_id: 3 },
+      { label: '2', paragraph_id: 1, sent_id: 4 },
+      { label: '2', paragraph_id: 2, sent_id: 1 },
+      { label: '2', paragraph_id: 3, sent_id: 0 },
+      { label: '2', paragraph_id: 3, sent_id: 2 },
+      { label: '2', paragraph_id: 4, sent_id: 0 },
+      { label: '2', paragraph_id: 4, sent_id: 1 },
+      { label: '2', paragraph_id: 5, sent_id: 0 },
+      { label: '2', paragraph_id: 5, sent_id: 2 },
+      { label: '2', paragraph_id: 5, sent_id: 3 },
+      { label: '2', paragraph_id: 6, sent_id: 0 },
+      { label: '2', paragraph_id: 6, sent_id: 1 }
     ],
     good_words: [
-      {
-        end: 5,
-        paragraph_id: 1,
-        sent_id: 2,
-        start: 2
-      },
-      {
-        end: 33,
-        paragraph_id: 4,
-        sent_id: 0,
-        start: 29
-      },
-      {
-        end: 4,
-        paragraph_id: 5,
-        sent_id: 2,
-        start: 0
-      }
+      { end: 5, paragraph_id: 1, sent_id: 2, start: 2 },
+      { end: 33, paragraph_id: 4, sent_id: 0, start: 29 },
+      { end: 4, paragraph_id: 5, sent_id: 2, start: 0 }
     ],
     sick_sents: [
-      {
-        label: '字符级错误',
-        paragraph_id: 0,
-        sent_id: 0
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 0,
-        sent_id: 1
-      },
-      {
-        label: '其他成分多余',
-        paragraph_id: 0,
-        sent_id: 2
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 1,
-        sent_id: 0
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 1,
-        sent_id: 1
-      },
-      {
-        label: '其他成分多余',
-        paragraph_id: 1,
-        sent_id: 2
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 1,
-        sent_id: 4
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 1,
-        sent_id: 5
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 1,
-        sent_id: 6
-      },
-      {
-        label: '成分残缺型错误',
-        paragraph_id: 1,
-        sent_id: 7
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 1,
-        sent_id: 8
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 2,
-        sent_id: 0
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 3,
-        sent_id: 0
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 3,
-        sent_id: 2
-      },
-      {
-        label: '错别字错误',
-        paragraph_id: 4,
-        sent_id: 0
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 5,
-        sent_id: 0
-      },
-      {
-        label: '主语不明',
-        paragraph_id: 5,
-        sent_id: 1
-      },
-      {
-        label: '成分赘余型错误',
-        paragraph_id: 5,
-        sent_id: 3
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 6,
-        sent_id: 0
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 6,
-        sent_id: 1
-      }
+      { label: '字符级错误', paragraph_id: 0, sent_id: 0 },
+      { label: '字符级错误', paragraph_id: 0, sent_id: 1 },
+      { label: '其他成分多余', paragraph_id: 0, sent_id: 2 },
+      { label: '字符级错误', paragraph_id: 1, sent_id: 0 },
+      { label: '字符级错误', paragraph_id: 1, sent_id: 1 },
+      { label: '其他成分多余', paragraph_id: 1, sent_id: 2 },
+      { label: '字符级错误', paragraph_id: 1, sent_id: 4 },
+      { label: '字符级错误', paragraph_id: 1, sent_id: 5 },
+      { label: '字符级错误', paragraph_id: 1, sent_id: 6 },
+      { label: '成分残缺型错误', paragraph_id: 1, sent_id: 7 },
+      { label: '字符级错误', paragraph_id: 1, sent_id: 8 },
+      { label: '字符级错误', paragraph_id: 2, sent_id: 0 },
+      { label: '字符级错误', paragraph_id: 3, sent_id: 0 },
+      { label: '字符级错误', paragraph_id: 3, sent_id: 2 },
+      { label: '错别字错误', paragraph_id: 4, sent_id: 0 },
+      { label: '字符级错误', paragraph_id: 5, sent_id: 0 },
+      { label: '主语不明', paragraph_id: 5, sent_id: 1 },
+      { label: '成分赘余型错误', paragraph_id: 5, sent_id: 3 },
+      { label: '字符级错误', paragraph_id: 6, sent_id: 0 },
+      { label: '字符级错误', paragraph_id: 6, sent_id: 1 }
     ],
     sent_relations: [
+      { end: 0, label: '并列关系', paragraph_id: 0, start: 1 },
+      { end: 1, label: '条件关系', paragraph_id: 0, start: 2 },
+      { end: 0, label: '条件关系', paragraph_id: 1, start: 1 },
+      { end: 2, label: '解说关系', paragraph_id: 1, start: 3 },
+      { end: 3, label: '并列关系', paragraph_id: 1, start: 4 },
+      { end: 4, label: '并列关系', paragraph_id: 1, start: 5 },
+      { end: 5, label: '目的关系', paragraph_id: 1, start: 6 },
+      { end: 6, label: '因果关系', paragraph_id: 1, start: 7 },
+      { end: 0, label: '顺承关系', paragraph_id: 2, start: 1 },
+      { end: 0, label: '对比关系', paragraph_id: 3, start: 1 },
+      { end: 1, label: '对比关系', paragraph_id: 3, start: 2 },
+      { end: 2, label: '目的关系', paragraph_id: 3, start: 3 },
+      { end: 0, label: '并列关系', paragraph_id: 4, start: 1 },
+      { end: 0, label: '解说关系', paragraph_id: 5, start: 1 },
+      { end: 2, label: '并列关系', paragraph_id: 5, start: 3 },
+      { end: 0, label: '条件关系', paragraph_id: 6, start: 1 },
+      { end: 1, label: '对比关系', paragraph_id: 6, start: 2 }
+    ],
+    textCorrections: [
       {
-        end: 0,
-        label: '并列关系',
-        paragraph_id: 0,
-        start: 1
-      },
-      {
-        end: 1,
-        label: '条件关系',
-        paragraph_id: 0,
-        start: 2
-      },
-      {
-        end: 0,
-        label: '条件关系',
-        paragraph_id: 1,
-        start: 1
-      },
-      {
-        end: 2,
-        label: '解说关系',
-        paragraph_id: 1,
-        start: 3
-      },
-      {
-        end: 3,
-        label: '并列关系',
-        paragraph_id: 1,
-        start: 4
-      },
-      {
-        end: 4,
-        label: '并列关系',
-        paragraph_id: 1,
-        start: 5
-      },
-      {
-        end: 5,
-        label: '目的关系',
-        paragraph_id: 1,
-        start: 6
-      },
-      {
-        end: 6,
-        label: '因果关系',
-        paragraph_id: 1,
-        start: 7
-      },
-      {
-        end: 0,
-        label: '顺承关系',
+        label: ['R'],
         paragraph_id: 2,
-        start: 1
+        revised_sent: '我充满了期待希望他能快快长高。',
+        revised_token_idx: [8],
+        sent_id: 1,
+        token_idx: [8]
       },
       {
-        end: 0,
-        label: '对比关系',
+        label: ['R'],
         paragraph_id: 3,
-        start: 1
+        revised_sent: '第二天，我带着期待的心情来看望我的家，但是它却没有发生变化。',
+        revised_token_idx: [17],
+        sent_id: 0,
+        token_idx: [17]
       },
       {
-        end: 1,
-        label: '对比关系',
-        paragraph_id: 3,
-        start: 2
-      },
-      {
-        end: 2,
-        label: '目的关系',
-        paragraph_id: 3,
-        start: 3
-      },
-      {
-        end: 0,
-        label: '并列关系',
-        paragraph_id: 4,
-        start: 1
-      },
-      {
-        end: 0,
-        label: '解说关系',
+        label: ['R'],
         paragraph_id: 5,
-        start: 1
+        revised_sent: '一天又一天，我的嗨每天都在长高。',
+        revised_token_idx: [8],
+        sent_id: 0,
+        token_idx: [8]
       },
       {
-        end: 2,
-        label: '并列关系',
-        paragraph_id: 5,
-        start: 3
-      },
-      {
-        end: 0,
-        label: '条件关系',
+        label: ['R'],
         paragraph_id: 6,
-        start: 1
-      },
-      {
-        end: 1,
-        label: '对比关系',
-        paragraph_id: 6,
-        start: 2
+        revised_sent: '海的生命力非常旺盛。',
+        revised_token_idx: [0],
+        sent_id: 0,
+        token_idx: [0]
       }
     ]
   },
   {
     id: 11,
     title: '去莫干山玩',
+    author: { name: '贺睿思', class: '五年级一班' },
     content:
       '位于浙江德清的莫干山，是著名的避暑胜地。顺着小路往莫干山上行驶。一路上看见了一片片的竹林还有一棵棵参天大树，那郁郁葱葱的枝叶挡住了骄阳，让人感觉非常凉爽，刚才还是满头大汗，头昏脑胀的你立刻就会有神清气爽之感。听说山上山下的温度相差5，6度真是山上山下两重天啊！到了目的地我下车呼吸着清新的空气，这空气好像被滤过似的，真是一个天然氧吧。\n在莫干山最有趣的活动莫过于”十八湾“漂流了。一开始水塘较少的船只缓缓，后来小艇顺着水势一个俯冲，瞬间激起的水花洒落在身上，带走了屠气，送来了清凉。\n那里不仅有好玩的，还有好吃的。远离了城市的污染，着了的食材更新鲜美味。\n听了我的介绍你心动了吗？心动不如行动，快来莫干山玩吧！',
     scores: [90, 90, 70, 80, 90, 80],
@@ -2396,11 +1219,10 @@ export const ORIGINAL_ESSAYS = [
       '这篇作文的内容充实，描述了莫干山的自然风光和丰富的旅游活动，但可以加入更多细节和感受，让读者更加身临其境。'
     ],
     paragraphComments: [
-      '这一段的句式和结构非常丰富，让人读起来愉悦而不单调。',
-      '作者在这一段中提出了独特的思考和观点，让人不由得感叹其想象力和创造力。',
-      '作者在这一段中提出了独特的思考和观点，让人不由得感叹其想象力和创造力。',
-      '这一段的句子结构非常多变，让人读起来非常流畅，也让人印象深刻。',
-      '这一段的句式和结构非常丰富，让人读起来愉悦而不单调。'
+      '这一段的描写比较简单，需要加入更多的细节描写来让场景更加生动。“头昏脑胀”鲜活生动。“郁郁葱葱”用语生动。“位于浙江德清的莫干山，是著名的避暑胜地。”言简意丰，颇耐咀嚼。',
+      '这一段的描写还可以更加具体，可以加入更多的人物、事物的描写来让文章更加丰富。“在莫干山最有趣的活动莫过于”十八湾“漂流了。”感情真挚，亲切自然。“一开始水塘较少的船只缓缓，后来小艇顺着水势一个俯冲，瞬间激起的水花洒落在身上，带走了屠气，送来了清凉。”既使文章的语言整齐有气势，也使作者的情感得以更透彻的表达。',
+      '这一段的描写比较平淡，需要更加注意细节的描写和表现。',
+      '这一段的描写比较简单，需要加入更多的细节描写来让场景更加生动。'
     ],
     sents: [
       [
@@ -2418,130 +1240,58 @@ export const ORIGINAL_ESSAYS = [
       ['听了我的介绍你心动了吗？', '心动不如行动，快来莫干山玩吧！']
     ],
     good_sents: [
-      {
-        label: '2',
-        paragraph_id: 0,
-        sent_id: 0
-      },
-      {
-        label: '2',
-        paragraph_id: 1,
-        sent_id: 0
-      },
-      {
-        label: '2',
-        paragraph_id: 1,
-        sent_id: 1
-      }
+      { label: '2', paragraph_id: 0, sent_id: 0 },
+      { label: '2', paragraph_id: 1, sent_id: 0 },
+      { label: '2', paragraph_id: 1, sent_id: 1 }
     ],
     good_words: [
-      {
-        end: 58,
-        paragraph_id: 0,
-        sent_id: 2,
-        start: 54
-      },
-      {
-        end: 27,
-        paragraph_id: 0,
-        sent_id: 2,
-        start: 23
-      }
+      { end: 58, paragraph_id: 0, sent_id: 2, start: 54 },
+      { end: 27, paragraph_id: 0, sent_id: 2, start: 23 }
     ],
     sick_sents: [
-      {
-        label: '成分残缺型错误',
-        paragraph_id: 0,
-        sent_id: 0
-      },
-      {
-        label: '主语不明',
-        paragraph_id: 0,
-        sent_id: 1
-      },
-      {
-        label: '成分赘余型错误，主语不明',
-        paragraph_id: 0,
-        sent_id: 2
-      },
-      {
-        label: '成分残缺型错误',
-        paragraph_id: 0,
-        sent_id: 3
-      },
-      {
-        label: '缺少标点',
-        paragraph_id: 0,
-        sent_id: 4
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 1,
-        sent_id: 0
-      },
-      {
-        label: '错别字错误',
-        paragraph_id: 1,
-        sent_id: 1
-      },
-      {
-        label: '成分残缺型错误',
-        paragraph_id: 2,
-        sent_id: 0
-      },
-      {
-        label: '字符级错误，主语不明',
-        paragraph_id: 2,
-        sent_id: 1
-      },
-      {
-        label: '缺少标点',
-        paragraph_id: 3,
-        sent_id: 0
-      }
+      { label: '成分残缺型错误', paragraph_id: 0, sent_id: 0 },
+      { label: '主语不明', paragraph_id: 0, sent_id: 1 },
+      { label: '成分赘余型错误，主语不明', paragraph_id: 0, sent_id: 2 },
+      { label: '成分残缺型错误', paragraph_id: 0, sent_id: 3 },
+      { label: '缺少标点', paragraph_id: 0, sent_id: 4 },
+      { label: '字符级错误', paragraph_id: 1, sent_id: 0 },
+      { label: '错别字错误', paragraph_id: 1, sent_id: 1 },
+      { label: '成分残缺型错误', paragraph_id: 2, sent_id: 0 },
+      { label: '字符级错误，主语不明', paragraph_id: 2, sent_id: 1 },
+      { label: '缺少标点', paragraph_id: 3, sent_id: 0 }
     ],
     sent_relations: [
+      { end: 0, label: '解说关系', paragraph_id: 0, start: 1 },
+      { end: 1, label: '因果关系', paragraph_id: 0, start: 2 },
+      { end: 2, label: '并列关系', paragraph_id: 0, start: 3 },
+      { end: 0, label: '时序关系', paragraph_id: 1, start: 1 },
+      { end: 0, label: '并列关系', paragraph_id: 2, start: 1 },
+      { end: 0, label: '时序关系', paragraph_id: 3, start: 1 }
+    ],
+    textCorrections: [
       {
-        end: 0,
-        label: '解说关系',
-        paragraph_id: 0,
-        start: 1
-      },
-      {
-        end: 1,
-        label: '因果关系',
-        paragraph_id: 0,
-        start: 2
-      },
-      {
-        end: 2,
-        label: '并列关系',
-        paragraph_id: 0,
-        start: 3
-      },
-      {
-        end: 0,
-        label: '时序关系',
+        label: ['R'],
         paragraph_id: 1,
-        start: 1
+        revised_sent:
+          '一开始水塘较少的船只缓缓，后来小艇顺着水势一个俯冲，瞬间激起的水花洒落在身上，带走了血气，送来了清凉。',
+        revised_token_idx: [42],
+        sent_id: 1,
+        token_idx: [42]
       },
       {
-        end: 0,
-        label: '并列关系',
+        label: ['R', 'R'],
         paragraph_id: 2,
-        start: 1
-      },
-      {
-        end: 0,
-        label: '时序关系',
-        paragraph_id: 3,
-        start: 1
+        revised_sent: '远离了城市的污染，早种的食材更新鲜美味。',
+        revised_token_idx: [9, 10],
+        sent_id: 1,
+        token_idx: [9, 10]
       }
     ]
   },
   {
     id: 12,
     title: '',
+    author: { name: '白文辉', class: '六年级一班' },
     content:
       '尊敬的吕老师：\n您好！\n这周四的语文课上，我没控制好自己，在班级的不良现象前起哄、大笑，破坏了班级上课秩序。您发现了我的这个错误，并及时对我进行了严厉的批评和指正\n回家后我仔细思考了当时的行为，我感到千般懊恼，万番悔恨。我身为班级中队委员，不仅不应该在不良行为前起哄，而应该及时制止这些行为的发生，弘扬正能量，为同学们树立模范带头作用。我决心从今以后一定要改正错误，严格要求自己，做一名品学兼优的好学生。\n从四年级开始，您来到我班担任班主任。在课堂上您总是面带笑容，让人如沐春风，我们仿佛邀游在语文的无垠海洋中。您批改作业格外仔细认真，每篇作业都写上了详细的批注，因此我越来越喜欢作文了，作文水平有了明显进步。因为您，我才会对语文产生浓厚的兴趣！\n一日为师，终身为母！谢谢您对我悉心的引导！您就是我成长道路上的一盏明灯，令我对未来充满信心。\n祝\n万事如意！天天开心！\n您的学生：孙峻昊\n2020年12月29日',
     scores: [90, 90, 80, 80, 85, 85],
@@ -2555,10 +1305,14 @@ export const ORIGINAL_ESSAYS = [
     ],
     paragraphComments: [
       '作者这一段的语言非常优美，每一个词语都能够恰到好处地表达作者的意图。',
+      '这一段内容独具匠心，让读者在思考的过程中得到新的启示和思考。',
+      '这一段内容独具匠心，让读者在思考的过程中得到新的启示和思考。',
+      '这一段的描写比较平淡，需要更加注意细节的描写和表现。“品学兼优”为文章增添了亮色，可见作者有较强的写作功底。',
+      '这一段的情感表达非常到位，让人不由自主地被感染和打动。“在课堂上您总是面带笑容，让人如沐春风，我们仿佛邀游在语文的无垠海洋中。”描写细腻，真切生动。',
+      '这一段内容独具匠心，让读者在思考的过程中得到新的启示和思考。“您就是我成长道路上的一盏明灯，令我对未来充满信心。”为文章平添了许多文采。',
+      '作者在这一段中运用了不同的句式和结构，让文章更加生动有趣。',
       '作者在这一段中运用了丰富的词汇和词语，让人印象深刻。',
-      '这一段的描写比较简单，需要加入更多的细节描写来让场景更加生动。',
-      '这一段的句子结构非常多变，让人读起来非常流畅，也让人印象深刻。',
-      '这一段的句子结构非常多变，让人读起来非常流畅，也让人印象深刻。'
+      '作者这一段的语言非常优美，每一个词语都能够恰到好处地表达作者的意图。'
     ],
     sents: [
       ['尊敬的吕老师：'],
@@ -2589,145 +1343,58 @@ export const ORIGINAL_ESSAYS = [
       ['2020年12月29日']
     ],
     good_sents: [
-      {
-        label: '2',
-        paragraph_id: 4,
-        sent_id: 1
-      },
-      {
-        label: '1',
-        paragraph_id: 5,
-        sent_id: 2
-      }
+      { label: '2', paragraph_id: 4, sent_id: 1 },
+      { label: '1', paragraph_id: 5, sent_id: 2 }
     ],
-    good_words: [
-      {
-        end: 29,
-        paragraph_id: 3,
-        sent_id: 2,
-        start: 25
-      }
-    ],
+    good_words: [{ end: 29, paragraph_id: 3, sent_id: 2, start: 25 }],
     sick_sents: [
-      {
-        label: '字符级错误',
-        paragraph_id: 0,
-        sent_id: 0
-      },
-      {
-        label: '其他成分多余',
-        paragraph_id: 2,
-        sent_id: 0
-      },
-      {
-        label: '其他成分多余',
-        paragraph_id: 2,
-        sent_id: 1
-      },
-      {
-        label: '其他成分多余',
-        paragraph_id: 3,
-        sent_id: 0
-      },
-      {
-        label: '成分搭配不当型错误',
-        paragraph_id: 3,
-        sent_id: 1
-      },
-      {
-        label: '其他成分多余',
-        paragraph_id: 3,
-        sent_id: 2
-      },
-      {
-        label: '错别字错误',
-        paragraph_id: 4,
-        sent_id: 1
-      },
-      {
-        label: '其他成分多余',
-        paragraph_id: 4,
-        sent_id: 2
-      },
-      {
-        label: '成分赘余型错误',
-        paragraph_id: 4,
-        sent_id: 3
-      },
-      {
-        label: '成分残缺型错误',
-        paragraph_id: 5,
-        sent_id: 0
-      },
-      {
-        label: '其他成分多余',
-        paragraph_id: 5,
-        sent_id: 1
-      },
-      {
-        label: '其他成分多余',
-        paragraph_id: 5,
-        sent_id: 2
-      },
-      {
-        label: '主语不明',
-        paragraph_id: 8,
-        sent_id: 0
-      },
-      {
-        label: '缺少标点',
-        paragraph_id: 9,
-        sent_id: 0
-      }
+      { label: '字符级错误', paragraph_id: 0, sent_id: 0 },
+      { label: '其他成分多余', paragraph_id: 2, sent_id: 0 },
+      { label: '其他成分多余', paragraph_id: 2, sent_id: 1 },
+      { label: '其他成分多余', paragraph_id: 3, sent_id: 0 },
+      { label: '成分搭配不当型错误', paragraph_id: 3, sent_id: 1 },
+      { label: '其他成分多余', paragraph_id: 3, sent_id: 2 },
+      { label: '错别字错误', paragraph_id: 4, sent_id: 1 },
+      { label: '其他成分多余', paragraph_id: 4, sent_id: 2 },
+      { label: '成分赘余型错误', paragraph_id: 4, sent_id: 3 },
+      { label: '成分残缺型错误', paragraph_id: 5, sent_id: 0 },
+      { label: '其他成分多余', paragraph_id: 5, sent_id: 1 },
+      { label: '其他成分多余', paragraph_id: 5, sent_id: 2 },
+      { label: '主语不明', paragraph_id: 8, sent_id: 0 },
+      { label: '缺少标点', paragraph_id: 9, sent_id: 0 }
     ],
     sent_relations: [
+      { end: 0, label: '并列关系', paragraph_id: 2, start: 1 },
+      { end: 0, label: '对比关系', paragraph_id: 3, start: 1 },
+      { end: 1, label: '目的关系', paragraph_id: 3, start: 2 },
+      { end: 0, label: '时序关系', paragraph_id: 4, start: 1 },
+      { end: 1, label: '因果关系', paragraph_id: 4, start: 2 },
+      { end: 2, label: '因果关系', paragraph_id: 4, start: 3 },
+      { end: 1, label: '因果关系', paragraph_id: 5, start: 2 }
+    ],
+    textCorrections: [
       {
-        end: 0,
-        label: '并列关系',
+        label: ['A'],
         paragraph_id: 2,
-        start: 1
+        revised_sent: '您发现了我的这个错误，并及时对我进行了严厉的批评和指正。',
+        revised_token_idx: [27],
+        sent_id: 1,
+        token_idx: [27]
       },
       {
-        end: 0,
-        label: '对比关系',
-        paragraph_id: 3,
-        start: 1
-      },
-      {
-        end: 1,
-        label: '目的关系',
-        paragraph_id: 3,
-        start: 2
-      },
-      {
-        end: 0,
-        label: '时序关系',
-        paragraph_id: 4,
-        start: 1
-      },
-      {
-        end: 1,
-        label: '因果关系',
-        paragraph_id: 4,
-        start: 2
-      },
-      {
-        end: 2,
-        label: '因果关系',
-        paragraph_id: 4,
-        start: 3
-      },
-      {
-        end: 1,
-        label: '因果关系',
+        label: ['R', 'R'],
         paragraph_id: 5,
-        start: 2
+        revised_sent: '谢谢您对我细心地引导！',
+        revised_token_idx: [5, 7],
+        sent_id: 1,
+        token_idx: [5, 7]
       }
     ]
   },
   {
     id: 13,
     title: '破蛹而出的蝴蝶',
+    author: { name: '刘子怡', class: '五年级四班' },
     content:
       '今天,我亲眼睹了蝴蝶是如何破蛹而出的呢!\n蝴蝶先用了1分钟用火努力地把蛹顶开,再用45秒把它的前两只足从踊中伸出来,正当它想把身体全部抽出来时,大事不妙!它的下半身竟然卡在了蛹里.我着急得像热锅上的蚂蚁,。小蝴蝶先试着用它现在仅有的两只足把蛹给扒开, 2分20秒后从通蛹中爬出来,可惜并没有成功。过了1分35秒,它又试着用它自己的蛹和其它的蛹相互碰撞,好让它的蛹破裂,过了2~3分钟后,再从蛹里出来。它试了一次又一次,也撞了一次又一次。5 ~ 10分钟后,小蝴蝶的蛹裂开了一点儿缝,小蝴蝶就可以从蛹里出来啦!我在心中默默给它鼓掌,为它的努力而鼓掌,为它的坚持而鼓掌。\n破蛹而出的小蝴蝶在一片树叶上,晒干翅膀,过了10 ~ 15分钟后,它的翅膀已经全部干透了，并且翅膀上带着绚丽的光彩,它的翅膀是淡蓝色的,翅膀边缘是深蓝色的，还带着5、6个小白点儿,漂亮级了!小蝴蝶先试着扑腾扑腾翅膀,过了25分钟,它已经可以飞了。它飞到了一朵小巧的花儿上,这是小蝴蝶第一次采花蜜,它犹如一个可爱的少女,在花朵上跳着华尔兹。\n我为我亲眼见证了一个新生而高兴。',
     scores: [90, 90, 70, 80, 80, 80],
@@ -2740,13 +1407,11 @@ export const ORIGINAL_ESSAYS = [
       '作文内容充实，描述了蝴蝶破蛹而出的全过程，细节刻画丰富生动，但部分描写可以更加生动详实。'
     ],
     paragraphComments: [
-      '这一段内容独具匠心，让读者在思考的过程中得到新的启示和思考。',
-      '这一段内容独具匠心，让读者在思考的过程中得到新的启示和思考。',
-      '作者在这一段中运用了丰富的词汇和词语，让人印象深刻。',
-      '作者在这一段中表达了深刻的情感，让人不由自主地体会到其中的情感和感受。',
-      '这一段的描写比较平淡，需要更加注意细节的描写和表现。'
+      '这一段的句子结构非常多变，让人读起来非常流畅，也让人印象深刻。文章的语言富有情趣，如“今天,我亲眼睹了蝴蝶是如何破蛹而出的呢!”。',
+      '这一段的描写比较平淡，需要更加注意细节的描写和表现。“热锅上的蚂蚁”用语生动。文中“蝴蝶先用了1分钟用火努力地把蛹顶开,再用45秒把它的前两只足从踊中伸出来,正当它想把身体全部抽出来时,大事不妙!它的下半身竟然卡在了蛹里.我着急得像热锅上的蚂蚁,。”与所表达的语意密切相关，所以写得真切、自然，贴近生活实际。“小蝴蝶先试着用它现在仅有的两只足把蛹给扒开, 2分20秒后从通蛹中爬出来,可惜并没有成功。”的运用读来别具风味。“它试了一次又一次,也撞了一次又一次。”描写细腻，生动感人。“5 ~ 10分钟后,小蝴蝶的蛹裂开了一点儿缝,小蝴蝶就可以从蛹里出来啦!我在心中默默给它鼓掌,为它的努力而鼓掌,为它的坚持而鼓掌。”生动具体，感情真挚丰富。',
+      '作者在这一段中运用了不同的句式和结构，让文章更加生动有趣。文章的语言富有情趣，如“破蛹而出的小蝴蝶在一片树叶上,晒干翅膀,过了10 ~ 15分钟后,它的翅膀已经全部干透了，并且翅膀上带着绚丽的光彩,它的翅膀是淡蓝色的,翅膀边缘是深蓝色的，还带着5、6个小白点儿,漂亮级了!小蝴蝶先试着扑腾扑腾翅膀,过了25分钟,它已经可以飞了。”。文中“它飞到了一朵小巧的花儿上,这是小蝴蝶第一次采花蜜,它犹如一个可爱的少女,在花朵上跳着华尔兹。”与所表达的语意密切相关，所以写得真切、自然，贴近生活实际。',
+      '作者这一段的语言非常优美，每一个词语都能够恰到好处地表达作者的意图。'
     ],
-
     sents: [
       ['今天,我亲眼睹了蝴蝶是如何破蛹而出的呢!'],
       [
@@ -2763,157 +1428,88 @@ export const ORIGINAL_ESSAYS = [
       ['我为我亲眼见证了一个新生而高兴。']
     ],
     good_sents: [
-      {
-        label: '2',
-        paragraph_id: 0,
-        sent_id: 0
-      },
-      {
-        label: '1',
-        paragraph_id: 1,
-        sent_id: 0
-      },
-      {
-        label: '2',
-        paragraph_id: 1,
-        sent_id: 1
-      },
-      {
-        label: '2',
-        paragraph_id: 1,
-        sent_id: 3
-      },
-      {
-        label: '2',
-        paragraph_id: 1,
-        sent_id: 4
-      },
-      {
-        label: '2',
-        paragraph_id: 2,
-        sent_id: 0
-      },
-      {
-        label: '2',
-        paragraph_id: 2,
-        sent_id: 1
-      }
+      { label: '2', paragraph_id: 0, sent_id: 0 },
+      { label: '1', paragraph_id: 1, sent_id: 0 },
+      { label: '2', paragraph_id: 1, sent_id: 1 },
+      { label: '2', paragraph_id: 1, sent_id: 3 },
+      { label: '2', paragraph_id: 1, sent_id: 4 },
+      { label: '2', paragraph_id: 2, sent_id: 0 },
+      { label: '2', paragraph_id: 2, sent_id: 1 }
     ],
-    good_words: [
-      {
-        end: 80,
-        paragraph_id: 1,
-        sent_id: 0,
-        start: 74
-      }
-    ],
+    good_words: [{ end: 80, paragraph_id: 1, sent_id: 0, start: 74 }],
     sick_sents: [
-      {
-        label: '其他成分多余',
-        paragraph_id: 0,
-        sent_id: 0
-      },
-      {
-        label: '错别字错误，错用标点',
-        paragraph_id: 1,
-        sent_id: 0
-      },
-      {
-        label: '错别字错误',
-        paragraph_id: 1,
-        sent_id: 1
-      },
-      {
-        label: '错用标点',
-        paragraph_id: 1,
-        sent_id: 2
-      },
-      {
-        label: '错别字错误',
-        paragraph_id: 1,
-        sent_id: 3
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 1,
-        sent_id: 4
-      },
-      {
-        label: '错用标点',
-        paragraph_id: 2,
-        sent_id: 0
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 2,
-        sent_id: 1
-      },
-      {
-        label: '其他成分多余',
-        paragraph_id: 3,
-        sent_id: 0
-      }
+      { label: '其他成分多余', paragraph_id: 0, sent_id: 0 },
+      { label: '错别字错误，错用标点', paragraph_id: 1, sent_id: 0 },
+      { label: '错别字错误', paragraph_id: 1, sent_id: 1 },
+      { label: '错用标点', paragraph_id: 1, sent_id: 2 },
+      { label: '错别字错误', paragraph_id: 1, sent_id: 3 },
+      { label: '字符级错误', paragraph_id: 1, sent_id: 4 },
+      { label: '错用标点', paragraph_id: 2, sent_id: 0 },
+      { label: '字符级错误', paragraph_id: 2, sent_id: 1 },
+      { label: '其他成分多余', paragraph_id: 3, sent_id: 0 }
     ],
     sent_relations: [
+      { end: 0, label: '顺承关系', paragraph_id: 1, start: 1 },
+      { end: 1, label: '因果关系', paragraph_id: 1, start: 2 },
+      { end: 2, label: '时序关系', paragraph_id: 1, start: 3 },
+      { end: 3, label: '并列关系', paragraph_id: 1, start: 4 },
+      { end: 4, label: '并列关系', paragraph_id: 1, start: 5 },
+      { end: 5, label: '时序关系', paragraph_id: 1, start: 6 },
+      { end: 6, label: '对比关系', paragraph_id: 1, start: 7 },
+      { end: 0, label: '并列关系', paragraph_id: 2, start: 1 },
+      { end: 1, label: '时序关系', paragraph_id: 2, start: 2 }
+    ],
+    textCorrections: [
       {
-        end: 0,
-        label: '顺承关系',
-        paragraph_id: 1,
-        start: 1
+        label: ['A'],
+        paragraph_id: 0,
+        revised_sent: '今天,我亲眼观睹了蝴蝶是如何破蛹而出的呢!',
+        revised_token_idx: [6],
+        sent_id: 0,
+        token_idx: [6]
       },
       {
-        end: 1,
-        label: '因果关系',
+        label: ['D'],
         paragraph_id: 1,
-        start: 2
+        revised_sent:
+          '小蝴蝶先试着用它现在仅有的两只足把蛹给扒开,2分20秒后从蛹中爬出来,可惜并没有成功。',
+        revised_token_idx: [29],
+        sent_id: 1,
+        token_idx: [29]
       },
       {
-        end: 2,
-        label: '时序关系',
+        label: ['R'],
         paragraph_id: 1,
-        start: 3
+        revised_sent:
+          '过了1分35秒,它又试着用它自己的蛹和其它的蛹相互碰撞,好让它的蛹破裂,过了2u3分钟后,再从蛹里出来。',
+        revised_token_idx: [39],
+        sent_id: 2,
+        token_idx: [39]
       },
       {
-        end: 3,
-        label: '并列关系',
+        label: ['R'],
         paragraph_id: 1,
-        start: 4
+        revised_sent:
+          '5u10分钟后,小蝴蝶的蛹裂开了一点儿缝,小蝴蝶就可以从蛹里出来啦!我在心中默默给它鼓掌,为它的努力而鼓掌,为它的坚持而鼓掌。',
+        revised_token_idx: [1],
+        sent_id: 4,
+        token_idx: [1]
       },
       {
-        end: 4,
-        label: '并列关系',
-        paragraph_id: 1,
-        start: 5
-      },
-      {
-        end: 5,
-        label: '时序关系',
-        paragraph_id: 1,
-        start: 6
-      },
-      {
-        end: 6,
-        label: '对比关系',
-        paragraph_id: 1,
-        start: 7
-      },
-      {
-        end: 0,
-        label: '并列关系',
+        label: ['R'],
         paragraph_id: 2,
-        start: 1
-      },
-      {
-        end: 1,
-        label: '时序关系',
-        paragraph_id: 2,
-        start: 2
+        revised_sent:
+          '破蛹而出的小蝴蝶在一片树叶上,晒干翅膀,过了10u15分钟后,它的翅膀已经全部干透了，并且翅膀上带着绚丽的光彩,它的翅膀是淡蓝色的,翅膀边缘是深蓝色的，还带着5、6个小白点儿,漂亮级了!小蝴蝶先试着扑腾扑腾翅膀,过了25分钟,它已经可以飞了。',
+        revised_token_idx: [24],
+        sent_id: 0,
+        token_idx: [24]
       }
     ]
   },
   {
     id: 14,
     title: '迷人的海昌海洋公园',
+    author: { name: '帅俊彦', class: '六年级一班' },
     content:
       '暑假里，爸爸，妈妈带着我去了上海昌海洋公园，我来向大家推荐一下这迷人的昌公园吧！\n公园里有很多刺激的项目，比如过山车、火山漂流等。我来讲一讲火山漂流吧。上了一个圆形的船，就可以听见千面人大声尖叫，我心想：有什么好害怕的，简直就是小菜一碟。我们坐在圆船上顺流而下，后来一个长长的巨大的轨道出现在我的眼前，很快到达了最高点，一个巨大的”大喇叭“出现了，我们瞬间掉了下去，我们一会冲到了右边，一会儿又冲到了左边，我们变成了”落汤鸡“。终于火山漂流结束了。\n这里还有许多好看表演，比如虎鲸表演，瞧！驯养员一个手势，虎就会表演各种精彩的演出。虎鲸用大大的尾巴拍打出巨大的水花，观众的雨伞都撑不住，只能落荒而逃，他们还会和观众做游戏，还会摇头摆尾。\n这里还有许多小店，品种多，个个都非常精致，可以买一些喜欢的物品留作纪念，也可以买了送给好朋友。\n晚上的夜景迷人，灯光璀璨，听了我的推荐，小伙伴们是不是也很想去迷人的海昌海洋公园呢？',
     scores: [90, 90, 70, 80, 80, 85],
@@ -2926,11 +1522,11 @@ export const ORIGINAL_ESSAYS = [
       '这篇作文内容充实，对上海昌海洋公园进行了详细描述，包括项目体验、表演精彩、购物以及夜景。可以适当增加一些过山车等项目的描述，以及更多细节描写，让读者更有代入感。总体来说，内容充实，给予良好评价。'
     ],
     paragraphComments: [
-      '这一段的句子结构非常多变，让人读起来非常流畅，也让人印象深刻。',
-      '作者在这一段中提出了独特的思考和观点，让人不由得感叹其想象力和创造力。',
-      '这一段的句子结构非常多变，让人读起来非常流畅，也让人印象深刻。',
       '这一段的描写还可以更加具体，可以加入更多的人物、事物的描写来让文章更加丰富。',
-      '这一段内容独具匠心，让读者在思考的过程中得到新的启示和思考。'
+      '这一段的描写还可以更加具体，可以加入更多的人物、事物的描写来让文章更加丰富。“我们坐在圆船上顺流而下，后来一个长长的巨大的轨道出现在我的眼前，很快到达了最高点，一个巨大的”大喇叭“出现了，我们瞬间掉了下去，我们一会冲到了右边，一会儿又冲到了左边，我们变成了”落汤鸡“。”感情真挚，亲切自然。小作者的此句“终于火山漂流结束了。”比较生动，能够打动读者。',
+      '作者在这一段中阐述了深刻的见解和观点，让人不由自主地思考和反思。“落荒而逃”感情真挚。“驯养员一个手势，虎就会表演各种精彩的演出。”言简意丰，颇耐咀嚼。文章的语言富有情趣，如“虎鲸用大大的尾巴拍打出巨大的水花，观众的雨伞都撑不住，只能落荒而逃，他们还会和观众做游戏，还会摇头摆尾。”。',
+      '这一段的句式和结构非常丰富，让人读起来愉悦而不单调。',
+      '作者在这一段中提出了独特的思考和观点，让人不由得感叹其想象力和创造力。'
     ],
     sents: [
       ['暑假里，爸爸，妈妈带着我去了上海昌海洋公园，我来向大家推荐一下这迷人的昌公园吧！'],
@@ -2952,123 +1548,46 @@ export const ORIGINAL_ESSAYS = [
       ['晚上的夜景迷人，灯光璀璨，听了我的推荐，小伙伴们是不是也很想去迷人的海昌海洋公园呢？']
     ],
     good_sents: [
-      {
-        label: '1',
-        paragraph_id: 1,
-        sent_id: 3
-      },
-      {
-        label: '2',
-        paragraph_id: 1,
-        sent_id: 4
-      },
-      {
-        label: '2',
-        paragraph_id: 2,
-        sent_id: 1
-      },
-      {
-        label: '2',
-        paragraph_id: 2,
-        sent_id: 2
-      }
+      { label: '1', paragraph_id: 1, sent_id: 3 },
+      { label: '2', paragraph_id: 1, sent_id: 4 },
+      { label: '2', paragraph_id: 2, sent_id: 1 },
+      { label: '2', paragraph_id: 2, sent_id: 2 }
     ],
-    good_words: [
-      {
-        end: 33,
-        paragraph_id: 2,
-        sent_id: 2,
-        start: 29
-      }
-    ],
+    good_words: [{ end: 33, paragraph_id: 2, sent_id: 2, start: 29 }],
     sick_sents: [
-      {
-        label: '错别字错误',
-        paragraph_id: 0,
-        sent_id: 0
-      },
-      {
-        label: '成分残缺型错误',
-        paragraph_id: 1,
-        sent_id: 0
-      },
-      {
-        label: '错别字错误',
-        paragraph_id: 1,
-        sent_id: 1
-      },
-      {
-        label: '主语不明',
-        paragraph_id: 1,
-        sent_id: 2
-      },
-      {
-        label: '错用标点',
-        paragraph_id: 1,
-        sent_id: 3
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 1,
-        sent_id: 4
-      },
-      {
-        label: '成分搭配不当型错误',
-        paragraph_id: 2,
-        sent_id: 0
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 2,
-        sent_id: 1
-      },
-      {
-        label: '缺字漏字',
-        paragraph_id: 2,
-        sent_id: 2
-      },
-      {
-        label: '成分残缺型错误',
-        paragraph_id: 3,
-        sent_id: 0
-      }
+      { label: '错别字错误', paragraph_id: 0, sent_id: 0 },
+      { label: '成分残缺型错误', paragraph_id: 1, sent_id: 0 },
+      { label: '错别字错误', paragraph_id: 1, sent_id: 1 },
+      { label: '主语不明', paragraph_id: 1, sent_id: 2 },
+      { label: '错用标点', paragraph_id: 1, sent_id: 3 },
+      { label: '字符级错误', paragraph_id: 1, sent_id: 4 },
+      { label: '成分搭配不当型错误', paragraph_id: 2, sent_id: 0 },
+      { label: '字符级错误', paragraph_id: 2, sent_id: 1 },
+      { label: '缺字漏字', paragraph_id: 2, sent_id: 2 },
+      { label: '成分残缺型错误', paragraph_id: 3, sent_id: 0 }
     ],
     sent_relations: [
+      { end: 1, label: '因果关系', paragraph_id: 1, start: 2 },
+      { end: 2, label: '时序关系', paragraph_id: 1, start: 3 },
+      { end: 3, label: '顺承关系', paragraph_id: 1, start: 4 },
+      { end: 0, label: '因果关系', paragraph_id: 2, start: 1 },
+      { end: 1, label: '并列关系', paragraph_id: 2, start: 2 }
+    ],
+    textCorrections: [
       {
-        end: 1,
-        label: '因果关系',
-        paragraph_id: 1,
-        start: 2
-      },
-      {
-        end: 2,
-        label: '时序关系',
-        paragraph_id: 1,
-        start: 3
-      },
-      {
-        end: 3,
-        label: '顺承关系',
-        paragraph_id: 1,
-        start: 4
-      },
-      {
-        end: 0,
-        label: '因果关系',
+        label: ['A'],
         paragraph_id: 2,
-        start: 1
-      },
-      {
-        end: 1,
-        label: '并列关系',
-        paragraph_id: 2,
-        start: 2
+        revised_sent: '驯养员员一个手势，虎就会表演各种精彩的演出。',
+        revised_token_idx: [3],
+        sent_id: 1,
+        token_idx: [3]
       }
     ]
   },
   {
     id: 15,
     title: '单独睡',
+    author: { name: '马小雨', class: '四年级二班' },
     content:
       '我有过数次“心儿怦怦跳”的经历,但最让我难忘的就是单独睡这件事了.\n“妈妈,今天我要一个人睡,因为我已经长大了!”我的好朋友轩轩已经敢一个人睡觉了而我还不敢，爸爸、妈妈看了我一眼,好像在问我:“你敢不敢一个人睡呢?这时我心里真不是滋味儿,于是也想试试,就鼓起勇气对妈妈说了。她一只答应,坐在旁边的爸爸听见了,对我竖起了大拇指说:“川川真棒,真是长大了!”我听了,心里美滋的。\n到了晚上,我抱着心爱的小兔子，爬上床,盖好被子，闲上了眼睛。可是毕竟是第一次自己睡,我心里这是有点儿害怕的,我不由的睁开了眼睛 ……. 妈妈过来看看我,我对妈妈说:”可以开个小夜灯吗?“妈妈说:“你要勇敢点,你是男子汉，长大了你要怎么帮妈妈呢?”说着把门关上了。可是我发现我害怕睡不着觉啊!眼睛看看周围黑乎乎的一片,我心怦怦跳,心都提到了嗓子眼儿,脑海里出现了各种各样的画面,害怕地汗毛都竖起来了。我像兔子一样的跳到了妈妈的房间里,哭着求妈妈让我在睡一晚吧!不一会儿,我进入了甜甜的梦中!\n现在的我早已敢一个人睡觉了,但是当想起第一次单独睡的情景，还会情不禁地红起脸来。',
     scores: [90, 90, 70, 90, 80, 78],
@@ -3081,11 +1600,10 @@ export const ORIGINAL_ESSAYS = [
       '这篇作文的内容充实，涉及了作者的成长经历和内心独白。作者描述了自己在尝试独自睡觉时的内心挣扎和成长过程，展现出了成长的勇气和渴望。然而，作文在描述情感时可以更加细腻生动，增加些许细节来丰富作文内容，会使作文更加生动感人。'
     ],
     paragraphComments: [
-      '作者在这一段中运用了丰富的词汇和词语，让人印象深刻。',
-      '这一段内容独具匠心，让读者在思考的过程中得到新的启示和思考。',
-      '作者这一段的语言非常优美，每一个词语都能够恰到好处地表达作者的意图。',
-      '作者这一段的语言非常优美，每一个词语都能够恰到好处地表达作者的意图。',
-      '作者在这一段中阐述了深刻的见解和观点，让人不由自主地思考和反思。'
+      '作者在这一段中提出了独特的思考和观点，让人不由得感叹其想象力和创造力。',
+      '这一段的句式和结构非常丰富，让人读起来愉悦而不单调。“她一只答应,坐在旁边的爸爸听见了,对我竖起了大拇指说:“川川真棒,真是长大了!”我听了,心里美滋的。”描写细腻，生动感人。',
+      '这一段的描写比较简单，需要加入更多的细节描写来让场景更加生动。“黑乎乎”用得精准。“到了晚上,我抱着心爱的小兔子，爬上床,盖好被子，闲上了眼睛。”韵味悠长。文章的语言比较文雅，如“. 妈妈过来看看我,我对妈妈说:”可以开个小夜灯吗?”。“可是我发现我害怕睡不着觉啊!眼睛看看周围黑乎乎的一片,我心怦怦跳,心都提到了嗓子眼儿,脑海里出现了各种各样的画面,害怕地汗毛都竖起来了。”的运用读来别具风味。“我像兔子一样的跳到了妈妈的房间里,哭着求妈妈让我在睡一晚吧!不一会儿,我进入了甜甜的梦中!”使得文章显得更有文采，更有气势。',
+      '这一段的句式和结构非常丰富，让人读起来愉悦而不单调。'
     ],
     sents: [
       ['我有过数次“心儿怦怦跳”的经历,但最让我难忘的就是单独睡这件事了.'],
@@ -3106,216 +1624,88 @@ export const ORIGINAL_ESSAYS = [
       ['现在的我早已敢一个人睡觉了,但是当想起第一次单独睡的情景，还会情不禁地红起脸来。']
     ],
     good_sents: [
-      {
-        label: '2',
-        paragraph_id: 1,
-        sent_id: 2
-      },
-      {
-        label: '2',
-        paragraph_id: 2,
-        sent_id: 0
-      },
-      {
-        label: '2',
-        paragraph_id: 2,
-        sent_id: 2
-      },
-      {
-        label: '1',
-        paragraph_id: 2,
-        sent_id: 5
-      },
-      {
-        label: '1',
-        paragraph_id: 2,
-        sent_id: 6
-      }
+      { label: '2', paragraph_id: 1, sent_id: 2 },
+      { label: '2', paragraph_id: 2, sent_id: 0 },
+      { label: '2', paragraph_id: 2, sent_id: 2 },
+      { label: '1', paragraph_id: 2, sent_id: 5 },
+      { label: '1', paragraph_id: 2, sent_id: 6 }
     ],
-    good_words: [
-      {
-        end: 23,
-        paragraph_id: 2,
-        sent_id: 5,
-        start: 20
-      }
-    ],
+    good_words: [{ end: 23, paragraph_id: 2, sent_id: 5, start: 20 }],
     sick_sents: [
-      {
-        label: '错用标点',
-        paragraph_id: 0,
-        sent_id: 0
-      },
-      {
-        label: '字符级错误，成分赘余型错误',
-        paragraph_id: 1,
-        sent_id: 0
-      },
-      {
-        label: '成分赘余型错误',
-        paragraph_id: 1,
-        sent_id: 1
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 1,
-        sent_id: 2
-      },
-      {
-        label: '错别字错误',
-        paragraph_id: 2,
-        sent_id: 0
-      },
-      {
-        label: '错别字错误',
-        paragraph_id: 2,
-        sent_id: 1
-      },
-      {
-        label: '错用标点',
-        paragraph_id: 2,
-        sent_id: 2
-      },
-      {
-        label: '错用标点',
-        paragraph_id: 2,
-        sent_id: 3
-      },
-      {
-        label: '成分残缺型错误',
-        paragraph_id: 2,
-        sent_id: 4
-      },
-      {
-        label: '错别字错误',
-        paragraph_id: 2,
-        sent_id: 5
-      },
-      {
-        label: '错别字错误，成分赘余型错误',
-        paragraph_id: 2,
-        sent_id: 6
-      },
-      {
-        label: '成分赘余型错误',
-        paragraph_id: 3,
-        sent_id: 0
-      }
+      { label: '错用标点', paragraph_id: 0, sent_id: 0 },
+      { label: '字符级错误，成分赘余型错误', paragraph_id: 1, sent_id: 0 },
+      { label: '成分赘余型错误', paragraph_id: 1, sent_id: 1 },
+      { label: '字符级错误', paragraph_id: 1, sent_id: 2 },
+      { label: '错别字错误', paragraph_id: 2, sent_id: 0 },
+      { label: '错别字错误', paragraph_id: 2, sent_id: 1 },
+      { label: '错用标点', paragraph_id: 2, sent_id: 2 },
+      { label: '错用标点', paragraph_id: 2, sent_id: 3 },
+      { label: '成分残缺型错误', paragraph_id: 2, sent_id: 4 },
+      { label: '错别字错误', paragraph_id: 2, sent_id: 5 },
+      { label: '错别字错误，成分赘余型错误', paragraph_id: 2, sent_id: 6 },
+      { label: '成分赘余型错误', paragraph_id: 3, sent_id: 0 }
     ],
     sent_relations: [
+      { end: 0, label: '并列关系', paragraph_id: 1, start: 1 },
+      { end: 1, label: '因果关系', paragraph_id: 1, start: 2 },
+      { end: 2, label: '顺承关系', paragraph_id: 1, start: 3 },
+      { end: 3, label: '顺承关系', paragraph_id: 1, start: 4 },
+      { end: 0, label: '并列关系', paragraph_id: 2, start: 1 },
+      { end: 1, label: '因果关系', paragraph_id: 2, start: 2 },
+      { end: 2, label: 'ROOT', paragraph_id: 2, start: 3 },
+      { end: 3, label: 'ROOT', paragraph_id: 2, start: 4 },
+      { end: 4, label: 'ROOT', paragraph_id: 2, start: 5 },
+      { end: 5, label: 'ROOT', paragraph_id: 2, start: 6 },
+      { end: 6, label: 'ROOT', paragraph_id: 2, start: 7 },
+      { end: 7, label: '顺承关系', paragraph_id: 2, start: 8 },
+      { end: 8, label: '目的关系', paragraph_id: 2, start: 9 },
+      { end: 9, label: '顺承关系', paragraph_id: 2, start: 10 },
+      { end: 10, label: '顺承关系', paragraph_id: 2, start: 11 },
+      { end: 11, label: '时序关系', paragraph_id: 2, start: 12 },
+      { end: 12, label: '并列关系', paragraph_id: 2, start: 13 },
+      { end: 13, label: '顺承关系', paragraph_id: 2, start: 14 }
+    ],
+    textCorrections: [
       {
-        end: 0,
-        label: '并列关系',
+        label: ['R'],
         paragraph_id: 1,
-        start: 1
+        revised_sent:
+          '她一直答应,坐在旁边的爸爸听见了,对我竖起了大拇指说:“川川真棒,真是长大了!”我听了,心里美滋的。',
+        revised_token_idx: [2],
+        sent_id: 2,
+        token_idx: [2]
       },
       {
-        end: 1,
-        label: '因果关系',
-        paragraph_id: 1,
-        start: 2
-      },
-      {
-        end: 2,
-        label: '顺承关系',
-        paragraph_id: 1,
-        start: 3
-      },
-      {
-        end: 3,
-        label: '顺承关系',
-        paragraph_id: 1,
-        start: 4
-      },
-      {
-        end: 0,
-        label: '并列关系',
+        label: ['R'],
         paragraph_id: 2,
-        start: 1
+        revised_sent: '到了晚上,我抱着亲爱的小兔子，爬上床,盖好被子，闲上了眼睛。',
+        revised_token_idx: [8],
+        sent_id: 0,
+        token_idx: [8]
       },
       {
-        end: 1,
-        label: '因果关系',
+        label: ['R', 'R', 'R'],
         paragraph_id: 2,
-        start: 2
+        revised_sent: '可是毕竟是第一次自己睡,我心里这是有点儿害怕的,我不由地睁开了眼睛uu',
+        revised_token_idx: [27, 33, 34],
+        sent_id: 1,
+        token_idx: [27, 33, 34]
       },
       {
-        end: 2,
-        label: 'ROOT',
+        label: ['R'],
         paragraph_id: 2,
-        start: 3
-      },
-      {
-        end: 3,
-        label: 'ROOT',
-        paragraph_id: 2,
-        start: 4
-      },
-      {
-        end: 4,
-        label: 'ROOT',
-        paragraph_id: 2,
-        start: 5
-      },
-      {
-        end: 5,
-        label: 'ROOT',
-        paragraph_id: 2,
-        start: 6
-      },
-      {
-        end: 6,
-        label: 'ROOT',
-        paragraph_id: 2,
-        start: 7
-      },
-      {
-        end: 7,
-        label: '顺承关系',
-        paragraph_id: 2,
-        start: 8
-      },
-      {
-        end: 8,
-        label: '目的关系',
-        paragraph_id: 2,
-        start: 9
-      },
-      {
-        end: 9,
-        label: '顺承关系',
-        paragraph_id: 2,
-        start: 10
-      },
-      {
-        end: 10,
-        label: '顺承关系',
-        paragraph_id: 2,
-        start: 11
-      },
-      {
-        end: 11,
-        label: '时序关系',
-        paragraph_id: 2,
-        start: 12
-      },
-      {
-        end: 12,
-        label: '并列关系',
-        paragraph_id: 2,
-        start: 13
-      },
-      {
-        end: 13,
-        label: '顺承关系',
-        paragraph_id: 2,
-        start: 14
+        revised_sent:
+          '我像兔子一样的跳到了妈妈的房间里,哭着求妈妈让我再睡一晚吧!不一会儿,我进入了甜甜的梦中!',
+        revised_token_idx: [24],
+        sent_id: 6,
+        token_idx: [24]
       }
     ]
   },
   {
     id: 16,
     title: '美丽的凤凰古城',
+    author: { name: '李祺然', class: '六年级二班' },
     content:
       '凤凰古城位于湖南省的西南部,是一个非常安静,美丽的小城。今天,我为大家介绍的地方,就是凤凰古城。\n凤凰古城的建造非常别样。不同于我去过的别的古镇小巧玲珑,而凤凰古城却非常大气。宽阔的沱江从中间穿过，把古城分城左右两面。碧绿的江水缓缓,清澈见低。江面上架着一座石拱桥,桥上还有供人休息的凉亭。两岸边是红墙黑瓦,古色古香的吊脚楼立在沱江的两岸。\n凤凰古城的楼也非常与众不同。平常的房子都是建在土地上的,而吊脚楼下面却支着许多粗状的木头,房子就建在木头上,下面是流动的江水。我真担心地会倒下来，掉进江里。楼的边上有许多水车,随着水流的运动,水车咯吱咯吱的转动起来。江水流不停,水车也不停歇工作着。\n江的两岸是许多层的水中台阶，不仅仿便了两岸的居民生活,还给来来住住的游客带来了许多乐趣。早晨,两岸的居民在石阶选衣服,聊天。天气炎热,人也越来多的时候,就有大大小小的孩子们脱了鞋子和袜子,踩进石阶上走来走去。沱江的水非常凉爽,带走了夏天的炎热。\n听了我的介绍,你是不是也想去美丽的凤凰古城看看吊脚楼,玩一玩水呀!',
     scores: [90, 90, 70, 80, 80, 80],
@@ -3328,11 +1718,11 @@ export const ORIGINAL_ESSAYS = [
       '这篇作文内容充实，描述了凤凰古城的建筑特色、生活风貌以及吸引游客的魅力。可以适当增加一些历史文化背景，使作文更加丰富。'
     ],
     paragraphComments: [
-      '这一段的描写比较平淡，需要更加注意细节的描写和表现。',
-      '这一段的描写比较平淡，需要更加注意细节的描写和表现。',
-      '作者在这一段中表达了深刻的情感，让人不由自主地体会到其中的情感和感受。',
-      '作者在这一段中提出了独特的思考和观点，让人不由得感叹其想象力和创造力。',
-      '作者在这一段中运用了丰富的词汇和词语，让人印象深刻。'
+      '这一段的描写还可以更加具体，可以加入更多的人物、事物的描写来让文章更加丰富。文章的语言比较文雅，如“凤凰古城位于湖南省的西南部,是一个非常安静,美丽的小城。”。',
+      '作者在这一段中表达了深刻的情感，让人不由自主地体会到其中的情感和感受。“小巧玲珑”使用得很有创意。“古色古香”生动传神。“凤凰古城的建造非常别样。”意义丰富，耐人寻味。“宽阔的沱江从中间穿过，把古城分城左右两面。”描写细腻，真切生动。“碧绿的江水缓缓,清澈见低。”的运用读来别具风味。“江面上架着一座石拱桥,桥上还有供人休息的凉亭。”描写细腻，真切生动。“两岸边是红墙黑瓦,古色古香的吊脚楼立在沱江的两岸。”言简意丰，颇耐咀嚼。',
+      '这一段的描写比较简单，需要加入更多的细节描写来让场景更加生动。“凤凰古城的楼也非常与众不同。”感情真挚，亲切自然。“楼的边上有许多水车,随着水流的运动,水车咯吱咯吱的转动起来。”这句使文章显得丰富多彩。“江水流不停,水车也不停歇工作着。”生动具体，感情真挚丰富。',
+      '作者在这一段中表达了深刻的情感，让人不由自主地体会到其中的情感和感受。“大大小小”用语生动。“江的两岸是许多层的水中台阶，不仅仿便了两岸的居民生活,还给来来住住的游客带来了许多乐趣。”生动具体、趣味盎然。“早晨,两岸的居民在石阶选衣服,聊天。”这样的语言富有灵动的美，将浓浓的文字馨香，摇曳在字里行间。“天气炎热,人也越来多的时候,就有大大小小的孩子们脱了鞋子和袜子,踩进石阶上走来走去。”描写细腻，真切生动。“沱江的水非常凉爽,带走了夏天的炎热。”言简意丰，颇耐咀嚼。',
+      '作者在这一段中提出了独特的思考和观点，让人不由得感叹其想象力和创造力。'
     ],
     sents: [
       [
@@ -3363,240 +1753,79 @@ export const ORIGINAL_ESSAYS = [
       ['听了我的介绍,你是不是也想去美丽的凤凰古城看看吊脚楼,玩一玩水呀!']
     ],
     good_sents: [
-      {
-        label: '2',
-        paragraph_id: 0,
-        sent_id: 0
-      },
-      {
-        label: '2',
-        paragraph_id: 1,
-        sent_id: 0
-      },
-      {
-        label: '2',
-        paragraph_id: 1,
-        sent_id: 2
-      },
-      {
-        label: '2',
-        paragraph_id: 1,
-        sent_id: 3
-      },
-      {
-        label: '2',
-        paragraph_id: 1,
-        sent_id: 4
-      },
-      {
-        label: '2',
-        paragraph_id: 1,
-        sent_id: 5
-      },
-      {
-        label: '2',
-        paragraph_id: 2,
-        sent_id: 0
-      },
-      {
-        label: '2',
-        paragraph_id: 2,
-        sent_id: 3
-      },
-      {
-        label: '2',
-        paragraph_id: 2,
-        sent_id: 4
-      },
-      {
-        label: '2',
-        paragraph_id: 3,
-        sent_id: 0
-      },
-      {
-        label: '2',
-        paragraph_id: 3,
-        sent_id: 1
-      },
-      {
-        label: '2',
-        paragraph_id: 3,
-        sent_id: 2
-      },
-      {
-        label: '2',
-        paragraph_id: 3,
-        sent_id: 3
-      }
+      { label: '2', paragraph_id: 0, sent_id: 0 },
+      { label: '2', paragraph_id: 1, sent_id: 0 },
+      { label: '2', paragraph_id: 1, sent_id: 2 },
+      { label: '2', paragraph_id: 1, sent_id: 3 },
+      { label: '2', paragraph_id: 1, sent_id: 4 },
+      { label: '2', paragraph_id: 1, sent_id: 5 },
+      { label: '2', paragraph_id: 2, sent_id: 0 },
+      { label: '2', paragraph_id: 2, sent_id: 3 },
+      { label: '2', paragraph_id: 2, sent_id: 4 },
+      { label: '2', paragraph_id: 3, sent_id: 0 },
+      { label: '2', paragraph_id: 3, sent_id: 1 },
+      { label: '2', paragraph_id: 3, sent_id: 2 },
+      { label: '2', paragraph_id: 3, sent_id: 3 }
     ],
     good_words: [
-      {
-        end: 15,
-        paragraph_id: 1,
-        sent_id: 1,
-        start: 11
-      },
-      {
-        end: 13,
-        paragraph_id: 1,
-        sent_id: 5,
-        start: 9
-      },
-      {
-        end: 20,
-        paragraph_id: 3,
-        sent_id: 2,
-        start: 16
-      }
+      { end: 15, paragraph_id: 1, sent_id: 1, start: 11 },
+      { end: 13, paragraph_id: 1, sent_id: 5, start: 9 },
+      { end: 20, paragraph_id: 3, sent_id: 2, start: 16 }
     ],
     sick_sents: [
-      {
-        label: '成分赘余型错误',
-        paragraph_id: 0,
-        sent_id: 0
-      },
-      {
-        label: '成分赘余型错误',
-        paragraph_id: 1,
-        sent_id: 0
-      },
-      {
-        label: '成分残缺型错误',
-        paragraph_id: 1,
-        sent_id: 1
-      },
-      {
-        label: '成分赘余型错误',
-        paragraph_id: 1,
-        sent_id: 2
-      },
-      {
-        label: '错别字错误',
-        paragraph_id: 1,
-        sent_id: 3
-      },
-      {
-        label: '成分赘余型错误',
-        paragraph_id: 1,
-        sent_id: 4
-      },
-      {
-        label: '成分残缺型错误',
-        paragraph_id: 1,
-        sent_id: 5
-      },
-      {
-        label: '错别字错误',
-        paragraph_id: 2,
-        sent_id: 1
-      },
-      {
-        label: '错别字错误',
-        paragraph_id: 2,
-        sent_id: 2
-      },
-      {
-        label: '错别字错误',
-        paragraph_id: 2,
-        sent_id: 3
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 2,
-        sent_id: 4
-      },
-      {
-        label: '错别字错误',
-        paragraph_id: 3,
-        sent_id: 0
-      },
-      {
-        label: '错别字错误',
-        paragraph_id: 3,
-        sent_id: 1
-      },
-      {
-        label: '成分赘余型错误',
-        paragraph_id: 3,
-        sent_id: 2
-      },
-      {
-        label: '成分赘余型错误',
-        paragraph_id: 3,
-        sent_id: 3
-      },
-      {
-        label: '缺少标点',
-        paragraph_id: 4,
-        sent_id: 0
-      }
+      { label: '成分赘余型错误', paragraph_id: 0, sent_id: 0 },
+      { label: '成分赘余型错误', paragraph_id: 1, sent_id: 0 },
+      { label: '成分残缺型错误', paragraph_id: 1, sent_id: 1 },
+      { label: '成分赘余型错误', paragraph_id: 1, sent_id: 2 },
+      { label: '错别字错误', paragraph_id: 1, sent_id: 3 },
+      { label: '成分赘余型错误', paragraph_id: 1, sent_id: 4 },
+      { label: '成分残缺型错误', paragraph_id: 1, sent_id: 5 },
+      { label: '错别字错误', paragraph_id: 2, sent_id: 1 },
+      { label: '错别字错误', paragraph_id: 2, sent_id: 2 },
+      { label: '错别字错误', paragraph_id: 2, sent_id: 3 },
+      { label: '字符级错误', paragraph_id: 2, sent_id: 4 },
+      { label: '错别字错误', paragraph_id: 3, sent_id: 0 },
+      { label: '错别字错误', paragraph_id: 3, sent_id: 1 },
+      { label: '成分赘余型错误', paragraph_id: 3, sent_id: 2 },
+      { label: '成分赘余型错误', paragraph_id: 3, sent_id: 3 },
+      { label: '缺少标点', paragraph_id: 4, sent_id: 0 }
     ],
     sent_relations: [
+      { end: 0, label: '目的关系', paragraph_id: 0, start: 1 },
+      { end: 0, label: '对比关系', paragraph_id: 1, start: 1 },
+      { end: 2, label: '并列关系', paragraph_id: 1, start: 3 },
+      { end: 4, label: '并列关系', paragraph_id: 1, start: 5 },
+      { end: 0, label: '对比关系', paragraph_id: 2, start: 1 },
+      { end: 1, label: '对比关系', paragraph_id: 2, start: 2 },
+      { end: 2, label: '时序关系', paragraph_id: 2, start: 3 },
+      { end: 3, label: '对比关系', paragraph_id: 2, start: 4 },
+      { end: 0, label: '因果关系', paragraph_id: 3, start: 1 },
+      { end: 1, label: '因果关系', paragraph_id: 3, start: 2 }
+    ],
+    textCorrections: [
       {
-        end: 0,
-        label: '目的关系',
-        paragraph_id: 0,
-        start: 1
-      },
-      {
-        end: 0,
-        label: '对比关系',
+        label: ['R'],
         paragraph_id: 1,
-        start: 1
+        revised_sent: '宽阔的沱江从中间穿过，把古城分成左右两面。',
+        revised_token_idx: [15],
+        sent_id: 2,
+        token_idx: [15]
       },
       {
-        end: 2,
-        label: '并列关系',
-        paragraph_id: 1,
-        start: 3
-      },
-      {
-        end: 4,
-        label: '并列关系',
-        paragraph_id: 1,
-        start: 5
-      },
-      {
-        end: 0,
-        label: '对比关系',
-        paragraph_id: 2,
-        start: 1
-      },
-      {
-        end: 1,
-        label: '对比关系',
-        paragraph_id: 2,
-        start: 2
-      },
-      {
-        end: 2,
-        label: '时序关系',
-        paragraph_id: 2,
-        start: 3
-      },
-      {
-        end: 3,
-        label: '对比关系',
-        paragraph_id: 2,
-        start: 4
-      },
-      {
-        end: 0,
-        label: '因果关系',
+        label: ['R'],
         paragraph_id: 3,
-        start: 1
-      },
-      {
-        end: 1,
-        label: '因果关系',
-        paragraph_id: 3,
-        start: 2
+        revised_sent:
+          '江的两岸是许多层的水中台阶，不仅方便了两岸的居民生活,还给来来住住的游客带来了许多乐趣。',
+        revised_token_idx: [16],
+        sent_id: 0,
+        token_idx: [16]
       }
     ]
   },
   {
     id: 17,
     title: '三国边境塔',
+    author: { name: '伦如曼', class: '六年级三班' },
     content:
       '今天，我给大家推荐一个好地方，三国边境塔。\n润边境塔地风景迷。美不胜收。在那边，你能够见到一座美丽的高塔，到达高塔的顶楼，俄罗斯、北朝鲜和中国的三国边境尽收眼底。放眼望去，你一定能够见到北朝边境一望无际的青青草原，那里有一群白白胖胖的小绵羊在草地上快乐地奔跑着。\n在那里，绝对能让你大饱眼福，那里有着许多稀奇古怪的动物，如梅花鸟、北极狐等……在众多的动物里，东北虎，一定能吸引你的眼球。在墙上，挂着许许多的东北虎照片，其中有一幅令人心花怒放的照片，照片中的东北虎在黑暗中，两只眼睛闪烁着绿色的光芒，像极了两只翩翩起舞的萤火虫，美丽极了！\n参观以后，一定要去周围的商品店看一看，那力有着许多美丽的小泥人，好看极了！不仅有小泥人，还有让人垂涎欲滴的烤玉米呢！\n欢迎你到三国边境塔玩，我在这里等你！',
     scores: [90, 90, 70, 80, 90, 85],
@@ -3609,11 +1838,11 @@ export const ORIGINAL_ESSAYS = [
       '这篇作文在介绍三国边境塔的时候，内容充实，细节描述生动。对景点、风景、动物等都有详细描述，增加了读者的阅读体验。可以多展示一些自己的心得体会，使作文更加丰富。'
     ],
     paragraphComments: [
-      '这一段的描写比较平淡，需要更加注意细节的描写和表现。',
-      '这一段的描写比较平淡，需要更加注意细节的描写和表现。',
-      '作者在这一段中表达了深刻的情感，让人不由自主地体会到其中的情感和感受。',
-      '这一段的情感表达非常到位，让人不由自主地被感染和打动。',
-      '作者这一段的语言非常优美，每一个词语都能够恰到好处地表达作者的意图。'
+      '这一段的描写比较简单，需要加入更多的细节描写来让场景更加生动。',
+      '作者在这一段中阐述了深刻的见解和观点，让人不由自主地思考和反思。“美不胜收”用语新颖。“一望无际”为文章增添了亮色，可见作者有较强的写作功底。“白胖胖”饱含感情。“放眼望去，你一定能够见到北朝边境一望无际的青青草原，那里有一群白白胖胖的小绵羊在草地上快乐地奔跑着。”的运用读来别具风味。',
+      '这一段的句子结构非常多变，让人读起来非常流畅，也让人印象深刻。“稀奇古怪”词语精练，朴实生动。“心花怒放”用语生动。文章的语言富有情趣，如“在众多的动物里，东北虎，一定能吸引你的眼球。”。“在墙上，挂着许许多的东北虎照片，其中有一幅令人心花怒放的照片，照片中的东北虎在黑暗中，两只眼睛闪烁着绿色的光芒，像极了两只翩翩起舞的萤火虫，美丽极了！”描写细腻，真切生动。',
+      '作者这一段的语言非常优美，每一个词语都能够恰到好处地表达作者的意图。“垂涎欲滴”词语精练，朴实生动。“不仅有小泥人，还有让人垂涎欲滴的烤玉米呢！”生动具体，感情真挚丰富。',
+      '这一段的情感表达非常到位，让人不由自主地被感染和打动。'
     ],
     sents: [
       ['今天，我给大家推荐一个好地方，三国边境塔。'],
@@ -3635,189 +1864,76 @@ export const ORIGINAL_ESSAYS = [
       ['欢迎你到三国边境塔玩，我在这里等你！']
     ],
     good_sents: [
-      {
-        label: '2',
-        paragraph_id: 1,
-        sent_id: 3
-      },
-      {
-        label: '2',
-        paragraph_id: 2,
-        sent_id: 1
-      },
-      {
-        label: '1',
-        paragraph_id: 2,
-        sent_id: 2
-      },
-      {
-        label: '2',
-        paragraph_id: 3,
-        sent_id: 1
-      }
+      { label: '2', paragraph_id: 1, sent_id: 3 },
+      { label: '2', paragraph_id: 2, sent_id: 1 },
+      { label: '1', paragraph_id: 2, sent_id: 2 },
+      { label: '2', paragraph_id: 3, sent_id: 1 }
     ],
     good_words: [
-      {
-        end: 4,
-        paragraph_id: 1,
-        sent_id: 1,
-        start: 0
-      },
-      {
-        end: 20,
-        paragraph_id: 1,
-        sent_id: 3,
-        start: 16
-      },
-      {
-        end: 35,
-        paragraph_id: 1,
-        sent_id: 3,
-        start: 32
-      },
-      {
-        end: 24,
-        paragraph_id: 2,
-        sent_id: 0,
-        start: 20
-      },
-      {
-        end: 27,
-        paragraph_id: 2,
-        sent_id: 2,
-        start: 23
-      },
-      {
-        end: 15,
-        paragraph_id: 3,
-        sent_id: 1,
-        start: 11
-      }
+      { end: 4, paragraph_id: 1, sent_id: 1, start: 0 },
+      { end: 20, paragraph_id: 1, sent_id: 3, start: 16 },
+      { end: 35, paragraph_id: 1, sent_id: 3, start: 32 },
+      { end: 24, paragraph_id: 2, sent_id: 0, start: 20 },
+      { end: 27, paragraph_id: 2, sent_id: 2, start: 23 },
+      { end: 15, paragraph_id: 3, sent_id: 1, start: 11 }
     ],
     sick_sents: [
-      {
-        label: '成分搭配不当型错误',
-        paragraph_id: 0,
-        sent_id: 0
-      },
-      {
-        label: '错别字错误',
-        paragraph_id: 1,
-        sent_id: 0
-      },
-      {
-        label: '成分赘余型错误',
-        paragraph_id: 1,
-        sent_id: 2
-      },
-      {
-        label: '其他成分多余',
-        paragraph_id: 1,
-        sent_id: 3
-      },
-      {
-        label: '错用标点',
-        paragraph_id: 2,
-        sent_id: 0
-      },
-      {
-        label: '其他成分多余',
-        paragraph_id: 2,
-        sent_id: 1
-      },
-      {
-        label: '其他成分多余',
-        paragraph_id: 2,
-        sent_id: 2
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 3,
-        sent_id: 0
-      },
-      {
-        label: '成分残缺型错误',
-        paragraph_id: 3,
-        sent_id: 1
-      },
-      {
-        label: '错别字错误',
-        paragraph_id: 4,
-        sent_id: 0
-      }
+      { label: '成分搭配不当型错误', paragraph_id: 0, sent_id: 0 },
+      { label: '错别字错误', paragraph_id: 1, sent_id: 0 },
+      { label: '成分赘余型错误', paragraph_id: 1, sent_id: 2 },
+      { label: '其他成分多余', paragraph_id: 1, sent_id: 3 },
+      { label: '错用标点', paragraph_id: 2, sent_id: 0 },
+      { label: '其他成分多余', paragraph_id: 2, sent_id: 1 },
+      { label: '其他成分多余', paragraph_id: 2, sent_id: 2 },
+      { label: '字符级错误', paragraph_id: 3, sent_id: 0 },
+      { label: '成分残缺型错误', paragraph_id: 3, sent_id: 1 },
+      { label: '错别字错误', paragraph_id: 4, sent_id: 0 }
     ],
     sent_relations: [
+      { end: 0, label: '并列关系', paragraph_id: 1, start: 1 },
+      { end: 1, label: '并列关系', paragraph_id: 1, start: 2 },
+      { end: 2, label: '时序关系', paragraph_id: 1, start: 3 },
+      { end: 0, label: '解说关系', paragraph_id: 2, start: 1 },
+      { end: 1, label: 'ROOT', paragraph_id: 2, start: 2 },
+      { end: 2, label: 'ROOT', paragraph_id: 2, start: 3 },
+      { end: 3, label: 'ROOT', paragraph_id: 2, start: 4 },
+      { end: 4, label: 'ROOT', paragraph_id: 2, start: 5 },
+      { end: 5, label: '条件关系', paragraph_id: 2, start: 6 },
+      { end: 6, label: '解说关系', paragraph_id: 2, start: 7 },
+      { end: 0, label: '解说关系', paragraph_id: 3, start: 1 }
+    ],
+    textCorrections: [
       {
-        end: 0,
-        label: '并列关系',
-        paragraph_id: 1,
-        start: 1
-      },
-      {
-        end: 1,
-        label: '并列关系',
-        paragraph_id: 1,
-        start: 2
-      },
-      {
-        end: 2,
-        label: '时序关系',
-        paragraph_id: 1,
-        start: 3
-      },
-      {
-        end: 0,
-        label: '解说关系',
+        label: ['R', 'R'],
         paragraph_id: 2,
-        start: 1
+        revised_sent:
+          '在那里，绝对能让你大饱眼福，那里有着许多稀奇古怪的动物，如梅花鸟、北极狐等uu',
+        revised_token_idx: [37, 38],
+        sent_id: 0,
+        token_idx: [37, 38]
       },
       {
-        end: 1,
-        label: 'ROOT',
-        paragraph_id: 2,
-        start: 2
-      },
-      {
-        end: 2,
-        label: 'ROOT',
-        paragraph_id: 2,
-        start: 3
-      },
-      {
-        end: 3,
-        label: 'ROOT',
-        paragraph_id: 2,
-        start: 4
-      },
-      {
-        end: 4,
-        label: 'ROOT',
-        paragraph_id: 2,
-        start: 5
-      },
-      {
-        end: 5,
-        label: '条件关系',
-        paragraph_id: 2,
-        start: 6
-      },
-      {
-        end: 6,
-        label: '解说关系',
-        paragraph_id: 2,
-        start: 7
-      },
-      {
-        end: 0,
-        label: '解说关系',
+        label: ['R'],
         paragraph_id: 3,
-        start: 1
+        revised_sent: '参观以后，一定要去周围的商品店看一看，那里有着许多美丽的小泥人，好看极了！',
+        revised_token_idx: [20],
+        sent_id: 0,
+        token_idx: [20]
+      },
+      {
+        label: ['R'],
+        paragraph_id: 4,
+        revised_sent: '欢迎你到三国边境打玩，我在这里等你！',
+        revised_token_idx: [8],
+        sent_id: 0,
+        token_idx: [8]
       }
     ]
   },
   {
     id: 18,
     title: '我推荐的好地方——文化公园',
+    author: { name: '曲安然', class: '五年级一班' },
     content:
       '今天，我要给大家推荐一个好地方。闵行文化公园。闵行文化公园在上海市闵行区七宝镇。同学们，让我们一起去看一看吧！\n闵行文化公园非常美，春天，公园里的树长出了小叶子，草地上开满了五颜六色的鲜花；夏天，公园里的草地绿油油的，池塘里开满了睡莲；到了秋天，银杏的叶子黄了，像一只只美丽的金色蝴蝶；到了冬天，公园里还有碧绿的松树。\n文化公园不仅可以看到迷人的景色，还有玩的地方。公园里有一个湖，湖里可以划船。文化公园里还有一个儿童乐园，小朋友们都在那里玩得不亦乐乎。\n文化公园还可以了解历史呢！公园里有一个坚固的碉堡，碉堡旁有一座壮观的雕像，这座雕像是一个正在打仗的战士。文化公园里有一个廉政文化馆，里面收藏着珍贵的展品，可以了解丰富的文化。\n闵文化公园既可以看到美丽的景色，又可以了解丰富的文化知识，还可以玩。这真是一个好地方。\n同学们，你们喜欢闵行文化公园吗？',
     scores: [90, 90, 80, 70, 85, 90],
@@ -3830,11 +1946,12 @@ export const ORIGINAL_ESSAYS = [
       '这篇作文内容充实，描述了闵行文化公园的美丽景色和丰富的活动。作者用丰富的词汇和生动的描写，让读者对文化公园有了深刻的认识。但是在未来的写作中，可以适当增加一些对文化公园的个人体验和感受，让读者更加容易产生共鸣。'
     ],
     paragraphComments: [
-      '这一段的描写比较简单，需要加入更多的细节描写来让场景更加生动。',
-      '这一段的描写比较平淡，需要更加注意细节的描写和表现。',
-      '作者在这一段中提出了独特的思考和观点，让人不由得感叹其想象力和创造力。',
-      '这一段的描写比较简单，需要加入更多的细节描写来让场景更加生动。',
-      '作者在这一段中运用了丰富的词汇和词语，让人印象深刻。'
+      '这一段的描写还可以更加具体，可以加入更多的人物、事物的描写来让文章更加丰富。',
+      '作者在这一段中运用了不同的句式和结构，让文章更加生动有趣。“五颜六色”鲜活生动。“绿油油”鲜活生动。“闵行文化公园非常美，春天，公园里的树长出了小叶子，草地上开满了五颜六色的鲜花；夏天，公园里的草地绿油油的，池塘里开满了睡莲；到了秋天，银杏的叶子黄了，像一只只美丽的金色蝴蝶；到了冬天，公园里还有碧绿的松树。”生动具体、趣味盎然。',
+      '这一段的情感表达非常到位，让人不由自主地被感染和打动。“不亦乐乎”为文章增添了亮色，可见作者有较强的写作功底。',
+      '这一段的描写还可以更加具体，可以加入更多的人物、事物的描写来让文章更加丰富。“公园里有一个坚固的碉堡，碉堡旁有一座壮观的雕像，这座雕像是一个正在打仗的战士。”为文章平添了许多文采。',
+      '作者在这一段中阐述了深刻的见解和观点，让人不由自主地思考和反思。',
+      '这一段的描写比较平淡，需要更加注意细节的描写和表现。'
     ],
     sents: [
       [
@@ -3863,133 +1980,40 @@ export const ORIGINAL_ESSAYS = [
       ['同学们，你们喜欢闵行文化公园吗？']
     ],
     good_sents: [
-      {
-        label: '1',
-        paragraph_id: 1,
-        sent_id: 0
-      },
-      {
-        label: '1',
-        paragraph_id: 3,
-        sent_id: 1
-      }
+      { label: '1', paragraph_id: 1, sent_id: 0 },
+      { label: '1', paragraph_id: 3, sent_id: 1 }
     ],
     good_words: [
-      {
-        end: 35,
-        paragraph_id: 1,
-        sent_id: 0,
-        start: 31
-      },
-      {
-        end: 51,
-        paragraph_id: 1,
-        sent_id: 0,
-        start: 48
-      },
-      {
-        end: 28,
-        paragraph_id: 2,
-        sent_id: 2,
-        start: 24
-      }
+      { end: 35, paragraph_id: 1, sent_id: 0, start: 31 },
+      { end: 51, paragraph_id: 1, sent_id: 0, start: 48 },
+      { end: 28, paragraph_id: 2, sent_id: 2, start: 24 }
     ],
     sick_sents: [
-      {
-        label: '成分搭配不当型错误',
-        paragraph_id: 0,
-        sent_id: 0
-      },
-      {
-        label: '其他成分多余',
-        paragraph_id: 0,
-        sent_id: 2
-      },
-      {
-        label: '其他成分多余',
-        paragraph_id: 0,
-        sent_id: 3
-      },
-      {
-        label: '错用标点',
-        paragraph_id: 1,
-        sent_id: 0
-      },
-      {
-        label: '成分残缺型错误',
-        paragraph_id: 2,
-        sent_id: 0
-      },
-      {
-        label: '成分赘余型错误',
-        paragraph_id: 2,
-        sent_id: 2
-      },
-      {
-        label: '成分残缺型错误',
-        paragraph_id: 3,
-        sent_id: 0
-      },
-      {
-        label: '成分残缺型错误',
-        paragraph_id: 4,
-        sent_id: 0
-      }
+      { label: '成分搭配不当型错误', paragraph_id: 0, sent_id: 0 },
+      { label: '其他成分多余', paragraph_id: 0, sent_id: 2 },
+      { label: '其他成分多余', paragraph_id: 0, sent_id: 3 },
+      { label: '错用标点', paragraph_id: 1, sent_id: 0 },
+      { label: '成分残缺型错误', paragraph_id: 2, sent_id: 0 },
+      { label: '成分赘余型错误', paragraph_id: 2, sent_id: 2 },
+      { label: '成分残缺型错误', paragraph_id: 3, sent_id: 0 },
+      { label: '成分残缺型错误', paragraph_id: 4, sent_id: 0 }
     ],
     sent_relations: [
-      {
-        end: 0,
-        label: '解说关系',
-        paragraph_id: 0,
-        start: 1
-      },
-      {
-        end: 1,
-        label: '并列关系',
-        paragraph_id: 0,
-        start: 2
-      },
-      {
-        end: 2,
-        label: '并列关系',
-        paragraph_id: 0,
-        start: 3
-      },
-      {
-        end: 0,
-        label: '并列关系',
-        paragraph_id: 2,
-        start: 1
-      },
-      {
-        end: 1,
-        label: '并列关系',
-        paragraph_id: 2,
-        start: 2
-      },
-      {
-        end: 0,
-        label: '并列关系',
-        paragraph_id: 3,
-        start: 1
-      },
-      {
-        end: 1,
-        label: '并列关系',
-        paragraph_id: 3,
-        start: 2
-      },
-      {
-        end: 0,
-        label: '解说关系',
-        paragraph_id: 4,
-        start: 1
-      }
-    ]
+      { end: 0, label: '解说关系', paragraph_id: 0, start: 1 },
+      { end: 1, label: '并列关系', paragraph_id: 0, start: 2 },
+      { end: 2, label: '并列关系', paragraph_id: 0, start: 3 },
+      { end: 0, label: '并列关系', paragraph_id: 2, start: 1 },
+      { end: 1, label: '并列关系', paragraph_id: 2, start: 2 },
+      { end: 0, label: '并列关系', paragraph_id: 3, start: 1 },
+      { end: 1, label: '并列关系', paragraph_id: 3, start: 2 },
+      { end: 0, label: '解说关系', paragraph_id: 4, start: 1 }
+    ],
+    textCorrections: []
   },
   {
     id: 19,
     title: '三亚海棠湾',
+    author: { name: '本清韵', class: '六年级一班' },
     content:
       '三亚是海南省下辖地级市，位于海南岛的最南端，而三亚海棠湾地处三亚市海棠镇与陵水黎族自治县英州镇交界处，那里景色优美，也很好玩，还有一些特色美食，接下来，请听听我的介绍吧！\n海棠湾的海水很蓝，好像一匹宽阔无边的蓝绸子，一直铺到天边，海面上一只只海鸥忽飞忽降地，仿佛给蓝绸子绣上美丽的图案。那大海的涛声听起来好像是母亲低吟的摇篮曲，我坐在沙滩上，看着蓝蓝的大海，听着海水的涛声，呼吸着海边的清新空气，细滑的沙子好像在亲吻我的小脚丫，舒服极了。\n海棠湾的沙子也很细腻，沙子金黄金黄的，被太阳晒得暖乎乎的，躺在沙子上，用沙子盖满身体，十分享受。最有趣的就是堆沙堡啦！可以堆出各种各样的形妆，好玩极了。\n海棠湾还有许多特色美食，其中我特别推荐椰子，椰子可以做成椰子汁、椰子糕、椰子糖和椰子西米露等一些美食，都十分可口、美味。\n如果要去旅游的话，我极力向你推荐——三亚海棠湾。',
     scores: [90, 90, 70, 70, 85, 78],
@@ -4002,11 +2026,11 @@ export const ORIGINAL_ESSAYS = [
       '在内容充实方面，这篇作文表现一般。作文对于三亚海棠湾的景点、沙滩和美食进行了介绍，但可以更详细地描述景点的特色、沙滩的观感以及美食的口感，让读者更加深入地了解海棠湾的吸引力。建议在内容方面进行更充实的描写。'
     ],
     paragraphComments: [
-      '作者在这一段中阐述了深刻的见解和观点，让人不由自主地思考和反思。',
-      '作者在这一段中运用了丰富的词汇和词语，让人印象深刻。',
-      '作者在这一段中运用了丰富的词汇和词语，让人印象深刻。',
-      '这一段的句子结构非常多变，让人读起来非常流畅，也让人印象深刻。',
-      '这一段的描写比较平淡，需要更加注意细节的描写和表现。'
+      '这一段的情感表达非常到位，让人不由自主地被感染和打动。',
+      '作者在这一段中表达了深刻的情感，让人不由自主地体会到其中的情感和感受。“海棠湾的海水很蓝，好像一匹宽阔无边的蓝绸子，一直铺到天边，海面上一只只海鸥忽飞忽降地，仿佛给蓝绸子绣上美丽的图案。”情感真挚，打动人心。“那大海的涛声听起来好像是母亲低吟的摇篮曲，我坐在沙滩上，看着蓝蓝的大海，听着海水的涛声，呼吸着海边的清新空气，细滑的沙子好像在亲吻我的小脚丫，舒服极了。”为文章平添了许多文采。',
+      '作者在这一段中运用了不同的句式和结构，让文章更加生动有趣。“海棠湾的沙子也很细腻，沙子金黄金黄的，被太阳晒得暖乎乎的，躺在沙子上，用沙子盖满身体，十分享受。”的运用读来别具风味。',
+      '作者在这一段中阐述了深刻的见解和观点，让人不由自主地思考和反思。“海棠湾还有许多特色美食，其中我特别推荐椰子，椰子可以做成椰子汁、椰子糕、椰子糖和椰子西米露等一些美食，都十分可口、美味。”描写细腻，生动感人。',
+      '这一段的描写比较简单，需要加入更多的细节描写来让场景更加生动。'
     ],
     sents: [
       [
@@ -4027,77 +2051,41 @@ export const ORIGINAL_ESSAYS = [
       ['如果要去旅游的话，我极力向你推荐——三亚海棠湾。']
     ],
     good_sents: [
-      {
-        label: '1',
-        paragraph_id: 1,
-        sent_id: 0
-      },
-      {
-        label: '2',
-        paragraph_id: 1,
-        sent_id: 1
-      },
-      {
-        label: '2',
-        paragraph_id: 2,
-        sent_id: 0
-      },
-      {
-        label: '2',
-        paragraph_id: 3,
-        sent_id: 0
-      }
+      { label: '1', paragraph_id: 1, sent_id: 0 },
+      { label: '2', paragraph_id: 1, sent_id: 1 },
+      { label: '2', paragraph_id: 2, sent_id: 0 },
+      { label: '2', paragraph_id: 3, sent_id: 0 }
     ],
     good_words: [],
     sick_sents: [
-      {
-        label: '成分赘余型错误',
-        paragraph_id: 0,
-        sent_id: 0
-      },
-      {
-        label: '成分赘余型错误',
-        paragraph_id: 1,
-        sent_id: 0
-      },
-      {
-        label: '字符级错误，其他成分多余',
-        paragraph_id: 1,
-        sent_id: 1
-      },
-      {
-        label: '成分残缺型错误',
-        paragraph_id: 2,
-        sent_id: 0
-      },
-      {
-        label: '错别字错误',
-        paragraph_id: 2,
-        sent_id: 1
-      },
-      {
-        label: '错别字错误',
-        paragraph_id: 2,
-        sent_id: 2
-      },
-      {
-        label: '字符级错误',
-        paragraph_id: 3,
-        sent_id: 0
-      }
+      { label: '成分赘余型错误', paragraph_id: 0, sent_id: 0 },
+      { label: '成分赘余型错误', paragraph_id: 1, sent_id: 0 },
+      { label: '字符级错误，其他成分多余', paragraph_id: 1, sent_id: 1 },
+      { label: '成分残缺型错误', paragraph_id: 2, sent_id: 0 },
+      { label: '错别字错误', paragraph_id: 2, sent_id: 1 },
+      { label: '错别字错误', paragraph_id: 2, sent_id: 2 },
+      { label: '字符级错误', paragraph_id: 3, sent_id: 0 }
     ],
     sent_relations: [
+      { end: 0, label: '并列关系', paragraph_id: 1, start: 1 },
+      { end: 0, label: '并列关系', paragraph_id: 2, start: 1 }
+    ],
+    textCorrections: [
       {
-        end: 0,
-        label: '并列关系',
-        paragraph_id: 1,
-        start: 1
+        label: ['R'],
+        paragraph_id: 2,
+        revised_sent: '可以堆出各种各样的型妆，好玩极了。',
+        revised_token_idx: [9],
+        sent_id: 2,
+        token_idx: [9]
       },
       {
-        end: 0,
-        label: '并列关系',
-        paragraph_id: 2,
-        start: 1
+        label: ['R', 'R'],
+        paragraph_id: 4,
+        revised_sent: '如果要去旅游的话，我极力向你推荐uu三亚海棠湾。',
+        revised_token_idx: [16, 17],
+        sent_id: 0,
+        token_idx: [16, 17]
       }
     ]
   }
@@ -4123,11 +2111,22 @@ type ParagraphInterval = {
 type Sent = ParagraphId & SentId & Label;
 type GoodWord = ParagraphId & SentId & ParagraphInterval;
 type SendRelation = ParagraphId & Label & ParagraphInterval;
+type TextCorrection = ParagraphId &
+  SentId & {
+    label: ('A' | 'R' | 'D')[];
+    revised_sent: string;
+    revised_token_idx: number[];
+    token_idx: number[];
+  };
 
 export interface Essay {
   id: number;
   title: string;
   content: string;
+  author: {
+    name: string;
+    class: string;
+  };
   scores: number[];
   comments: string[];
   paragraphComments: string[];
@@ -4136,12 +2135,14 @@ export interface Essay {
   sick_sents: Sent[];
   sent_relations: SendRelation[];
   good_words: GoodWord[];
+  textCorrections: TextCorrection[];
 
   lines: number;
   good_sents_arranged: Sent[][];
   sick_sents_arranged: Sent[][];
   sent_relations_arranged: SendRelation[][];
-  good_words_arranged: GoodWord[][];
+  good_words_arranged: GoodWord[][][];
+  textCorrections_arranged: TextCorrection[][];
 }
 
 function calcLines(content: string, cols: number) {
@@ -4168,23 +2169,52 @@ function calcLines(content: string, cols: number) {
 function arrangeSents<T extends ParagraphId & SentId>(sents: Array<T>) {
   let res = [] as T[][];
   sents.forEach(sent => {
-    let target = res[sent.paragraph_id];
-    if (!target) {
+    if (!res[sent.paragraph_id]) {
       res[sent.paragraph_id] = [];
     }
     res[sent.paragraph_id][sent.sent_id] = sent;
   });
-  console.log(res);
+  // console.log(res);
+  return res;
+}
+
+function arrangeSentArrays<T extends ParagraphId & SentId>(sents: Array<T>) {
+  let res = [] as T[][][];
+  sents.forEach(sent => {
+    if (!res[sent.paragraph_id]) {
+      res[sent.paragraph_id] = [];
+    }
+    if (!res[sent.paragraph_id][sent.sent_id]) {
+      res[sent.paragraph_id][sent.sent_id] = [];
+    }
+    res[sent.paragraph_id][sent.sent_id].push(sent);
+  });
+  // console.log(res);
   return res;
 }
 
 export const ESSAYS = ORIGINAL_ESSAYS.map(essay => {
-  return {
+  let res = {
     ...essay,
+    textCorrections: essay.textCorrections as TextCorrection[],
     lines: calcLines(essay.content, GRID_COLS),
     sent_relations_arranged: [],
     good_sents_arranged: arrangeSents(essay.good_sents),
     sick_sents_arranged: arrangeSents(essay.sick_sents),
-    good_words_arranged: arrangeSents(essay.good_words)
+    good_words_arranged: arrangeSentArrays(essay.good_words),
+    textCorrections_arranged: arrangeSents(essay.textCorrections) as TextCorrection[][]
   };
+  essay.textCorrections.forEach(correction => {
+    if (!res.sick_sents_arranged[correction.paragraph_id]) {
+      res.sick_sents_arranged[correction.paragraph_id] = [];
+    }
+    if (!res.sick_sents_arranged[correction.paragraph_id][correction.sent_id]) {
+      res.sick_sents_arranged[correction.paragraph_id][correction.sent_id] = {
+        label: '错别字错误',
+        paragraph_id: correction.paragraph_id,
+        sent_id: correction.sent_id
+      };
+    }
+  });
+  return res;
 });

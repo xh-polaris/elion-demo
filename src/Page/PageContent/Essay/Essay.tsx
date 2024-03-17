@@ -8,7 +8,7 @@ import { animationDurations } from '@def';
 import OpacityBg from '../../_components/OpacityBg/OpacityBg';
 
 import TypewriterAnimation from '../../_components/TypewriterAnimation/TypewriterAnimation';
-import ParagraphComment from './ParagraphComment/ParagraphComment';
+import ParagraphCommentNotation from './ParagraphCommentNotation/ParagraphCommentNotation';
 
 import { GRID_ROWS, ROW_HEIGHT, GRID_COLS } from './constants';
 
@@ -22,6 +22,7 @@ function Essay() {
     sents,
     id,
     lines,
+    author,
     paragraphComments,
     good_sents_arranged,
     sick_sents_arranged,
@@ -38,29 +39,39 @@ function Essay() {
     //   colCounter %= GRID_COLS;
     // }
     function addLineStarts(i: number) {
-      res.push(<div className="Essay__text" key={`lineStart0 ${i}`}></div>);
+      res.push(
+        <div className="Essay__text" key={`lineStart0 ${i}`}>
+          <ParagraphCommentNotation comment={paragraphComments[i]} idx={i} />
+        </div>
+      );
       res.push(<div className="Essay__text" key={`lineStart1 ${i}`}></div>);
     }
     function addEssayBreak(i: number) {
-      res.push(
-        <div className="Essay__break" key={`break ${i}`}>
-          <ParagraphComment comment={paragraphComments[i]} pos={i % 2 ? true : false} />
-        </div>
-      );
+      res.push(<div className="Essay__break" key={`break ${i}`}></div>);
     }
     sents.forEach((paragraph, i) => {
       addLineStarts(i);
       paragraph.forEach((sentence, j) => {
         for (let k = 0; k < sentence.length; k++) {
-          const goodWord = good_words_arranged[i] ? good_words_arranged[i][j] : null;
+          const goodWords = (good_words_arranged[i] ? good_words_arranged[i][j] : null) ?? [];
           const goodSent = good_sents_arranged[i] ? good_sents_arranged[i][j] : null;
           const sickSent = sick_sents_arranged[i] ? sick_sents_arranged[i][j] : null;
 
+          let isInGoodWord = false;
+
+          for (let i = 0; i < goodWords.length; i++) {
+            let goodWord = goodWords[i];
+            if (k < goodWord.start) {
+              break;
+            } else if (k < goodWord.end) {
+              isInGoodWord = true;
+              break;
+            }
+          }
+
           const Inner = (
             <div className="Essay__text" key={`${i} ${j} ${k}`}>
-              {goodWord && k >= goodWord.start && k < goodWord.end ? (
-                <div className="Essay__textDecorator--goodWord"></div>
-              ) : null}
+              {isInGoodWord ? <div className="Essay__textDecorator--goodWord"></div> : null}
               {goodSent ? (
                 <div
                   className={
@@ -78,7 +89,16 @@ function Essay() {
               <div className="Essay__char">{sentence[k]}</div>
             </div>
           );
-          res.push(sickSent ? <Popover content={sickSent.label}>{Inner}</Popover> : Inner);
+          res.push(
+            Inner
+            // sickSent ? (
+            //   <Popover key={`popover ${i} ${j} ${k}`} content={sickSent.label}>
+            //     {Inner}
+            //   </Popover>
+            // ) : (
+            //   Inner
+            // )
+          );
         }
       });
       addEssayBreak(i);
@@ -99,7 +119,14 @@ function Essay() {
 
   return (
     <div className="Essay">
-      <div className="Essay__title">{title}</div>
+      <div className="Essay__title">
+        {author.name ? (
+          <div className="Essay__author">
+            {author.class} {author.name}
+          </div>
+        ) : null}
+        {title}
+      </div>
       <OpacityBg>
         <div className="Essay__content">
           <div className="Essay__grid" onScroll={throttledScrollRecorder} ref={scroller}>

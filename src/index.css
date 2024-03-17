@@ -8,6 +8,8 @@ body {
   color: #fff;
 
   --theme-color: #e89c4f;
+  --good-sent-color:#0c8de3;
+  --sick-sent-color:#ff6262;
 }
 
 code {

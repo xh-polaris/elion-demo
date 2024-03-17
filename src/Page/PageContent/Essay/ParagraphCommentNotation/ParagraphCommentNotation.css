@@ -1,0 +1,36 @@
+.ParagraphCommentNotation {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+.ParagraphComment__locator {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--theme-color);
+
+  /* mask: radial-gradient(transparent 6px, #000 6px); */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'SmileySans';
+
+  font-size: 28px;
+}
+
+/* .ParagraphComment__locator--left {
+  left: -14px;
+}
+
+.ParagraphComment__locator--right {
+  right: -14px;
+} */
+
+.ParagraphCommentNotation__comment {
+  min-width: 100px;
+
+  max-width: 200px;
+}
