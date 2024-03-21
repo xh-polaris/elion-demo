@@ -31,7 +31,7 @@ export default function EssayMarks() {
 
   const menusHidden = [false, false, false];
 
-  // console.log(good_sents.length, good_words.length);
+  console.log(good_sents.length, good_words.length);
 
   if (!good_sents.length && !good_words.length) {
     menusHidden[1] = true;

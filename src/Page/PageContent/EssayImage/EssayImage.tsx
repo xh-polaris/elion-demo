@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-import { useEssay } from '@store';
+import { useEssay, useDisplayMode } from '@store';
 import { animationDurations } from '@def';
 
 import EaseIn from '../../_components/EaseAnimation/EaseIn';
@@ -12,6 +12,7 @@ function EssayImage() {
   const [hide, setHide] = useState<boolean>(false);
   const [easeOut, setEaseOut] = useState<boolean>(false);
   const { id } = useEssay(state => state.essay);
+  const display = useDisplayMode(state => state.idx);
 
   useEffect(() => {
     const timeout0 = setTimeout(() => {
@@ -28,7 +29,7 @@ function EssayImage() {
   }, []);
 
   return id !== -1 && !hide ? (
-    <div className="EssayImage__locator">
+    <div className={'EssayImage__locator ' + (display === 1 ? 'EssayImage__locator--large' : '')}>
       <EaseIn>
         <EaseOut trigger={easeOut}>
           <div className="EssayImage__wrapper">

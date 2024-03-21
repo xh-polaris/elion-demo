@@ -1,5 +1,5 @@
 .EssayMarks {
-  width: 380px;
+  width: 580px;
   height: 100%;
 
   border-radius: 25px;
@@ -43,7 +43,7 @@
 
 .EssayMarks__menu__item {
   font-family: 'SmileySans';
-  font-size: 20px;
+  font-size: 28px;
   color: #fff;
 
   display: flex;

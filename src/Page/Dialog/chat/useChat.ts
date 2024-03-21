@@ -27,7 +27,7 @@ export function useChatResp() {
 
           const str = textDecoder.decode(value);
 
-          // console.log('Received chunk:', textDecoder.decode(value));
+          console.log('Received chunk:', textDecoder.decode(value));
           chucks.current += str;
           setText(chucks.current);
         }

@@ -19,7 +19,7 @@ export function useRecognition() {
     recognition.lang = 'zh-CN';
     // recognition.continuous = true;
     recognition.interimResults = true;
-    // console.log(recognition);
+    console.log(recognition);
 
     recognition.start();
 

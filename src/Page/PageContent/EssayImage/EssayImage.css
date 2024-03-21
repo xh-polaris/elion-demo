@@ -8,6 +8,10 @@
   transform: translate(-50%, -50%);
 }
 
+.EssayImage__locator--large {
+  left: -10%;
+}
+
 .EssayImage__wrapper {
   width: 420px;
   height: 560px;
