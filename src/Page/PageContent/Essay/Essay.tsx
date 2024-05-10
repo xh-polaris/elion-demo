@@ -10,6 +10,8 @@ import OpacityBg from '../../_components/OpacityBg/OpacityBg';
 import TypewriterAnimation from '../../_components/TypewriterAnimation/TypewriterAnimation';
 import ParagraphCommentNotation from './ParagraphCommentNotation/ParagraphCommentNotation';
 
+import { judgeRhetoric } from '../EssayMarks/BrightSpot/BrightSpot';
+
 import { GRID_ROWS, ROW_HEIGHT, GRID_COLS } from './constants';
 
 import './Essay.css';
@@ -90,14 +92,26 @@ function Essay() {
             </div>
           );
           res.push(
-            Inner
-            // sickSent ? (
-            //   <Popover key={`popover ${i} ${j} ${k}`} content={sickSent.label}>
-            //     {Inner}
-            //   </Popover>
-            // ) : (
-            //   Inner
-            // )
+            sickSent || goodSent ? (
+              <Popover
+                key={`popover ${i} ${j} ${k}`}
+                content={
+                  <div>
+                    {goodSent ? (
+                      <div className="Essay__popover__content--good">
+                        {judgeRhetoric(goodSent.label)}
+                      </div>
+                    ) : null}
+                    {sickSent ? (
+                      <div className="Essay__popover__content--sick">{sickSent.label}</div>
+                    ) : null}
+                  </div>
+                }>
+                {Inner}
+              </Popover>
+            ) : (
+              Inner
+            )
           );
         }
       });

@@ -194,3 +194,11 @@
 .Scroll__icon--invisible {
   opacity: 0;
 }
+
+.Essay__popover__content--good {
+  color: var(--good-sent-color);
+}
+
+.Essay__popover__content--sick {
+  color: var(--sick-sent-color);
+}

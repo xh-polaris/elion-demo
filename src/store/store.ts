@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 
-import { ESSAYS as es, type Essay } from './essays';
+import { ESSAYS as es } from './essays';
 
 export const ESSAYS = es;
 
@@ -75,7 +75,7 @@ interface VideoState {
   toggleVideo: () => void;
 }
 
-const VIDEO_NAMES = ['earth', 'DNA', 'heartbeat', 'tech'];
+const VIDEO_NAMES = window.VIDEO_NAMES_DEF;
 
 const defIdx = 0;
 

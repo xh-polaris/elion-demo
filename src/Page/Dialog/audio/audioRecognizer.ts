@@ -8,18 +8,19 @@ export enum RecognitionState {
 
 export function useRecognition() {
   const [state, setState] = useState<RecognitionState>(RecognitionState.initial);
-  const [recognition, setRecognition] = useState<string>('');
-  const reco = useRef<any>('');
+  const [result, setResult] = useState<string>('');
+  const reco = useRef<any>();
 
   function startReco() {
     setState(RecognitionState.initial);
-    setRecognition('');
-    const recognition = new (window as any).webkitSpeechRecognition();
+    setResult('');
+    const recognition = (window as any).webkitSpeechRecognition
+      ? new (window as any).webkitSpeechRecognition()
+      : new (window as any).speechRecognition();
     reco.current = recognition;
     recognition.lang = 'zh-CN';
     // recognition.continuous = true;
     recognition.interimResults = true;
-    console.log(recognition);
 
     recognition.start();
 
@@ -30,13 +31,17 @@ export function useRecognition() {
     recognition.onresult = (event: any) => {
       const results = event.results as SpeechRecognitionResultList;
       const input = results[0][0].transcript;
-      setRecognition(input);
+      setResult(input);
       // recognition.onresult = null;
     };
 
     recognition.onend = (event: any) => {
       recognition.onresult = null;
       setState(RecognitionState.end);
+    };
+
+    recognition.onerror = (e: any) => {
+      console.log(e);
     };
   }
 
@@ -52,5 +57,5 @@ export function useRecognition() {
     }
   }
 
-  return { controlReco, startReco, stopReco, recognition, state };
+  return { controlReco, startReco, stopReco, result, state };
 }

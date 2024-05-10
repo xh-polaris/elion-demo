@@ -9,7 +9,7 @@ import shortenSent from '../shortenSent';
 
 import './BrightSpot.css';
 
-function judgeRhetoric(label: string) {
+export function judgeRhetoric(label: string) {
   switch (label) {
     case '0':
       return '';
@@ -27,7 +27,9 @@ export default function BrightSpot() {
   const { good_words, good_sents_arranged, sents } = useEssay(store => store.essay);
 
   const goodWords = good_words.map(({ paragraph_id, sent_id, start, end }) => (
-    <div className="BrightSpot__goodWord" key={`${paragraph_id} ${sent_id}`}>{sents[paragraph_id][sent_id].substring(start, end)}</div>
+    <div className="BrightSpot__goodWord" key={`${paragraph_id} ${sent_id}`}>
+      {sents[paragraph_id][sent_id].substring(start, end)}
+    </div>
   ));
 
   const goodSents = good_sents_arranged.map((goodSentsInParagraph, paragraphId) => (

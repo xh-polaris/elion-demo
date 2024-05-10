@@ -1,5 +1,7 @@
-Elion
-http://172.23.148.37:3000
+背景替换
+
+根目录/videos/bg 文件夹放置视频
+根目录/defs.js 对应视频名称更改到 VIDEO_NAMES_DEF
 
 # Getting Started with Create React App
 

@@ -23,9 +23,9 @@ export default function SickExpression() {
           if (textCorrections) {
             const tokenTarget = textCorrections.token_idx.indexOf(i);
             if (tokenTarget > -1) {
-              let revisedTokenIdx = textCorrections.revised_token_idx[tokenTarget];
+              // let revisedTokenIdx = textCorrections.revised_token_idx[tokenTarget];
               let label = textCorrections.label[tokenTarget];
-              let revisedToken = textCorrections.revised_sent[revisedTokenIdx];
+              let revisedToken = textCorrections.corrections[tokenTarget];
 
               let popoverContent =
                 label === 'R'
@@ -59,7 +59,7 @@ export default function SickExpression() {
     <div className="SickExpression">
       {sickSents.length ? (
         <div className="SickExpression__Title SickExpression__Title--sickWord">病句</div>
-      ) : null} 
+      ) : null}
       <TypewriterAnimation duration={1} list={sickSents}></TypewriterAnimation>
     </div>
   );
