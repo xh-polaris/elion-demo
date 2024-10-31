@@ -1,6 +1,5 @@
 .EssayMarks {
-  
-
+  width: 1119px;
   overflow: hidden;
 
   position: relative;
@@ -10,9 +9,8 @@
 }
 
 .EssayMarks__item {
-  width: 358px;
-  border-radius: 30px;
-  margin-right: 50px;
+  width: 349px;
+  border-radius: 15px;
   background-color: #25313B;
 }
 
