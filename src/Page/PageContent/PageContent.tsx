@@ -22,7 +22,7 @@ export default function PageContent() {
         <React.Fragment key={id}>
           <EssayDerivatives></EssayDerivatives>
           <Essay></Essay>
-          {displayMode === 1 ? <EssayMarks></EssayMarks> : null}
+          <EssayMarks></EssayMarks>
           <Analysis></Analysis>
           <EssayImage></EssayImage>
         </React.Fragment>

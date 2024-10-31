@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import { useEssay } from '@store';
 
@@ -10,23 +10,8 @@ import SickExpression from './SickExpression/SickExpression';
 
 import './EssayMarks.css';
 
-const items = [
-  {
-    name: '还需努力',
-    comp: <SickExpression></SickExpression>
-  },
-  {
-    name: '作文亮点',
-    comp: <BrightSpot></BrightSpot>
-  },
-  {
-    name: '段落点评',
-    comp: <ParagraphComment></ParagraphComment>
-  }
-];
 
 export default function EssayMarks() {
-  const [current, setCurrent] = useState(2);
   const { good_words, good_sents } = useEssay(store => store.essay);
 
   const menusHidden = [false, false, false];
@@ -37,35 +22,33 @@ export default function EssayMarks() {
     menusHidden[1] = true;
   }
 
-  function toggleCurrent(idx: number) {
-    setCurrent(idx);
-  }
+
 
   return (
-    <OpacityBg>
       <div className="EssayMarks">
-        <div className="EssayMarks__menu EssayMarks__menu__background">
-          {items.map((_, i) =>
-            menusHidden[i] ? null : (
-              <div
-                className={`EssayMarks__menu__item__background EssayMarks__menu__item__background--${i} ${
-                  i === current ? 'EssayMarks__menu__item__background--active' : ''
-                }`}
-                key={i}></div>
-            )
-          )}
-        </div>
-        <div className="EssayMarks__menu">
-          {items.map(({ name }, i) =>
-            menusHidden[i] ? null : (
-              <div className="EssayMarks__menu__item" key={i} onClick={() => toggleCurrent(i)}>
-                {name}
-              </div>
-            )
-          )}
-        </div>
-        <div className="EssayMarks__content">{items[current].comp}</div>
+          {/* 还需努力 */}
+          <div className="EssayMarks__item">
+            <div className="EssayMarks__item__title">还需努力</div>
+            <div className="EssayMarks__item__content">
+              <SickExpression />
+            </div>
+          </div>
+
+          {/* 作文亮点 */}
+          <div className="EssayMarks__item">
+            <div className="EssayMarks__item__title">作文亮点</div>
+            <div className="EssayMarks__item__content">
+              <BrightSpot />
+            </div>
+          </div>
+
+          {/* 段落点评 */}
+          <div className="EssayMarks__item">
+            <div className="EssayMarks__item__title">段落点评</div>
+            <div className="EssayMarks__item__content">
+              <ParagraphComment />
+            </div>
+          </div>
       </div>
-    </OpacityBg>
   );
 }
