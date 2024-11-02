@@ -12,7 +12,7 @@ export default function ParagraphComment() {
 
   const items = paragraphComments.map((comment, i) => (
     <div className="ParagraphComment__item" key={i}>
-      <div className="ParagraphComment__locator">{i + 1}</div>
+      <div className="ParagraphComment__locator">第{i + 1}段</div>
       <div>
         <TypewriterAnimationForString duration={1} text={comment}></TypewriterAnimationForString>
       </div>

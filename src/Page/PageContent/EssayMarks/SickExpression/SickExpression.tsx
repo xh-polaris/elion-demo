@@ -47,6 +47,7 @@ export default function SickExpression() {
 
         return (
           <div className="SickExpression__sickSent" key={sentId}>
+            <div className="SickExpression__sickSent__header">病句</div>
             <TypewriterAnimation duration={1} list={list}></TypewriterAnimation>
             <div className="SickExpression__label">{sickSent.label}</div>
           </div>
@@ -57,9 +58,6 @@ export default function SickExpression() {
 
   return (
     <div className="SickExpression">
-      {sickSents.length ? (
-        <div className="SickExpression__Title SickExpression__Title--sickWord">病句</div>
-      ) : null}
       <TypewriterAnimation duration={1} list={sickSents}></TypewriterAnimation>
     </div>
   );

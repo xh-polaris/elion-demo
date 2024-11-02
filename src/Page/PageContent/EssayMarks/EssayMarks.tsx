@@ -29,6 +29,7 @@ export default function EssayMarks() {
           {/* 还需努力 */}
           <div className="EssayMarks__item">
             <div className="EssayMarks__item__title">还需努力</div>
+            <div className="EssayMarks__divider"/>
             <div className="EssayMarks__item__content">
               <SickExpression />
             </div>
@@ -37,6 +38,7 @@ export default function EssayMarks() {
           {/* 作文亮点 */}
           <div className="EssayMarks__item">
             <div className="EssayMarks__item__title">作文亮点</div>
+            <div className="EssayMarks__divider"/>
             <div className="EssayMarks__item__content">
               <BrightSpot />
             </div>
@@ -45,6 +47,7 @@ export default function EssayMarks() {
           {/* 段落点评 */}
           <div className="EssayMarks__item">
             <div className="EssayMarks__item__title">段落点评</div>
+            <div className="EssayMarks__divider"/>
             <div className="EssayMarks__item__content">
               <ParagraphComment />
             </div>

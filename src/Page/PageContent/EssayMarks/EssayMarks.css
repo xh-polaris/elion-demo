@@ -14,12 +14,52 @@
   background-color: #25313B;
 }
 
+.EssayMarks__item__title {
+  width: 100px;
+  height: 37.5px;
+  margin-left: 38px;
+  margin-top: 31px;
+
+  font-family: 'Source Han Sans CN';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 37.5px;
+  /* identical to box height */
+  text-align: justify;
+  letter-spacing: -0.01em;
+
+  background: linear-gradient(180deg, #EF9F6C 0%, #E6672A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+  text-shadow: 0px 0px 5px rgba(239, 159, 108, 0.3);
+}
+
+/* Line 15 */
+.EssayMarks__divider {
+  width: 273px;
+  height: 0px;
+  margin-left: 38px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+
+  border: 2px solid rgba(255, 255, 255, 0.8);
+}
+.EssayMarks__item__content {
+  margin-top: 25px;
+  margin-left: 38px;
+  margin-right: 38px;
+}
+/*
+previous EssayMarks CSS
+
 .EssayMarks__content {
   flex: 1;
 
   overflow: auto;
 }
-
 .EssayMarks__menu {
   width: 100%;
   height: 64px;
@@ -78,3 +118,4 @@
 .EssayMarks__menu__item__background--active {
   opacity: 0.6;
 }
+*/

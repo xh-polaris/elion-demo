@@ -1,5 +1,26 @@
 .SickExpression {
-  padding: 20px;
+  max-height: 100%;
+  overflow-y: auto;
+}
+
+.SickExpression__sickSents__wrapper{
+  overflow: hidden;
+}
+
+
+.SickExpression::-webkit-scrollbar {
+  width: 7.5px;
+}
+
+.SickExpression::-webkit-scrollbar-track{
+  background: transparent;
+  background: rgba(25, 38, 48, 0.3);
+}
+
+.SickExpression::-webkit-scrollbar-thumb{
+  background: linear-gradient(180deg, rgba(239, 159, 108, 0.8) 0%, rgba(230, 103, 42, 0.8) 100%);
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(239, 159, 108, 0.3);
 }
 
 .SickExpression__Title {
@@ -10,7 +31,7 @@
 
   margin-bottom: 15px;
 }
-
+/*
 .BrightSpot__Title--goodWord {
   margin-top: 15px;
 }
@@ -25,19 +46,59 @@
 
   background-color: var(--good-sent-color);
 }
+*/
 
-.SickExpression__sickSent {
-  margin-bottom: 10px;
-  font-size: 24px;
+.SickExpression__sickSent { 
+  width: 240px;
+  margin-top: 25px;
+  background: rgba(211, 214, 216, 0.13);
+  border-radius: 15px;
+
+  padding-left: 16.5px;
+  padding-right: 16.5px;
+  padding-top: 16px;
+  padding-bottom: 13px;
+}
+
+.SickExpression__sickSent__header {
+  width: 50px;
+  height: 37.5px;
+  
+  font-family: 'Source Han Sans CN';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 37.5px;
+  text-align: justify;
+  letter-spacing: -0.01em;
+  
+  background: linear-gradient(180deg, #EF9F6C 0%, #E6672A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  
+  text-shadow: 0px 0px 10px rgba(239, 159, 108, 0.3);
 }
 
 .SickExpression__label {
   /* margin-left: 10px; */
-  color: var(--sick-sent-color);
-  font-size: 20px;
-  font-weight: bold;
+  margin-top: 7.5px;
+
+  font-family: 'Source Han Sans CN';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22.5px;
+  line-height: 34px;
+  /* identical to box height */
+
+  color: #D35151;
 }
 
 .SickExpression__revised {
   background-color: var(--sick-sent-color);
+}
+
+.SickExpression__sickSents__wrapper {
+  max-height: 100%;
+  overflow-y: auto;
 }

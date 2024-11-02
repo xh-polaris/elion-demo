@@ -28,7 +28,10 @@ export default function BrightSpot() {
 
   const goodWords = good_words.map(({ paragraph_id, sent_id, start, end }) => (
     <div className="BrightSpot__goodWord" key={`${paragraph_id} ${sent_id}`}>
-      {sents[paragraph_id][sent_id].substring(start, end)}
+      <div className="BrightSpot__goodWord__title">好词</div>
+      <div className="BrightSpot__goodWord__content">
+        {sents[paragraph_id][sent_id].substring(start, end)}
+      </div>
     </div>
   ));
 
@@ -36,10 +39,13 @@ export default function BrightSpot() {
     <div className="BrightSpot__goodSents__wrapper" key={paragraphId}>
       {goodSentsInParagraph.map((goodSent, sentId) => (
         <div className="BrightSpot__goodSent" key={sentId}>
+          <div className="BrightSpot__goodSent__title">好句</div>
+          <div className="BrightSpot__goodSent__content">
           <TypewriterAnimationForString
             duration={1}
             text={shortenSent(sents[paragraphId][sentId])}></TypewriterAnimationForString>
-          <span className="BrightSpot__rehetoric">{judgeRhetoric(goodSent.label)}</span>
+            <div className="BrightSpot__rehetoric">{judgeRhetoric(goodSent.label)}</div>
+          </div>
         </div>
       ))}
     </div>
@@ -47,11 +53,7 @@ export default function BrightSpot() {
 
   return (
     <div className="BrightSpot">
-      {goodWords.length ? <div className="BrightSpot__Title">好词</div> : null}
       <TypewriterAnimation duration={1} list={goodWords}></TypewriterAnimation>
-      {goodSents.length ? (
-        <div className="BrightSpot__Title BrightSpot__Title--goodSent">好句</div>
-      ) : null}
       <TypewriterAnimation duration={1} list={goodSents}></TypewriterAnimation>
     </div>
   );
