@@ -9,6 +9,8 @@ import EssayMarks from './EssayMarks/EssayMarks';
 import SideBar from './SideBar/SideBar';
 import EssayImage from './EssayImage/EssayImage';
 
+import Statics from './Statics/Statics';
+
 import './PageContent.css';
 
 export default function PageContent() {
@@ -18,6 +20,7 @@ export default function PageContent() {
   return (
     <div className="PageContent__wrapper">
       <div className={`PageContent ${displayMode === 1 ? 'PageContent--large' : ''}`}>
+        <Statics></Statics>
         <SideBar></SideBar>
         <React.Fragment key={id}>
           <EssayDerivatives></EssayDerivatives>

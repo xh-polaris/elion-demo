@@ -1,0 +1,193 @@
+.GeographicDistribution {
+  height: 425px;
+  width: 100%;
+  background: #25313B;
+  border-radius: 15px;
+
+  position: relative;
+}
+.Title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 55px;
+  width: 100%;
+  height: 73.5px;
+}
+.TitleText {
+  width: 99.5px;
+  height: 36.5px;
+
+  font-family: 'Source Han Sans CN';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 37.5px;
+  text-align: justify;
+  letter-spacing: -0.01em;
+
+  background: linear-gradient(180deg, #EF9F6C 0%, #E6672A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+
+  text-shadow: 0px 0px 10px rgba(239, 159, 108, 0.3);
+}
+.TitleIcon {
+  width: 62.5px;
+  height: 12.5px;
+}
+
+.Content {
+  display: flex;
+  justify-content: space-between;
+}   
+
+.Dropdown {
+  display: flex;
+  align-items: center;
+
+  width: 99.5px;
+  height: 36.5px;
+
+  box-sizing: border-box;
+  border: 2px solid #FFFFFF;
+}
+
+.DropdownText {
+  width: 50px;
+  height: 19px;
+  margin-left: 17px;
+
+  font-family: 'Source Han Sans CN';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12.5px;
+  line-height: 19px;
+  /* identical to box height */
+  text-align: justify;
+  letter-spacing: -0.01em;
+
+  color: #FFFFFF;
+}
+.DropdownIcon {
+  width: 11.5px;
+  height: 6.5px;    
+  margin-left: 4.5px;
+  object-fit: contain;
+}
+
+.ChartContainer {
+  width: 61px;
+  height: 86px;
+
+  position: absolute;
+  left: 55px;
+  bottom: 42.5px;
+}
+.ChartContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.MapContainer {
+  width: 393.5px;
+  height: 289.355px;
+}
+
+.MapContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.Top5 {
+  margin-left: 49px;
+  margin-right: 61.5px;
+  margin-bottom: 66.5px;
+  width: 260.5px;
+  height: 100%;
+  padding-top: 50px;
+}
+
+.Top5Title {
+  height: 30px;
+
+  font-family: 'Source Han Sans CN';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: justify;
+  letter-spacing: -0.01em;
+
+    color: #FFFFFF;
+}
+
+.Top5Content {
+  margin-left: 0;
+}
+
+.Top5List {
+  padding-left: 0;
+}
+
+.Top5Item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}   
+
+.Top5Index {
+  width: 12px;
+  height: 30px;
+
+  font-family: 'Source Han Sans CN';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height */
+  text-align: justify;
+  letter-spacing: -0.01em;
+
+  background: linear-gradient(180deg, #EF9F6C 0%, #E6672A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+
+  text-shadow: 0px 0px 10px rgba(239, 159, 108, 0.3);
+}
+
+.SchoolName {
+  margin-left: 10.5px;
+  height: 20px;
+
+  font-family: 'Source Han Sans CN';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12.5px;
+  line-height: 19px;
+  text-align: justify;
+  letter-spacing: -0.01em;
+
+  color: #FFFFFF;
+}   
+
+.ActivityCount {
+  height: 10px;
+
+  font-family: 'Source Han Sans CN';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 6.75px;
+  line-height: 10px;
+  /* identical to box height */
+  text-align: right;
+  letter-spacing: -0.01em;
+
+  color: #FFFFFF;
+}   

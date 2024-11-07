@@ -1,0 +1,83 @@
+.BasicStatics {
+  height: 353px;
+  width: 100%;
+  background: #25313B;
+  border-radius: 15px;
+}
+
+.Content {
+  margin-top: 34.5px;
+  margin-left: 55px;
+}
+
+.GridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 44.5px;
+}
+
+.GridItem {
+  display: flex;
+  align-items: center;
+}
+
+.ItemIcon {
+  width: 72px;
+  height: 72px;
+  margin-right: 32.5px;
+  object-fit: contain;
+}
+
+.ItemText {
+  display: flex;
+  flex-direction: column;
+}
+
+.ItemValue {
+  height: 45px;
+
+  font-family: 'Source Han Sans CN';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 45px;
+  /* identical to box height */
+  text-align: justify;
+  letter-spacing: -0.01em;
+
+  color: #FFFFFF;
+}
+
+.ItemLabel {
+  height: 19px;
+
+  font-family: 'Source Han Sans CN';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12.5px;
+  line-height: 19px;
+  /* identical to box height */
+  text-align: justify;
+  letter-spacing: -0.01em;
+
+  color: #FFFFFF;
+
+}
+
+.ItemUnit {
+  height: 19px;
+
+  font-family: 'Source Han Sans CN';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12.5px;
+  line-height: 19px;
+  /* identical to box height */
+  text-align: justify;
+  letter-spacing: -0.01em;
+
+  color: #FFFFFF;
+}
+
+

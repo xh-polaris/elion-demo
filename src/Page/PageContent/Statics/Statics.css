@@ -1,0 +1,7 @@
+.Statics {
+  height: 100%;
+  width: 919px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
