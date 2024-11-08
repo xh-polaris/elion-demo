@@ -1,24 +1,16 @@
 .Title {
   box-sizing: border-box;
 
+  padding-left: 31px;
+  padding-top: 25px;
   height: 45px;
   width: 100%;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
 
   position: relative;
 
   margin-bottom: 20px;
 }
 
-.Title__anchor {
-  width: 37px;
-  height: 3px;
-  background-color: rgba(255, 255, 255, 0.6);
-
-  position: absolute;
-
-  bottom: -1px;
-}
 
 .Title__anchor--start {
   left: 0;
@@ -29,18 +21,37 @@
 }
 
 .Title__zh {
-  font-family: 'SmileySans';
-  font-size: 24px;
-  letter-spacing: 1px;
-
-  height: 28px;
-  line-height: 28px;
-
   position: absolute;
-  bottom: 15px;
-  left: 0;
+  top: 25px;
+  left: 30px;
+
+  font-family: 'Source Han Sans CN';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 32.5px;
+  text-align: justify;
+  letter-spacing: -0.01em;
+
+  background: linear-gradient(180deg, #EF9F6C 0%, #E6672A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+
+  text-shadow: 0px 0px 10px rgba(239, 159, 108, 0.3);
 }
 
+.Title__icon {
+  position: absolute;
+  width: 62.5px;
+  height: 12.5px;
+
+  top: 35px;
+  right: 30px;
+}
+
+/*
 .Title__en {
   font-family: 'SmileySans';
   font-size: 14px;
@@ -53,3 +64,4 @@
   bottom: 16px;
   right: 0;
 }
+*/

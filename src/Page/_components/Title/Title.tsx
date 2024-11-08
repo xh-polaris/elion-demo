@@ -13,7 +13,7 @@ export default function Title({ en, zh }: Props) {
       <div className="Title__anchor Title__anchor--start"></div>
       <div className="Title__anchor Title__anchor--end"></div>
       <div className="Title__zh">{zh}</div>
-      {en ? <div className="Title__en">{en}</div> : null}
+      <img className="Title__icon" src="/images/icons/right.svg" alt=""></img>
     </div>
   );
 }

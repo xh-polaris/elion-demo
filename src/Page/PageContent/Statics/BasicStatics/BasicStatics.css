@@ -5,16 +5,23 @@
   border-radius: 15px;
 }
 
-.Content {
+.Content1 {
   margin-top: 34.5px;
   margin-left: 55px;
 }
 
+.Divider {
+  width: 802.5px;
+  height: 0px;
+  margin-left: 58px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
 .GridContainer {
+  width: 802.5px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 44.5px;
+  gap: 44.5px 84.5px;
 }
 
 .GridItem {

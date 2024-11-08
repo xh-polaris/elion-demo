@@ -1,9 +1,12 @@
 .PageTitle {
-  position: absolute;
-  left: 74px;
-  top: 58px;
+  /* Group 11 */
 
-  cursor: pointer;
+  position: absolute;
+  width: 620px;
+  height: 72px;
+  left: calc(50% - 620px/2);
+  top: 54px;
+
 }
 
 .PageTitle__logo {
@@ -15,16 +18,23 @@
   position: absolute;
   left: 99px;
   top: 0;
-  height: 55px;
-  line-height: 55px;
-
-  font-size: 55px;
-  font-weight: bold;
-  text-wrap: nowrap;
+  height: 72px;
 
   letter-spacing: 4px;
+  text-wrap: nowrap;
 
-  font-family: 'CKTKingKong';
+
+
+  font-family: 'Source Han Sans CN';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 72px;
+  /* identical to box height */
+  text-align: justify;
+  letter-spacing: -0.01em;
+
+  color: #FFFFFF;
 }
 
 .PageTitle__subtitle {

@@ -1,25 +1,92 @@
 .EssayImage__locator {
-  width: 420px;
-  height: 560px;
+  width: 601.5px;
+  height: 100%;
 
-  position: absolute;
-  left: 20%;
-  top: 55%;
-  transform: translate(-50%, -50%);
+  background: #25313B;
+  border-radius: 15px;
+
+  position: relative;
 }
 
 .EssayImage__locator--large {
   left: -10%;
 }
 
+.EssayImage__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 30px;
+}
+
+.EssayImage__title {
+  width: 100px;
+  height: 37.5px;
+
+  font-family: 'Source Han Sans CN';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 37.5px;
+  /* identical to box height */
+  text-align: justify;
+  letter-spacing: -0.01em;
+
+  background: linear-gradient(180deg, #EF9F6C 0%, #E6672A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+
+  text-shadow: 0px 0px 10px rgba(239, 159, 108, 0.3);
+}
+
+.EssayImage__icon {
+  width: 62.5px;
+  height: 12.5px;
+  object-fit: contain;
+}
+
+.EssayImage__divider {
+  width: 532.5px;
+  height: 0px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  margin-left: 35px;
+  margin-top: 11px;
+}
+
+.EssayImage__left-top {
+  position: absolute;
+  top: 96.5px;
+  left: 34.5px;
+  width: 21.5px;
+  height: 21.5px;
+}
+
+.EssayImage__right-bottom {
+  position: absolute;
+  bottom: 24.5px;
+  right: 40px;
+  width: 21.5px;
+  height: 21.5px;
+}
+
 .EssayImage__wrapper {
-  width: 420px;
-  height: 560px;
+/* 19 1 */
+
+  position: absolute;
+  width: 500.5px;
+  height: 667px;
+  left: 50.5px;
+  top: 40px;
+
+  border-radius: 15px;
 
   background-color: #fff;
 
   overflow: hidden;
-  position: relative;
 
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px,
     rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px,
@@ -37,8 +104,8 @@
   left: 0;
 
   width: 100%;
-  height: 240px;
-  background: linear-gradient(rgba(34, 229, 255, 0), rgb(34, 229, 255, 0.8));
+  height: 100%;
+  background: linear-gradient(360deg, rgba(231, 106, 45, 0.5) 0%, rgba(239, 159, 108, 0) 100%);
 
   transition: transform 3s;
   transform: translateY(-100%);

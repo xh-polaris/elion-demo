@@ -6,12 +6,18 @@
 
   position: relative;
 }
-.Title {
+
+.Content {
+  margin-top: 23.5px;
+  margin-left: 55px;
+}   
+
+.Titles {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 22px 55px;
-  width: 100%;
+  margin: 22px 55px;
+  margin-bottom: 0;
   height: 73.5px;
 }
 .TitleText {

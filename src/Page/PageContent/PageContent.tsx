@@ -21,13 +21,13 @@ export default function PageContent() {
     <div className="PageContent__wrapper">
       <div className={`PageContent ${displayMode === 1 ? 'PageContent--large' : ''}`}>
         <Statics></Statics>
+        <EssayImage></EssayImage>
         <SideBar></SideBar>
         <React.Fragment key={id}>
           <EssayDerivatives></EssayDerivatives>
           <Essay></Essay>
           <EssayMarks></EssayMarks>
           <Analysis></Analysis>
-          <EssayImage></EssayImage>
         </React.Fragment>
       </div>
     </div>

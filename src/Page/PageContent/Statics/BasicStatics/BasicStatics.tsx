@@ -1,5 +1,4 @@
 import './BasicStatics.css';
-import '../GeographicDistribution/GeographicDistribution.css'
 
 
 const statisticsData = [
@@ -43,12 +42,12 @@ const statisticsData = [
 
 export default function BasicStatics() {
   return <div className="BasicStatics">
-    <div className="Title">
+    <div className="Titles">
         <div className="TitleText">基础数据</div>
         <img src='/images/icons/right.svg' alt='' className='TitleIcon'/>
       </div>
       <div className="Divider"></div>
-      <div className="Content">
+      <div className="Content1">
         <div className="GridContainer">
           {statisticsData.map((item, index) => (
             <div className="GridItem" key={index}>

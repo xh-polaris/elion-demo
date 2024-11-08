@@ -11,8 +11,8 @@ export default function PageTitle() {
   return (
     <div className="PageTitle" onClick={() => id !== -1 && callDialog(true)}>
       <img className="PageTitle__logo" src="images/logo/logo.png" alt=""></img>
-      <div className="PageTitle__title">作文智能辅导系统</div>
-      <div className="PageTitle__subtitle">小花狮</div>
+      <div className="PageTitle__title">小花狮作文智能辅导系统</div>
+      {/* <div className="PageTitle__subtitle">小花狮</div> */}
     </div>
   );
 }

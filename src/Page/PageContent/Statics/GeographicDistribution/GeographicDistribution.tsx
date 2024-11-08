@@ -11,7 +11,7 @@ export default function GeographicDistribution() {
   ];
 
   return <div className="GeographicDistribution">
-      <div className="Title">
+      <div className="Titles">
         <div className="TitleText">城市分布</div>
         <img src='/images/icons/right.svg' alt='' className='TitleIcon'/>
       </div>
