@@ -49,12 +49,12 @@ function RadarChart() {
           shadowDeviation="8"></Pentagon>
         <Pentagon
           dimensions={new Array(5).fill(96)}
-          style={{ fill: 'rgb(82,139,206)' }}
+          style={{ fill: '#F4BC99' }}
           shadowDirection="out"></Pentagon>
-        <Pentagon dimensions={new Array(5).fill(72)} shadowDirection="in"></Pentagon>
+        <Pentagon dimensions={new Array(5).fill(72)} style={{ fill: '#EF9F6C' }} shadowDirection="in"></Pentagon>
         <Pentagon
           dimensions={new Array(5).fill(48)}
-          style={{ fill: 'rgb(82,139,206)' }}
+          style={{ fill: '#F4BC99' }}
           shadowDirection="out"></Pentagon>
         <Pentagon dimensions={new Array(5).fill(24)} shadowDirection="in"></Pentagon>
         <PentagonInsideLines></PentagonInsideLines>

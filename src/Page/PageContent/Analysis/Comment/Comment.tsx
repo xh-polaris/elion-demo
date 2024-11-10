@@ -1,46 +1,46 @@
-import React, { useMemo } from 'react';
+import React, { useMemo } from 'react'
 
-import { animationDurations, type HighlightRange } from '@def';
-import { useDialog } from '@store';
+import { animationDurations, type HighlightRange } from '@def'
+import { useDialog } from '@store'
 
-import TypewriterAnimation from 'src/Page/_components/TypewriterAnimation/TypewriterAnimation';
-import OpacityBg from 'src/Page/_components/OpacityBg/OpacityBg';
+import TypewriterAnimation from 'src/Page/_components/TypewriterAnimation/TypewriterAnimation'
+import OpacityBg from 'src/Page/_components/OpacityBg/OpacityBg'
 
-import CommentAudio from './CommentAudio/CommentAudio';
+import CommentAudio from './CommentAudio/CommentAudio'
 
-import './Comment.css';
+import './Comment.css'
 
-const ANIMATION_DURATION = animationDurations.comment;
+const ANIMATION_DURATION = animationDurations.comment
 
 function Comment({ content, highlights = [] }: { content: string; highlights?: HighlightRange[] }) {
-  const callDialog = useDialog(state => state.toggleActive);
+  const callDialog = useDialog(state => state.toggleActive)
   const list = useMemo(() => {
-    const chars = [] as string[];
+    const chars = [] as string[]
     for (let i = 0; i < content.length; i++) {
-      chars[i] = content[i];
+      chars[i] = content[i]
     }
-    const colors = [] as string[];
+    const colors = [] as string[]
     highlights.forEach(({ start, length, color }) => {
       for (let i = 0; i < length; i++) {
-        colors[start + i] = color;
+        colors[start + i] = color
       }
-    });
+    })
     return chars.map((char, i) => (
       <span key={`${i} ${colors[i]}`} style={colors[i] ? { color: colors[i] } : {}}>
         {char}
       </span>
-    ));
-  }, [content, highlights]);
+    ))
+  }, [content, highlights])
 
   return (
     <div className="CommentContent__wrapper">
       {list.length ? (
         <div className="CommentContent">
-          <OpacityBg>
-            <div className="CommentContent__interior">
-              <TypewriterAnimation list={list} duration={ANIMATION_DURATION}></TypewriterAnimation>
-            </div>
-          </OpacityBg>
+          {/* <div className="CommentContent__quote1">“</div> */}
+          <div className="CommentContent__interior">
+            <TypewriterAnimation list={list} duration={ANIMATION_DURATION}></TypewriterAnimation>
+          {/* <div className="CommentContent__quote2">”</div> */}
+          </div>
         </div>
       ) : null}
       <img
@@ -50,7 +50,7 @@ function Comment({ content, highlights = [] }: { content: string; highlights?: H
         onClick={() => callDialog()}></img>
       <CommentAudio content={content}></CommentAudio>
     </div>
-  );
+  )
 }
 
-export default Comment;
+export default Comment

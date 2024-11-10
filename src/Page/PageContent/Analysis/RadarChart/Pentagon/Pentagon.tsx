@@ -88,7 +88,7 @@ export function Pentagon({
               dx="0"
               dy="0"
               stdDeviation={shadowDeviation ?? '6'}
-              floodColor="rgb(219,227,255)"
+              floodColor="rgba(239, 159, 108, 0.5)"
             />
           </filter>
           <filter id={'blur-in' + shadowDeviation}>
@@ -104,8 +104,8 @@ export function Pentagon({
           }
           points={getPointsStr(vertexs)}
           style={{
-            fill: 'rgb(116,174,228)',
-            stroke: 'rgb(219,227,255)',
+            fill: '#F7CFB6',
+            stroke: '#F7CFB6',
             strokeWidth: 1,
             ...style
           }}>

@@ -134,12 +134,13 @@ function Essay() {
   return (
     <div className="Essay">
       <div className="Essay__title">
+        {/*
         {author.name ? (
           <div className="Essay__author">
             {author.class} {author.name}
           </div>
-        ) : null}
-        {title}
+        ) : null}*/}
+        <div className="Essay__titleText">{title}</div>
       </div>
       <OpacityBg>
         <div className="Essay__content">

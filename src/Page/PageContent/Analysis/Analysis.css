@@ -1,5 +1,5 @@
 .Analysis {
-  width: 488px;
+  width: 735px;
   position: relative;
 }
 
@@ -8,18 +8,42 @@
 }
 
 .RadarChartBoard {
-  width: 488px;
-  height: 350px;
+  position: relative;
+  top: 25px;
+  width: 735px;
+  height: 390px;
 }
 
 .CommentBoard {
-  width: 488px;
-  height: 347px;
+  width: 735px;
+  height: 387px;
 }
 
 .Battery--overall {
   position: absolute;
-  left: 110px;
-  top: 0;
+  left: 140px;
+  top: 27px;
   cursor: pointer;
+}
+
+.divider {
+  position: absolute;
+
+  width: 664px;
+  height: 0px;
+  left: 32.5px;
+  top: 78px;
+
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.divider2 {
+position: absolute;
+
+  width: 664px;
+  height: 0px;
+  left: 32.5px;
+  top: 560px;
+
+  border: 1px solid rgba(255, 255, 255, 0.8);
 }
