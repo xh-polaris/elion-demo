@@ -10,6 +10,8 @@ import BgVideo from './BgVideo/BgVideo';
 import PageTitle from './PageTitle/PageTitle';
 import Controls from './Controls/Controls';
 
+import Background from './Background/Background';
+
 import './Page.css';
 
 function Page() {
@@ -24,6 +26,7 @@ function Page() {
       <div className="CenterLocator">
         <Autofit>
           <div className="Page">
+            <Background />
             <PageTitle></PageTitle>
             <Controls></Controls>
             <PageContent />
