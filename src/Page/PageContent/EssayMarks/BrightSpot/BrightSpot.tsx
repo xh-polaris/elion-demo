@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React, { useMemo, useEffect } from 'react';
 
 import { useEssay } from '@store';
 
@@ -37,39 +37,50 @@ export default function BrightSpot() {
     </div>
   ));
 
-  const goodSents = useMemo(() => {
+  const goodSentsList = useMemo(() => {
     return good_sents_arranged.map((goodSentsInParagraph, paragraphId) => (
       <div className="BrightSpot__goodSents__wrapper" key={paragraphId}>
-        {goodSentsInParagraph.map((goodSent, sentId) => {
-          const isSelected = selectedSentence?.paragraphId === paragraphId && 
-                            selectedSentence?.sentId === sentId;
-          
-          return (
-            <div 
-              className={`BrightSpot__goodSent ${isSelected ? 'BrightSpot__goodSent--selected' : ''}`}
-              onClick={() => setSelectedSentence(paragraphId, sentId)}
-              key={sentId}
-            >
-              <div className="BrightSpot__goodSent__title">好句</div>
-              <div className="BrightSpot__goodSent__content">
-                <div className="BrightSpot__goodSent__text">
-                  {shortenSent(sents[paragraphId][sentId])}
-                </div>
-                <div className="BrightSpot__rehetoric">
-                  {judgeRhetoric(goodSent.label)}
-                </div>
+        {goodSentsInParagraph.map((goodSent, sentId) => (          
+          <div 
+            className="BrightSpot__goodSent"
+            data-paragraph-id={paragraphId}
+            data-sent-id={sentId}
+            onClick={() => setSelectedSentence(paragraphId, sentId)}
+            key={sentId}
+          >
+            <div className="BrightSpot__goodSent__title">好句</div>
+            <div className="BrightSpot__goodSent__content">
+              <div className="BrightSpot__goodSent__text">
+                {shortenSent(sents[paragraphId][sentId])}
+              </div>
+              <div className="BrightSpot__rehetoric">
+                {judgeRhetoric(goodSent.label)}
               </div>
             </div>
-          );
-        })}
+          </div>
+        ))}
       </div>
     ));
-  }, [good_sents_arranged, selectedSentence, sents]);
+  }, [good_sents_arranged, sents]);
+
+  useEffect(() => {
+    document.querySelectorAll('.BrightSpot__goodSent').forEach(el => {
+      const paragraphId = Number(el.getAttribute('data-paragraph-id'));
+      const sentId = Number(el.getAttribute('data-sent-id'));
+      
+      if (selectedSentence?.paragraphId === paragraphId && 
+          selectedSentence?.sentId === sentId) {
+        el.classList.add('BrightSpot__goodSent--selected');
+      } else {
+        el.classList.remove('BrightSpot__goodSent--selected');
+      }
+    });
+  }, [selectedSentence]);
 
   return (
     <div className="BrightSpot">
       <TypewriterAnimation duration={1} list={goodWords} key="goodWords" />
-      <TypewriterAnimation duration={1} list={goodSents} key="goodSents" />
+      <TypewriterAnimation duration={1} list={goodSentsList} key="goodSents" />
     </div>
   );
 }

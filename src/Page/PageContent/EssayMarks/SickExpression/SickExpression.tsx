@@ -12,13 +12,10 @@ export default function SickExpression() {
   const selectedSentence = useEssay(store => store.selectedSentence);
   const setSelectedSentence = useEssay(store => store.setSelectedSentence);
 
-  const sickSents = useMemo(() => {
+  const sickSentsList = useMemo(() => {
     return sick_sents_arranged.map((sickSentsInParagraph, paragraphId) => (
       <div className="SickExpression__sickSents__wrapper" key={paragraphId}>
         {sickSentsInParagraph.map((sickSent, sentId) => {
-          const isSelected = selectedSentence?.paragraphId === paragraphId && 
-                            selectedSentence?.sentId === sentId;
-          
           let textCorrections = textCorrections_arranged[paragraphId]?.[sentId];
           const chars = sents[paragraphId][sentId].split('');
 
@@ -50,7 +47,9 @@ export default function SickExpression() {
 
           return (
             <div 
-              className={`SickExpression__sickSent ${isSelected ? 'SickExpression__sickSent--selected' : ''}`}
+              className="SickExpression__sickSent"
+              data-paragraph-id={paragraphId}
+              data-sent-id={sentId}
               onClick={() => setSelectedSentence(paragraphId, sentId)}
               key={sentId}
             >
@@ -64,11 +63,26 @@ export default function SickExpression() {
         })}
       </div>
     ));
-  }, [sick_sents_arranged, selectedSentence, sents, textCorrections_arranged]);
+  }, [sick_sents_arranged, sents, textCorrections_arranged]);
+
+  // 使用 useEffect 来更新选中状态的样式
+  React.useEffect(() => {
+    document.querySelectorAll('.SickExpression__sickSent').forEach(el => {
+      const paragraphId = Number(el.getAttribute('data-paragraph-id'));
+      const sentId = Number(el.getAttribute('data-sent-id'));
+      
+      if (selectedSentence?.paragraphId === paragraphId && 
+          selectedSentence?.sentId === sentId) {
+        el.classList.add('SickExpression__sickSent--selected');
+      } else {
+        el.classList.remove('SickExpression__sickSent--selected');
+      }
+    });
+  }, [selectedSentence]);
 
   return (
     <div className="SickExpression">
-      <TypewriterAnimation duration={1} list={sickSents} key="sickSents" />
+      <TypewriterAnimation duration={1} list={sickSentsList} key="sickSents" />
     </div>
   );
 }

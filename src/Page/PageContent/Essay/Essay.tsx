@@ -36,7 +36,7 @@ function Essay() {
   const [currLine, setCurrLine] = useState<number>(0);
   const scroller = useRef<HTMLDivElement>(null);
 
-  const chars = useMemo(() => {
+  const textElements = useMemo(() => {
     const res = [] as JSX.Element[];
     sents.forEach((paragraph, i) => {
       res.push(
@@ -52,9 +52,6 @@ function Essay() {
       );
 
       paragraph.forEach((sentence, j) => {
-        const isSelected = selectedSentence?.paragraphId === i && 
-                          selectedSentence?.sentId === j;
-        
         sentence.split('').forEach((char, k) => {
           const goodWords = (good_words_arranged[i] ? good_words_arranged[i][j] : null) ?? [];
           const goodSent = good_sents_arranged[i] ? good_sents_arranged[i][j] : null;
@@ -62,8 +59,8 @@ function Essay() {
 
           let isInGoodWord = false;
 
-          for (let i = 0; i < goodWords.length; i++) {
-            let goodWord = goodWords[i];
+          for (let idx = 0; idx < goodWords.length; idx++) {
+            let goodWord = goodWords[idx];
             if (k < goodWord.start) {
               break;
             } else if (k < goodWord.end) {
@@ -74,28 +71,34 @@ function Essay() {
 
           const Inner = (
             <div 
-              className={`Essay__text ${isSelected ? 'Essay__text--selected' : ''}`}
+              className={`Essay__text ${
+                selectedSentence?.paragraphId === i && 
+                selectedSentence?.sentId === j 
+                  ? 'Essay__text--selected' 
+                  : ''
+              }`}
               onClick={() => setSelectedSentence(i, j)}
+              data-paragraph={i}
+              data-sentence={j}
               key={`${i} ${j} ${k}`}
             >
               {isInGoodWord ? <div className="Essay__textDecorator--goodWord"></div> : null}
               {goodSent ? (
-                <div
-                  className={
-                    'Essay__textDecorator--goodSent ' +
-                    (k === sentence.length - 1 ? 'Essay__textDecorator--divider' : '')
-                  }></div>
+                <div className={
+                  'Essay__textDecorator--goodSent ' +
+                  (k === sentence.length - 1 ? 'Essay__textDecorator--divider' : '')
+                }></div>
               ) : null}
               {sickSent ? (
-                <div
-                  className={
-                    'Essay__textDecorator--sickSent ' +
-                    (k === sentence.length - 1 ? 'Essay__textDecorator--divider' : '')
-                  }></div>
+                <div className={
+                  'Essay__textDecorator--sickSent ' +
+                  (k === sentence.length - 1 ? 'Essay__textDecorator--divider' : '')
+                }></div>
               ) : null}
               <div className="Essay__char">{char}</div>
             </div>
           );
+          
           res.push(
             sickSent || goodSent ? (
               <Popover
@@ -128,7 +131,7 @@ function Essay() {
       );
     });
     return res;
-  }, [sents, selectedSentence]);
+  }, [sents, good_words_arranged, good_sents_arranged, sick_sents_arranged]);
 
   const throttledScrollRecorder = useMemo(() => {
     function scrollRecorder(e: React.UIEvent<HTMLDivElement, WheelEvent>) {
@@ -163,8 +166,10 @@ function Essay() {
               </div> */}
               <div className="Essay__texts">
                 <TypewriterAnimation
-                  list={chars}
-                  duration={ANIMATION_DURATION}></TypewriterAnimation>
+                  key={id}
+                  list={textElements}
+                  duration={ANIMATION_DURATION}
+                />
               </div>
             </div>
           </div>
