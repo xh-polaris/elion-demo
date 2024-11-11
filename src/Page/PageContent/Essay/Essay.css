@@ -156,7 +156,7 @@
   left: 0;
   bottom: -5px;
 
-  border-bottom: 4px dotted var(--sick-sent-color);
+  border-bottom: 4px solid var(--sick-sent-color);
 }
 
 .Essay__textDecorator--divider {
@@ -216,4 +216,43 @@
 .Essay__text--selected {
   background-color: rgba(239, 159, 108, 0.3);
   cursor: pointer;
+}
+
+.Essay__sentence {
+  transition: background-color 0.3s;
+}
+
+.Essay__sentence--clickable {
+  cursor: pointer;
+}
+
+/* 好句选中状态 */
+.Essay__sentence--selected-good {
+  background-color: rgba(12, 141, 227, 0.3); /* 浅蓝色 */
+}
+
+/* 病句选中状态 */
+.Essay__sentence--selected-sick {
+  background-color: rgba(255, 98, 98, 0.3); /* 浅红色 */
+}
+
+.Essay__char--good-word {
+  background-color: var(--good-sent-color);
+}
+
+.Essay__paragraph-number {
+  font-family: 'Source Han Sans CN';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  /* identical to box height */
+  text-align: justify;
+  letter-spacing: -0.01em;
+  
+  background: linear-gradient(180deg, #EF9F6C 0%, #E6672A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+  text-shadow: 0px 0px 10px rgba(239, 159, 108, 0.3);
 }

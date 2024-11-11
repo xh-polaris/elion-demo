@@ -39,6 +39,18 @@ function Essay() {
   const chars = useMemo(() => {
     const res = [] as JSX.Element[];
     sents.forEach((paragraph, i) => {
+      res.push(
+        <div key={`para-num-${i}`} className="Essay__text Essay__paragraph-number">
+          {i + 1}.
+        </div>
+      );
+      
+      res.push(
+        <div key={`indent-${i}-1`} className="Essay__text">
+          <div className="Essay__char">&nbsp;</div>
+        </div>
+      );
+
       paragraph.forEach((sentence, j) => {
         const isSelected = selectedSentence?.paragraphId === i && 
                           selectedSentence?.sentId === j;
@@ -108,6 +120,12 @@ function Essay() {
           );
         });
       });
+
+      res.push(
+        <div key={`break-${i}`} className="Essay__break">
+          <br />
+        </div>
+      );
     });
     return res;
   }, [sents, selectedSentence]);
