@@ -16,6 +16,9 @@ import { GRID_ROWS, ROW_HEIGHT, GRID_COLS } from './constants';
 
 import './Essay.css';
 
+import { useScrollToSelectedSentence } from 'src/hooks/useScrollToSelectedSentence';
+import { useSelectedSentenceStyle } from 'src/hooks/useSelectedSentenceStyle';
+
 const ANIMATION_DURATION = animationDurations.essay;
 
 function Essay() {
@@ -35,6 +38,9 @@ function Essay() {
   const clearSelectedSentence = useEssay(store => store.clearSelectedSentence);
   const [currLine, setCurrLine] = useState<number>(0);
   const scroller = useRef<HTMLDivElement>(null);
+
+  useSelectedSentenceStyle();
+  useScrollToSelectedSentence(scroller);
 
   const textElements = useMemo(() => {
     const res = [] as JSX.Element[];
@@ -144,25 +150,6 @@ function Essay() {
   function scrollLines(line: number) {
     scroller.current?.scrollBy(0, line * ROW_HEIGHT);
   }
-
-  const handleSelectedStyle = () => {
-    if (!selectedSentence) return;
-    const elements = document.querySelectorAll('.Essay__text[data-paragraph][data-sentence]');
-    elements.forEach(el => {
-      const paragraph = el.getAttribute('data-paragraph');
-      const sentence = el.getAttribute('data-sentence');
-      if (paragraph === selectedSentence.paragraphId.toString() && 
-          sentence === selectedSentence.sentId.toString()) {
-        el.setAttribute('data-selected', 'true');
-      } else {
-        el.setAttribute('data-selected', 'false');
-      }
-    });
-  };
-
-  useEffect(() => {
-    handleSelectedStyle();
-  }, [selectedSentence]);
 
   return (
     <div className="Essay">
