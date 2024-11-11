@@ -1,4 +1,4 @@
-import React, { useMemo, useState, useRef } from 'react';
+import React, { useMemo, useState, useRef, useEffect } from 'react';
 import { Popover } from 'antd';
 import { throttle } from 'lodash';
 
@@ -71,12 +71,7 @@ function Essay() {
 
           const Inner = (
             <div 
-              className={`Essay__text ${
-                selectedSentence?.paragraphId === i && 
-                selectedSentence?.sentId === j 
-                  ? 'Essay__text--selected' 
-                  : ''
-              }`}
+              className="Essay__text"
               onClick={() => setSelectedSentence(i, j)}
               data-paragraph={i}
               data-sentence={j}
@@ -131,7 +126,13 @@ function Essay() {
       );
     });
     return res;
-  }, [sents, good_words_arranged, good_sents_arranged, sick_sents_arranged]);
+  }, [
+    sents, 
+    good_words_arranged, 
+    good_sents_arranged, 
+    sick_sents_arranged,
+    setSelectedSentence
+  ]);
 
   const throttledScrollRecorder = useMemo(() => {
     function scrollRecorder(e: React.UIEvent<HTMLDivElement, WheelEvent>) {
@@ -143,6 +144,25 @@ function Essay() {
   function scrollLines(line: number) {
     scroller.current?.scrollBy(0, line * ROW_HEIGHT);
   }
+
+  const handleSelectedStyle = () => {
+    if (!selectedSentence) return;
+    const elements = document.querySelectorAll('.Essay__text[data-paragraph][data-sentence]');
+    elements.forEach(el => {
+      const paragraph = el.getAttribute('data-paragraph');
+      const sentence = el.getAttribute('data-sentence');
+      if (paragraph === selectedSentence.paragraphId.toString() && 
+          sentence === selectedSentence.sentId.toString()) {
+        el.setAttribute('data-selected', 'true');
+      } else {
+        el.setAttribute('data-selected', 'false');
+      }
+    });
+  };
+
+  useEffect(() => {
+    handleSelectedStyle();
+  }, [selectedSentence]);
 
   return (
     <div className="Essay">
