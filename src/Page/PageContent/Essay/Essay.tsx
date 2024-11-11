@@ -30,31 +30,20 @@ function Essay() {
     sick_sents_arranged,
     good_words_arranged
   } = useEssay(state => state.essay);
+  const selectedSentence = useEssay(store => store.selectedSentence);
+  const setSelectedSentence = useEssay(store => store.setSelectedSentence);
+  const clearSelectedSentence = useEssay(store => store.clearSelectedSentence);
   const [currLine, setCurrLine] = useState<number>(0);
   const scroller = useRef<HTMLDivElement>(null);
 
   const chars = useMemo(() => {
     const res = [] as JSX.Element[];
-    // let colCounter = 0;
-    // function accumulateCol(diff: number = 1) {
-    //   colCounter += diff;
-    //   colCounter %= GRID_COLS;
-    // }
-    function addLineStarts(i: number) {
-      res.push(
-        <div className="Essay__text" key={`lineStart0 ${i}`}>
-          <ParagraphCommentNotation comment={paragraphComments[i]} idx={i} />
-        </div>
-      );
-      res.push(<div className="Essay__text" key={`lineStart1 ${i}`}></div>);
-    }
-    function addEssayBreak(i: number) {
-      res.push(<div className="Essay__break" key={`break ${i}`}></div>);
-    }
     sents.forEach((paragraph, i) => {
-      addLineStarts(i);
       paragraph.forEach((sentence, j) => {
-        for (let k = 0; k < sentence.length; k++) {
+        const isSelected = selectedSentence?.paragraphId === i && 
+                          selectedSentence?.sentId === j;
+        
+        sentence.split('').forEach((char, k) => {
           const goodWords = (good_words_arranged[i] ? good_words_arranged[i][j] : null) ?? [];
           const goodSent = good_sents_arranged[i] ? good_sents_arranged[i][j] : null;
           const sickSent = sick_sents_arranged[i] ? sick_sents_arranged[i][j] : null;
@@ -72,7 +61,11 @@ function Essay() {
           }
 
           const Inner = (
-            <div className="Essay__text" key={`${i} ${j} ${k}`}>
+            <div 
+              className={`Essay__text ${isSelected ? 'Essay__text--selected' : ''}`}
+              onClick={() => setSelectedSentence(i, j)}
+              key={`${i} ${j} ${k}`}
+            >
               {isInGoodWord ? <div className="Essay__textDecorator--goodWord"></div> : null}
               {goodSent ? (
                 <div
@@ -88,7 +81,7 @@ function Essay() {
                     (k === sentence.length - 1 ? 'Essay__textDecorator--divider' : '')
                   }></div>
               ) : null}
-              <div className="Essay__char">{sentence[k]}</div>
+              <div className="Essay__char">{char}</div>
             </div>
           );
           res.push(
@@ -113,12 +106,11 @@ function Essay() {
               Inner
             )
           );
-        }
+        });
       });
-      addEssayBreak(i);
     });
     return res;
-  }, [id]);
+  }, [sents, selectedSentence]);
 
   const throttledScrollRecorder = useMemo(() => {
     function scrollRecorder(e: React.UIEvent<HTMLDivElement, WheelEvent>) {

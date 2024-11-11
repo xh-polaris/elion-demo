@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 
 import { useEssay } from '@store';
 
@@ -25,6 +25,8 @@ export function judgeRhetoric(label: string) {
 
 export default function BrightSpot() {
   const { good_words, good_sents_arranged, sents } = useEssay(store => store.essay);
+  const selectedSentence = useEssay(store => store.selectedSentence);
+  const setSelectedSentence = useEssay(store => store.setSelectedSentence);
 
   const goodWords = good_words.map(({ paragraph_id, sent_id, start, end }) => (
     <div className="BrightSpot__goodWord" key={`${paragraph_id} ${sent_id}`}>
@@ -35,26 +37,39 @@ export default function BrightSpot() {
     </div>
   ));
 
-  const goodSents = good_sents_arranged.map((goodSentsInParagraph, paragraphId) => (
-    <div className="BrightSpot__goodSents__wrapper" key={paragraphId}>
-      {goodSentsInParagraph.map((goodSent, sentId) => (
-        <div className="BrightSpot__goodSent" key={sentId}>
-          <div className="BrightSpot__goodSent__title">好句</div>
-          <div className="BrightSpot__goodSent__content">
-          <TypewriterAnimationForString
-            duration={1}
-            text={shortenSent(sents[paragraphId][sentId])}></TypewriterAnimationForString>
-            <div className="BrightSpot__rehetoric">{judgeRhetoric(goodSent.label)}</div>
-          </div>
-        </div>
-      ))}
-    </div>
-  ));
+  const goodSents = useMemo(() => {
+    return good_sents_arranged.map((goodSentsInParagraph, paragraphId) => (
+      <div className="BrightSpot__goodSents__wrapper" key={paragraphId}>
+        {goodSentsInParagraph.map((goodSent, sentId) => {
+          const isSelected = selectedSentence?.paragraphId === paragraphId && 
+                            selectedSentence?.sentId === sentId;
+          
+          return (
+            <div 
+              className={`BrightSpot__goodSent ${isSelected ? 'BrightSpot__goodSent--selected' : ''}`}
+              onClick={() => setSelectedSentence(paragraphId, sentId)}
+              key={sentId}
+            >
+              <div className="BrightSpot__goodSent__title">好句</div>
+              <div className="BrightSpot__goodSent__content">
+                <div className="BrightSpot__goodSent__text">
+                  {shortenSent(sents[paragraphId][sentId])}
+                </div>
+                <div className="BrightSpot__rehetoric">
+                  {judgeRhetoric(goodSent.label)}
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    ));
+  }, [good_sents_arranged, selectedSentence, sents]);
 
   return (
     <div className="BrightSpot">
-      <TypewriterAnimation duration={1} list={goodWords}></TypewriterAnimation>
-      <TypewriterAnimation duration={1} list={goodSents}></TypewriterAnimation>
+      <TypewriterAnimation duration={1} list={goodWords} key="goodWords" />
+      <TypewriterAnimation duration={1} list={goodSents} key="goodSents" />
     </div>
   );
 }

@@ -71,3 +71,21 @@
 
   color: #439BD6;
 }
+
+.BrightSpot__goodSent {
+  cursor: pointer;
+}
+
+.BrightSpot__goodSent--selected {
+  border: 2px solid #EF9F6C;
+  box-shadow: 0 0 10px rgba(239, 159, 108, 0.3);
+}
+
+.BrightSpot__goodSent__text {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.BrightSpot__goodSent--selected .BrightSpot__goodSent__text {
+  opacity: 0.8;
+}

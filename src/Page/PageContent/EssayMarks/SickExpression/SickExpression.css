@@ -48,7 +48,7 @@
 }
 */
 
-.SickExpression__sickSent { 
+.SickExpression__sickSent {
   width: 240px;
   margin-bottom: 25px;
   background: rgba(211, 214, 216, 0.13);
@@ -58,6 +58,12 @@
   padding-right: 16.5px;
   padding-top: 16px;
   padding-bottom: 13px;
+  cursor: pointer;
+}
+
+.SickExpression__sickSent--selected {
+  border: 2px solid #EF9F6C;
+  box-shadow: 0 0 10px rgba(239, 159, 108, 0.3);
 }
 
 .SickExpression__sickSent__header {
@@ -101,4 +107,13 @@
 .SickExpression__sickSents__wrapper {
   max-height: 100%;
   overflow-y: auto;
+}
+
+.SickExpression__sickSent__content {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.SickExpression__sickSent--selected .SickExpression__sickSent__content {
+  opacity: 0.8;
 }

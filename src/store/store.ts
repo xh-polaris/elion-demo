@@ -36,21 +36,37 @@ interface EssayState {
   loadEssay: (idx: number) => void;
   viewIdx: number;
   changeViewIdx: (idx: number) => void;
+  selectedSentence: {
+    paragraphId: number;
+    sentId: number;
+  } | null;
+  setSelectedSentence: (paragraphId: number, sentId: number) => void;
+  clearSelectedSentence: () => void;
 }
 
-export const useEssay = create<EssayState>((set, get) => ({
+export const useEssay = create<EssayState>((set) => ({
   essay: emptyEssay,
   essayIdx: -1,
-  loadEssay: (idx: number) => {
-    if (get().essayIdx !== idx) {
-      set({ essay: ESSAYS[idx], viewIdx: 0, essayIdx: idx });
-      // setTimeout(() => {
-      //   set({ essay: ESSAYS[idx] });
-      // }, 0);
-    }
-  },
+  loadEssay: (idx: number) => 
+    set((state) => ({
+      ...state,
+      essay: ESSAYS[idx],
+      essayIdx: idx,
+      selectedSentence: null
+    })),
   viewIdx: 0,
-  changeViewIdx: (idx: number) => set({ viewIdx: idx })
+  changeViewIdx: (idx: number) => set({ viewIdx: idx }),
+  selectedSentence: null,
+  setSelectedSentence: (paragraphId: number, sentId: number) => 
+    set((state) => ({ 
+      ...state,
+      selectedSentence: { paragraphId, sentId } 
+    })),
+  clearSelectedSentence: () => 
+    set((state) => ({ 
+      ...state,
+      selectedSentence: null 
+    }))
 }));
 
 interface DialogState {

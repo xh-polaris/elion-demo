@@ -120,6 +120,7 @@
   padding-bottom: 4px;
 
   position: relative;
+  transition: background-color 0.3s;
 }
 
 .Essay__textDecorator--goodWord {
@@ -210,4 +211,9 @@
 
 .Essay__popover__content--sick {
   color: var(--sick-sent-color);
+}
+
+.Essay__text--selected {
+  background-color: rgba(239, 159, 108, 0.3);
+  cursor: pointer;
 }
