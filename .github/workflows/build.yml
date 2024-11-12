@@ -26,8 +26,8 @@ jobs:
       - name: Upload to COS
         uses: TencentCloud/cos-action@v1
         with:
-          secret_id: ${{ secrets.TENCENT_SECRET_ID }}
-          secret_key: ${{ secrets.TENCENT_SECRET_KEY }}
+          secret_id: ${{ secrets.TECENT_SECRET_ID }}
+          secret_key: ${{ secrets.TECENT_SECRET_KEY }}
           cos_bucket: elion-demo-1308722423
           cos_region: ap-shanghai
           local_path: build
@@ -36,8 +36,8 @@ jobs:
       - name: Refresh CDN
         uses: TencentCloud/cli-action@v1
         with:
-          secret_id: ${{ secrets.TENCENT_SECRET_ID }}
-          secret_key: ${{ secrets.TENCENT_SECRET_KEY }}
+          secret_id: ${{ secrets.TECENT_SECRET_ID }}
+          secret_key: ${{ secrets.TECENT_SECRET_KEY }}
           region: ap-shanghai
           commands: "cdn PurgePathCache --cli-unfold-argument --Paths https://elion-demo.xhpolaris.com/ --FlushType delete"
           output_format: json
