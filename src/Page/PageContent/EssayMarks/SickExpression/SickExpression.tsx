@@ -6,6 +6,7 @@ import { useEssay } from '@store';
 import TypewriterAnimation from 'src/Page/_components/TypewriterAnimation/TypewriterAnimation';
 
 import './SickExpression.css';
+import { useScrollToMark } from 'src/hooks/useScrollToMark';
 
 export default function SickExpression() {
   const { sick_sents_arranged, textCorrections_arranged, sents } = useEssay(store => store.essay);
@@ -79,6 +80,9 @@ export default function SickExpression() {
       }
     });
   }, [selectedSentence]);
+
+  // 添加滚动功能
+  useScrollToMark(selectedSentence, '.SickExpression__sickSent', '.SickExpression');
 
   return (
     <div className="SickExpression">

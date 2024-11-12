@@ -8,6 +8,7 @@ import TypewriterAnimationForString from 'src/Page/_components/TypewriterAnimati
 import shortenSent from '../shortenSent';
 
 import './BrightSpot.css';
+import { useScrollToMark } from 'src/hooks/useScrollToMark';
 
 export function judgeRhetoric(label: string) {
   switch (label) {
@@ -28,14 +29,16 @@ export default function BrightSpot() {
   const selectedSentence = useEssay(store => store.selectedSentence);
   const setSelectedSentence = useEssay(store => store.setSelectedSentence);
 
-  const goodWords = good_words.map(({ paragraph_id, sent_id, start, end }) => (
-    <div className="BrightSpot__goodWord" key={`${paragraph_id} ${sent_id}`}>
-      <div className="BrightSpot__goodWord__title">好词</div>
-      <div className="BrightSpot__goodWord__content">
-        {sents[paragraph_id][sent_id].substring(start, end)}
+  const goodWords = useMemo(() => {
+    return good_words.map(({ paragraph_id, sent_id, start, end }) => (
+      <div className="BrightSpot__goodWord" key={`${paragraph_id} ${sent_id}`}>
+        <div className="BrightSpot__goodWord__title">好词</div>
+        <div className="BrightSpot__goodWord__content">
+          {sents[paragraph_id][sent_id].substring(start, end)}
+        </div>
       </div>
-    </div>
-  ));
+    ));
+  }, [good_words, sents]);
 
   const goodSentsList = useMemo(() => {
     return good_sents_arranged.map((goodSentsInParagraph, paragraphId) => (
@@ -76,6 +79,8 @@ export default function BrightSpot() {
       }
     });
   }, [selectedSentence]);
+
+  useScrollToMark(selectedSentence, '.BrightSpot__goodSent', '.BrightSpot');
 
   return (
     <div className="BrightSpot">

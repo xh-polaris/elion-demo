@@ -62,8 +62,7 @@
 }
 
 .SickExpression__sickSent--selected {
-  border: 2px solid #EF9F6C;
-  box-shadow: 0 0 10px rgba(239, 159, 108, 0.3);
+  background: rgba(211, 214, 216, 0.38);
 }
 
 .SickExpression__sickSent__header {
