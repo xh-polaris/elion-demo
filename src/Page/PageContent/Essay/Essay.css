@@ -1,6 +1,10 @@
 .Essay {
   width: 580px;
   height: 100%;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .Essay__title {

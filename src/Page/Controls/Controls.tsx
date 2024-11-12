@@ -29,7 +29,7 @@ export default function Controls() {
   useEffect(() => {
     setVoiceToggling(true);
     cancelVoiceToggling();
-  }, [voiceIdx]);
+  }, [voiceIdx, cancelVoiceToggling]);
 
   return (
     <div className="Controls__wrapper">

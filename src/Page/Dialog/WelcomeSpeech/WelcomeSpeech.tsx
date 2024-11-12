@@ -12,7 +12,7 @@ export default function WelcomeSpeech() {
     if (!loading) {
       get('welcome', WELCOME_TEXT);
     }
-  }, []);
+  }, [loading, get]);
 
   return res ? <audio src={res.url} autoPlay></audio> : null;
 }
