@@ -21,5 +21,5 @@ export const useScrollToSelectedSentence = (scrollerRef: React.RefObject<HTMLEle
         behavior: 'smooth'
       });
     }
-  }, [selectedSentence]);
+  }, [scrollerRef, selectedSentence]);
 }; 

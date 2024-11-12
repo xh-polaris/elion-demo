@@ -37,7 +37,7 @@ function Autofit({ children, mode = scaleMode.MIN }: { children: ReactNode; mode
 
   useEffect(() => {
     resizePage();
-  }, [displayMode]);
+  }, [displayMode, resizePage]);
 
   return (
     <div className="Autofit" style={{ transform: `scale(${scale})` }} ref={ref}>

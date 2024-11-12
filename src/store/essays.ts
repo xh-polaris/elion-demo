@@ -21,8 +21,6 @@ type ParagraphInterval = {
 
 type Sent = ParagraphId & SentId & Label;
 type SickSent = Sent & { revised_sent: string };
-type GoodWord = ParagraphId & SentId & ParagraphInterval;
-type SendRelation = ParagraphId & Label & ParagraphInterval;
 type TextCorrection = ParagraphId &
   SentId & {
     label: ('A' | 'R' | 'D')[];

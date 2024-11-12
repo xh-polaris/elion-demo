@@ -30,5 +30,5 @@ export function useScrollToMark(
         });
       }
     });
-  }, [selectedSentence]);
+  }, [selectedSentence, selector, containerSelector]);
 }

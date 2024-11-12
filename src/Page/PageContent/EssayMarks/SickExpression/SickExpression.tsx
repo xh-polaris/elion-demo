@@ -64,7 +64,7 @@ export default function SickExpression() {
         })}
       </div>
     ));
-  }, [sick_sents_arranged, sents, textCorrections_arranged]);
+  }, [sick_sents_arranged, textCorrections_arranged, sents, setSelectedSentence]);
 
   // 使用 useEffect 来更新选中状态的样式
   React.useEffect(() => {
