@@ -35,7 +35,7 @@ function DialogContent() {
     if (!replying && res) {
       setAssistantReplys(replys => [...replys, res]);
     }
-  }, [replying]);
+  }, [replying, res]);
 
   useEffect(() => {
     scrollToBottom();

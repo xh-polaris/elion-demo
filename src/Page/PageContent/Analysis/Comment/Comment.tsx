@@ -4,7 +4,6 @@ import { animationDurations, type HighlightRange } from '@def'
 import { useDialog } from '@store'
 
 import TypewriterAnimation from 'src/Page/_components/TypewriterAnimation/TypewriterAnimation'
-import OpacityBg from 'src/Page/_components/OpacityBg/OpacityBg'
 
 import CommentAudio from './CommentAudio/CommentAudio'
 

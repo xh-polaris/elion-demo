@@ -8,11 +8,10 @@ import { animationDurations } from '@def';
 import OpacityBg from '../../_components/OpacityBg/OpacityBg';
 
 import TypewriterAnimation from '../../_components/TypewriterAnimation/TypewriterAnimation';
-import ParagraphCommentNotation from './ParagraphCommentNotation/ParagraphCommentNotation';
 
 import { judgeRhetoric } from '../EssayMarks/BrightSpot/BrightSpot';
 
-import { GRID_ROWS, ROW_HEIGHT, GRID_COLS } from './constants';
+import { GRID_ROWS, ROW_HEIGHT} from './constants';
 
 import './Essay.css';
 
@@ -26,15 +25,12 @@ function Essay() {
     sents,
     id,
     lines,
-    author,
-    paragraphComments,
     good_sents_arranged,
     sick_sents_arranged,
     good_words_arranged
   } = useEssay(state => state.essay);
   const selectedSentence = useEssay(store => store.selectedSentence);
   const setSelectedSentence = useEssay(store => store.setSelectedSentence);
-  const clearSelectedSentence = useEssay(store => store.clearSelectedSentence);
   const [currLine, setCurrLine] = useState<number>(0);
   const scroller = useRef<HTMLDivElement>(null);
 
@@ -166,6 +162,7 @@ function Essay() {
 
   useEffect(() => {
     handleSelectedStyle();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedSentence]);
 
   return (

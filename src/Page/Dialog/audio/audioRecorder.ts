@@ -1,8 +1,8 @@
 /*developing*/
 
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef } from 'react';
 
-import { getPostFunc, JsonProcessor, JsonPreProcessor } from 'src/request/post';
+import { getPostFunc, JsonProcessor } from 'src/request/post';
 import type { Req, Res } from 'src/request/interfaces/speechToText';
 
 import { RecognitionState } from './audioRecognizer';

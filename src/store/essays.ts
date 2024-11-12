@@ -14,10 +14,6 @@ type SentId = {
   sent_id: number;
 };
 
-type ParagraphInterval = {
-  start: number;
-  end: number;
-};
 
 type Sent = ParagraphId & SentId & Label;
 type SickSent = Sent & { revised_sent: string };

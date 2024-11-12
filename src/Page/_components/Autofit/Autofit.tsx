@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect, useRef, type ReactNode } from 'react';
 import { debounce } from 'lodash';
 
@@ -37,7 +38,7 @@ function Autofit({ children, mode = scaleMode.MIN }: { children: ReactNode; mode
 
   useEffect(() => {
     resizePage();
-  }, [displayMode, resizePage]);
+  }, [displayMode]);
 
   return (
     <div className="Autofit" style={{ transform: `scale(${scale})` }} ref={ref}>

@@ -22,6 +22,7 @@ export default function TextToImage() {
       }
     }, 3000);
     return () => clearInterval(interval);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [active]);
 
   if (id === -1) {

@@ -13,7 +13,6 @@ import {
 import './RadarChart.css';
 
 const MAX_SCORE = 100;
-const MIN_SCORE = 60;
 
 function RadarChart() {
   const scores = useEssay(state => state.essay.scores).slice(1, 6);

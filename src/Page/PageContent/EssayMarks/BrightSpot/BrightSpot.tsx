@@ -3,7 +3,6 @@ import React, { useMemo, useEffect } from 'react';
 import { useEssay } from '@store';
 
 import TypewriterAnimation from 'src/Page/_components/TypewriterAnimation/TypewriterAnimation';
-import TypewriterAnimationForString from 'src/Page/_components/TypewriterAnimation/TypewriterAnimationForString';
 
 import shortenSent from '../shortenSent';
 
@@ -64,7 +63,7 @@ export default function BrightSpot() {
         ))}
       </div>
     ));
-  }, [good_sents_arranged, sents]);
+  }, [good_sents_arranged, sents, setSelectedSentence]);
 
   useEffect(() => {
     document.querySelectorAll('.BrightSpot__goodSent').forEach(el => {

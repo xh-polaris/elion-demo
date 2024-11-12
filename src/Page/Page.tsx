@@ -6,7 +6,6 @@ import PageContent from './PageContent/PageContent';
 
 import Dialog from './Dialog/Dialog';
 
-import BgVideo from './BgVideo/BgVideo';
 import PageTitle from './PageTitle/PageTitle';
 import Controls from './Controls/Controls';
 

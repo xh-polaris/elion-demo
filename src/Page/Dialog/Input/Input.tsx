@@ -46,7 +46,7 @@ export default function Input({
     if (state === RecognitionState.end) {
       setText(t => `${t}${recognition}`);
     }
-  }, [state]);
+  }, [recognition, state]);
 
   // useEffect(() => {
   //   if (SPEECH_RECOGNITION_AVALIABLE) {

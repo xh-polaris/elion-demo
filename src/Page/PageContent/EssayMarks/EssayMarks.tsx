@@ -2,7 +2,6 @@ import React from 'react';
 
 import { useEssay } from '@store';
 
-import OpacityBg from 'src/Page/_components/OpacityBg/OpacityBg';
 
 import ParagraphComment from './ParagraphComment/ParagraphComment';
 import BrightSpot from './BrightSpot/BrightSpot';

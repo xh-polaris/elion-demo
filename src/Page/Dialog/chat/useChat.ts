@@ -1,4 +1,4 @@
-import { useState, useMemo, useRef, Suspense } from 'react';
+import { useState, useMemo, useRef } from 'react';
 import { getPostFunc, JsonPreProcessor } from 'src/request/post';
 import { useEssay } from '@store';
 
