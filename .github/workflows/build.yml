@@ -41,9 +41,3 @@ jobs:
           region: ap-shanghai
           commands: "cdn PurgePathCache --cli-unfold-argument --Paths https://elion-demo.xhpolaris.com/ --FlushType delete"
           output_format: json
-      - name: Send Notification
-        if: startsWith(github.ref, 'refs/tags')
-        uses: xh-polaris/send-changelog@v1
-        with:
-          webhook_url: ${{ secrets.WEBHOOK_URL }}
-          title: 作文辅导系统更新日志
