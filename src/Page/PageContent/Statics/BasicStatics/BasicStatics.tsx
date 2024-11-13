@@ -11,7 +11,7 @@ const statisticsData = [
   {
     icon: '/images/logo/student.png',
     value: '676',
-    label: '学生总数',
+    label: '教师总数',
     unit: '人'
   },
   {
