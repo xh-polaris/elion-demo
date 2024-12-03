@@ -22,7 +22,8 @@ export default function GeographicDistribution() {
           <img src='/images/icons/drop-down.png' alt='' className='DropdownIcon'/>
         </div>  
         <div className="ChartContainer"><img src='/images/logo/chart.png' alt=''/></div>
-        <div className="MapContainer"><img src='/images/logo/map.png' alt=''/></div>  
+        <div className="MapContainer"><img src='/images/logo/map.png' alt=''/></div>
+        <div className="Map-2"><img src="/images/logo/map-2.png" alt=''/></div>
         <div className="Top5">
           <div className="Top5Title">高频活跃学校Top5</div>
           <div className="Top5Content">

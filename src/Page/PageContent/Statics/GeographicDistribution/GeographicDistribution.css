@@ -196,4 +196,15 @@
   letter-spacing: -0.01em;
 
   color: #FFFFFF;
-}   
+}
+
+.Map-2 {
+  position: absolute;
+  right: 400px;
+  top: 350px;
+}
+
+.Map-2 > img {
+  height: 46px;
+  width: 32px;
+}
